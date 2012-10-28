@@ -1,0 +1,22 @@
+o Create database of images
+  o low-res
+  o Artists
+    o Picasso
+    o Monet
+    o Rembrandt
+    o Pollock
+  o Feature extraction data
+    o Serialize the data?
+o Feature extraction
+  o Color palette
+  o # blobs
+    o OpenCV blob detection
+    o average size of blobs
+    o number of blobs
+  o Null feature extraction
+    o raw machine learning
+    o simple classification based upon feeding the image to the classifier
+o Classification
+  o Bayesian Network
+  o SVM (Support Vector Machine)
+
