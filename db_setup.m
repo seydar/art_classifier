@@ -8,10 +8,12 @@ function db = db_setup(path)
     listing = arrayfun(@(x) x.name, listing);
 
     features = struct();
-    for i = 1:size(listing, 2)
-      picture = regexp(listing(i), '\.([^.]+)$', 'match');
-      load(listing, 'data');
-      features.(picture) = data;
+    if size(listing, 1) ~= 0
+      for i = 1:size(listing, 2)
+        picture = regexp(listing(i), '\.([^.]+)$', 'match');
+        load(listing, 'data');
+        features.(picture) = data;
+      end
     end
 
     function save
