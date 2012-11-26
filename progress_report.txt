@@ -1,0 +1,92 @@
+= Project Proposal: Using Computer Vision for Classification of Art
+
+by Mike Micatka, Ari Brown, and Andrew Gleeman
+
+== Problem
+
+The topic of art identification and classification is an ever-present issue in
+the world of art. Experts are paid thousands of dollars to give completely
+subjective opinions about the origins and qualities of paintings. We wish to
+use computer vision and other analytical techniques to provide a more
+quantitative analysis of the features of a painting. Using this quantification
+of the features, we will attempt to classify the given painting and match it
+to other like it. These similar paintings may be paintings by the same artist,
+or just paintings in the same style (impressionist, realist, surrealist, and
+so on). In doing so, we hope to create a tool for the automatic classification
+of art.
+
+== Technical Part
+
+Our implementation of this tool includes two largely distinct parts. First, we
+will produce a number of algorithms to extract quantitative data about the
+features of the paintings. We are using the following tests for extracting
+quantitative data: color palette, to determine the brightness and average
+color used in the paintings; blob detection, to determine the number of focal
+features and the average size of them; SIFT, to discern local features;
+Histogram of Oriented Gradients, which discerns local object appearance from
+the gradient of intensities; local binary patterns, to synergize with HoG;
+corner detection, for the jaggedness of patterns; edge detection, for a
+similar manner; and texton histograms, which finds texture patterns.
+
+The second part of our project involves using this data to sort and classify
+the images. We plan on using support vector machines to facilitate the
+training and educated guessing of art pieces. Support vector machines simply
+determine, given two classes of points and data for each class, to which class
+a new point would belong to.
+
+We will run the experiment by training our support vector machine (SVM) and
+then testing it on new data points between the artist that it the painting
+belongs to and another one. The SVM will give us one of the artists' names as
+a result, and this name will either be correct or incorrect.
+
+Error will be determined by the correct percentage of artists guessed. This
+will be compared to the baseline of Blessing and Wen's work. Blessing and Wen
+managed to succeed over 90% of the time with all of the artists that they
+chose. We will consider over 80% to be a success, and over 95% to be an
+improvement.
+
+== Milestones Completed
+
+The following is a list of milestones and sub-goals that we have and hope to
+achieve in order to realize this project. It also includes rough expectations
+for the future tasks for when we hope to have them completed.
+
+* October 30, 2012: Collect, organize, and construct a database of images.
+  We have compiled roughly 500 images for 5 artists. We also have a clean
+  interface with the database that makes creating and editing the information
+  for the images simple.
+* November 8, 2012: Complete implementations of various feature extraction
+  algorithms
+  We have the implementations completed for 5 of the 8, and we are planning on
+  getting the remaining 3 done by November 28, 2012. We missed our original
+  goal of November 8, but have not lost too much ground.
+* November 25, 2012: Complete progress report
+  This is very meta and is happening at this very moment.
+
+== Milestones Yet Incomplete
+
+* December 1, 2012: Implement various machine learning classification
+  algorithms
+* December 3, 2012: Test, evaluate, and refine algorithm
+* December 4, 2012: Present
+* December 17, 2012: Finish implementation
+
+== Division of Labor
+
+We plan on collaborating on most aspects of the project, with smaller tasks
+assigned as appropriate. For instance, we may individually implement special
+feature extraction algorithms or a particular machine learning approach.
+
+= Appendix
+== References
+
+We identified a Stanford University paper entitled "Using Machine Learning for
+Identification of Art Paintings" (Blessing, Wen, 2010). This paper describes a
+project comparable to our intended project, with a few key differences. The
+authors implemented a similarly structured program with a heavier and more
+technical machine learning focus. We plan to focus the majority of our
+attention on the feature extraction tools, as they are the ones that are most
+relevant to the class. A link to the paper can be found below.
+
+http://cs229.stanford.edu/proj2010/BlessingWen-UsingMachineLearningForIdentificationOfArtPaintings.pdf
+
