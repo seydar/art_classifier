@@ -19,7 +19,8 @@ of art.
 
 Our implementation of this tool includes two largely distinct parts. First, we
 will produce a number of algorithms to extract quantitative data about the
-features of the paintings. We are using the following tests for extracting
+features of the paintings. The paintings number to 100 and are for 4 different
+artists. We are using the following tests for extracting
 quantitative data: color palette, to determine the brightness and average
 color used in the paintings; blob detection, to determine the number of focal
 features and the average size of them; SIFT, to discern local features;
