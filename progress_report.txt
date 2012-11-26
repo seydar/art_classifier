@@ -10,7 +10,7 @@ subjective opinions about the origins and qualities of paintings. We wish to
 use computer vision and other analytical techniques to provide a more
 quantitative analysis of the features of a painting. Using this quantification
 of the features, we will attempt to classify the given painting and match it
-to other like it. These similar paintings may be paintings by the same artist,
+to others like it. These similar paintings may be paintings by the same artist,
 or just paintings in the same style (impressionist, realist, surrealist, and
 so on). In doing so, we hope to create a tool for the automatic classification
 of art.
