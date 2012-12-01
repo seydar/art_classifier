@@ -1,7 +1,7 @@
 function db = db_setup(path)
 
   function image = get_image(name)
-    full_path = [path '/images/' name '.jpg'];
+    full_path = [path '/images/' name];
     img = imread(full_path);
 
     listing = dir([path '/features/' name '.*']);

@@ -2,8 +2,8 @@ o Create database of images
   o low-res
   o Artists
     o Picasso
-    o Monet
-    o Rembrandt
+    x Monet
+    x Rembrandt
     o Pollock
     o Seurat
   o Feature extraction data
@@ -11,19 +11,11 @@ o Create database of images
 o Feature extraction
   o Color palette (group)
   o # blobs (hw)
-    o OpenCV blob detection
-    o average size of blobs
-    o number of blobs
-  o Null feature extraction
-    o raw machine learning
-    o simple classification based upon feeding the image to the classifier
-  o SIFT (openCV)
+  o SIFT (vlfeat)
   o Local Binary Patterns (ari)
-  o Harris Corner Detection (hw)
-  o Histogram of Oriented Gradients (ari)
-  o Edge Detection (drew)
+  x Harris Corner Detection (hw)
+  x Histogram of Oriented Gradients (ari)
   o Geometric Probabilty Map
-  o Texton Histogram (mike)
 o Classification
   o Bayesian Network
   o SVM (Support Vector Machine)
