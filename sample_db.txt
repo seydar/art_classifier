@@ -1,0 +1,6 @@
+db = db_setup('.');
+image = db.get_image('monet1');
+image.features.sift
+image.features.hog = hog(image.image)
+image.save();
+
