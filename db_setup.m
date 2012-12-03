@@ -16,7 +16,7 @@ function db = db_setup(path)
       end
     end
 
-    function save
+    function save_me
       fields = fieldnames(features);
       for i = 1:length(fields)
         save_path = [path '/features/' name '.' fields{i}];
@@ -24,11 +24,16 @@ function db = db_setup(path)
         save(save_path, 'data');
       end
     end
+    
+    function add_feature(name, info)
+      features.(name) = info;
+    end
 
     image = struct();
     image.image = img;
     image.features = features;
-    image.save = @save;
+    image.add_feature = @add_feature;
+    image.save_me = @save_me;
   end
 
   db = struct();
