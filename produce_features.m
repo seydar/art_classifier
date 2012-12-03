@@ -1,7 +1,11 @@
 function produce_features(base)
-  matlabpool open;
+
+if matlabpool('size') == 0
+	matlabpool open;
+end
+
   
-  run 'vlfeat/toolbox/v1_setup'
+%  run 'vlfeat/toolbox/v1_setup'
   db = db_setup(base);
 
   path = [base '/images/*.jpg'];
@@ -11,15 +15,26 @@ function produce_features(base)
   for i = 1:size(list, 1)
     new{i} = list(i).name;
   end
-  
-  parfor i = 1:size(new, 2)
-    image = db.get_image(x);
-    image.hog = hog(image.image);
-    image.sift = sift(image.image);
-    image.corners = corners(image.image, );
-    image.blobs = blobs(image.image, );
-    image.color_palette = color_palette(image.image);
-    image.save();
-  end
-end
 
+  size(new,2)
+  tic
+  parfor i = 1:size(new, 2)
+	  disp(['Image #: ' num2str(i)]);
+    image = db.get_image(new{i});
+ %   image.hog = hog(image.image);
+    image.add_feature('sift', sift_features(image.image));
+% image.edge_hist = edge_hist(image.image);
+	%image.lbp = lbp_features(image.image);
+ %   image.corners = corners(image.image, );
+ %   image.blobs = blobs(image.image, );
+ %   image.color_palette = color_palette(image.image);
+    image.save_me();
+  end
+  toc;
+ 
+  matlabpool close;
+
+  
+  
+  
+end

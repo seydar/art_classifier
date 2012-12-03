@@ -9,12 +9,13 @@ o Create database of images
   o Feature extraction data
     o Serialize the data?
 o Feature extraction
-  x Color palette (group)
-  x # blobs (hw)
-  x SIFT (vlfeat)
-  x Local Binary Patterns (ari)
+  o Color palette (group)
+  o # blobs (hw)
+  o SIFT (vlfeat)
+  o Local Binary Patterns (ari)
   x Harris Corner Detection (hw)
   x Histogram of Oriented Gradients (ari)
+  o Geometric Probabilty Map
 o Classification
   o Bayesian Network
   o SVM (Support Vector Machine)
