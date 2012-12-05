@@ -9,13 +9,14 @@ function db = db_setup(path)
     end
     
     listing = dir([path '/features/' name '.*']);
-    listing = arrayfun(@(x) x.name, listing);
+    listing = arrayfun(@(x) x.name, listing, 'uni', false);
 
     features = struct();
     if size(listing, 1) ~= 0
       for i = 1:size(listing, 2)
-        picture = regexp(listing(i), '\.([^.]+)$', 'match');
-        load(listing(i), 'data');
+        picture = listing{i};
+        picture = picture((length(name) + 2):(end - 4));
+        load(listing{i}, 'data');
         features.(picture) = data;
       end
     end
@@ -23,7 +24,7 @@ function db = db_setup(path)
     function save_me
       fields = fieldnames(features);
       for i = 1:length(fields)
-        save_path = [path '/features/' name '.' fields{i}];
+        save_path = [path '/features/' name '.' fields{i} '.mat'];
         data = features.(fields{i});
         save(save_path, 'data');
       end

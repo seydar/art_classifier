@@ -22,8 +22,8 @@ function [edge_hist] = edge_hist( image )
 	Ixy = imfilter(Ix.*Iy, H);
 	
 
-	all_eigs = zeros((size(Ix2,1)*size(Ix2,2))/(step*step),1);
-	size(all_eigs)
+	all_eigs = zeros(ceil((size(Ix2,1)*size(Ix2,2))/(step*step)),1);
+	size(all_eigs);
 	for i = 1:step:size(Ix2, 1)
 		for j = 1:step:size(Ix2, 2)
 			
