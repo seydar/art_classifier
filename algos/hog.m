@@ -1,5 +1,5 @@
 % from http://www.mathworks.com/matlabcentral/fileexchange/28689-hog-descriptor-for-matlab
-function result = hog(pixels)
+function H = hog(pixels)
   pixels    = double(pixels);
   s         = size(pixels);
 
