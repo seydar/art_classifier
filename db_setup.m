@@ -44,3 +44,4 @@ function db = db_setup(path)
   db = struct();
   db.get_image = @get_image;
 end
+
