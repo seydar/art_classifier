@@ -3,7 +3,11 @@ function db = db_setup(path)
   function image = get_image(name)
     full_path = [path '/images/' name];
     img = imread(full_path);
-
+    if (size(img,1) * size(img,2)) > (480*640)
+	    scale = (640*480)/(size(img,1) * size(img,2));
+        img = imresize(img, scale);
+    end
+    
     listing = dir([path '/features/' name '.*']);
     listing = arrayfun(@(x) x.name, listing);
 
