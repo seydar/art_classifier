@@ -1,0 +1,10 @@
+o All pairs of artists
+  o bars for individual features
+    -> in one graph
+  o graph for cumulative features
+o For each histogram
+  o Line graph of histograms for images by artist
+o For each [mean, variance, num]
+  o produce curve
+    -> find probability that given two curves, SVM will get it right
+
