@@ -1,6 +1,14 @@
 function [firsts_rate seconds_rate ] = svm_train(artist_1, artist_2, feat, n)
 
-    db      = db_setup('.');
+   db      = db_setup('.');
+	
+	
+	if strcmp(feat, 'sift_hist')
+		gen_sift_hist(artist_1, artist_2, 10);
+	end
+	
+	 
+	
     firsts  = dir(['./images/' artist_1 '*']);
     seconds = dir(['./images/' artist_2 '*']);
     
