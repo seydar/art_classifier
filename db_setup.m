@@ -12,11 +12,10 @@ function db = db_setup(path)
     listing = arrayfun(@(x) x.name, listing, 'uni', false);
 
     features = struct();
-    size(listing)
     if size(listing, 1) ~= 0
       for i = 1:size(listing, 1)
         picture = listing{i};
-        picture = picture((length(name) + 2):(end - 4))
+        picture = picture((length(name) + 2):(end - 4));
         load([path '/features/' listing{i}], 'data');
         features.(picture) = data;
       end
