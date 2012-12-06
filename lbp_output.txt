@@ -9,4 +9,58 @@ r2 =
 
     0.9200
 
+>> [r1 r2] = svm_train('Rembrandt', 'picasso', 'lbp', 40)
+
+r1 =
+
+    0.6500
+
+
+r2 =
+
+    0.5106
+
+>> [r1 r2] = svm_train('Rembrandt', 'monet', 'lbp', 40)  
+
+r1 =
+
+    0.5833
+
+
+r2 =
+
+    0.8077
+
+>> [r1 r2] = svm_train('pollock', 'picasso', 'lbp', 40)
+
+r1 =
+
+    0.5200
+
+
+r2 =
+
+    0.2553
+
+>> [r1 r2] = svm_train('pollock', 'monet', 'lbp', 40)  
+
+r1 =
+
+    0.9600
+
+
+r2 =
+
+    0.4615
+
+>> [r1 r2] = svm_train('picasso', 'monet', 'lbp', 40)
+
+r1 =
+
+    0.6170
+
+
+r2 =
+
+    0.6923
 
