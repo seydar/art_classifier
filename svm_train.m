@@ -40,6 +40,7 @@ function [firsts_rate seconds_rate ] = svm_train(artist_1, artist_2, feat, n)
     seconds_rate = 0;
     for i=(n+1):length(seconds)
         im = db.get_image(seconds(i).name);
+        seconds(i).name
         if (svmclassify(trained_svm, im.features.(feat)) == 1)
             seconds_rate = seconds_rate + 1;
         end
