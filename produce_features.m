@@ -25,6 +25,7 @@ function [db] = produce_features(base)
 	disp(['Image #: ' num2str(i)]);
     image = db.get_image(new{i});
 
+<<<<<<< HEAD
     % image.add_feature('hog', hog(image.image));
     % image.add_feature('edge_hist', edge_hist(image.image));
 	  image.add_feature('lbp', lbp_features(image.image));
@@ -32,6 +33,15 @@ function [db] = produce_features(base)
     % image.add_feature('blobs' blobs(image.image, 0.45);
     % image.add_feature('color_palette', color_palette(image.image);
     % image.add_feature('color_hist', color_hist(image.image, 10));
+=======
+  %  image.add_feature('edge_hist', edge_hist(image.image));
+	%image.save_me();
+	 %image.lbp = lbp_features(image.image);
+ %   image.corners = corners(image.image, );
+ %   image.blobs = blobs(image.image, );
+  %  image.color_palette = color_palette(image.image);
+    image.add_feature('color_hist', color_hist(image.image, 10));
+>>>>>>> 81a784de36122083a4481eac8e434ba0a68efce8
     image.save_me();
   end
   toc;
