@@ -1,0 +1,12 @@
+>> [r1 r2] = svm_train('Rembrandt', 'pollock', 'lbp', 40)
+
+r1 =
+
+    0.6667
+
+
+r2 =
+
+    0.9200
+
+
