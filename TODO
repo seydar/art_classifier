@@ -1,10 +1,14 @@
-o All pairs of artists
-  o bars for individual features
-    -> in one graph
-  o graph for cumulative features
-o For each histogram
-  o Line graph of histograms for images by artist
-o For each [mean, variance, num]
-  o produce curve
-    -> find probability that given two curves, SVM will get it right
+t a o Paper writeup
+      -> false positives/false negatives
+      -> statistical guessing
+      -> literature review
+  a o Blob detection speedup
+t a o Feature combination (council style)
+t a o Make HoG correct
+  d o Blobs at different thresholds
+t m o SIFT Histograms
+      -> fix saving
+      -> do at different sizes
+t d o Rerun data
+  d o Graphical representation of data
 
