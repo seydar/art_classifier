@@ -35,9 +35,6 @@ list = dir(path);
 	end
 
 	[words, ~] = vl_ikmeans(feat, K);
-	
-	class(words)
-	
 	save_path = ['./features/' art_name '.words.level.' level '.mat'];
 	save(save_path, 'words');
 	
