@@ -1,0 +1,1636 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: MATLAB, The MathWorks, Inc. Version 7.14.0.739 (R2012a). Operating System: Microsoft Windows 7.
+%%Title: M:\eecs442\homework5\vlfeat\doc\demo\sift_peak_3.eps
+%%CreationDate: 11/27/2012  18:55:36
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox:    39    94   280   146
+%%EndComments
+
+%%BeginProlog
+% MathWorks dictionary
+/MathWorks 160 dict begin
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s {show newpath} bdef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+% orientation switch
+/portraitMode 0 def /landscapeMode 1 def /rotateMode 2 def
+% coordinate system mappings
+/dpi2point 0 def
+% font control
+/FontSize 0 def
+/FMS {/FontSize xstore findfont [FontSize 0 0 FontSize neg 0 0]
+  makefont setfont} bdef
+/ISOLatin1Encoding where {pop /WindowsLatin1Encoding 256 array bdef
+ISOLatin1Encoding WindowsLatin1Encoding copy pop
+/.notdef/.notdef/quotesinglbase/florin/quotedblbase/ellipsis/dagger
+/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE/.notdef/.notdef
+/.notdef/.notdef/quoteleft/quoteright/quotedblleft/quotedblright/bullet
+/endash/emdash/tilde/trademark/scaron/guilsinglright/oe/.notdef/.notdef
+/Ydieresis WindowsLatin1Encoding 128 32 getinterval astore pop}
+{/WindowsLatin1Encoding StandardEncoding bdef} ifelse
+/reencode {exch dup where {pop load} {pop StandardEncoding} ifelse
+  exch dup 3 1 roll findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def currentdict end definefont pop} bdef
+/isroman {findfont /CharStrings get /Agrave known} bdef
+/FMSR {3 1 roll 1 index dup isroman {reencode} {pop pop} ifelse
+  exch FMS} bdef
+/csm {1 dpi2point div -1 dpi2point div scale neg translate
+ dup landscapeMode eq {pop -90 rotate}
+  {rotateMode eq {90 rotate} if} ifelse} bdef
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
+  dpi2point mul] 0 setdash } bdef
+% macros for lines and objects
+/L {lineto stroke} bdef
+/MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
+/AP {{rlineto} repeat} bdef
+/PDlw -1 def
+/W {/PDlw currentlinewidth def setlinewidth} def
+/PP {closepath eofill} bdef
+/DP {closepath stroke} bdef
+/MR {4 -2 roll moveto dup  0 exch rlineto exch 0 rlineto
+  neg 0 exch rlineto closepath} bdef
+/FR {MR stroke} bdef
+/PR {MR fill} bdef
+/L1i {{currentfile picstr readhexstring pop} image} bdef
+/tMatrix matrix def
+/MakeOval {newpath tMatrix currentmatrix pop translate scale
+0 0 1 0 360 arc tMatrix setmatrix} bdef
+/FO {MakeOval stroke} bdef
+/PO {MakeOval fill} bdef
+/PD {currentlinewidth 2 div 0 360 arc fill
+   PDlw -1 eq not {PDlw w /PDlw -1 def} if} def
+/FA {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arc tMatrix setmatrix stroke} bdef
+/PA {newpath tMatrix currentmatrix pop	translate 0 0 moveto scale
+  0 0 1 5 -2 roll arc closepath tMatrix setmatrix fill} bdef
+/FAn {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arcn tMatrix setmatrix stroke} bdef
+/PAn {newpath tMatrix currentmatrix pop translate 0 0 moveto scale
+  0 0 1 5 -2 roll arcn closepath tMatrix setmatrix fill} bdef
+/vradius 0 def /hradius 0 def /lry 0 def
+/lrx 0 def /uly 0 def /ulx 0 def /rad 0 def
+/MRR {/vradius xdef /hradius xdef /lry xdef /lrx xdef /uly xdef
+  /ulx xdef newpath tMatrix currentmatrix pop ulx hradius add uly
+  vradius add translate hradius vradius scale 0 0 1 180 270 arc 
+  tMatrix setmatrix lrx hradius sub uly vradius add translate
+  hradius vradius scale 0 0 1 270 360 arc tMatrix setmatrix
+  lrx hradius sub lry vradius sub translate hradius vradius scale
+  0 0 1 0 90 arc tMatrix setmatrix ulx hradius add lry vradius sub
+  translate hradius vradius scale 0 0 1 90 180 arc tMatrix setmatrix
+  closepath} bdef
+/FRR {MRR stroke } bdef
+/PRR {MRR fill } bdef
+/MlrRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lry uly sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 90 270 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 270 90 arc tMatrix setmatrix
+  closepath} bdef
+/FlrRR {MlrRR stroke } bdef
+/PlrRR {MlrRR fill } bdef
+/MtbRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lrx ulx sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 180 360 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 0 180 arc tMatrix setmatrix
+  closepath} bdef
+/FtbRR {MtbRR stroke } bdef
+/PtbRR {MtbRR fill } bdef
+/stri 6 array def /dtri 6 array def
+/smat 6 array def /dmat 6 array def
+/tmat1 6 array def /tmat2 6 array def /dif 3 array def
+/asub {/ind2 exch def /ind1 exch def dup dup
+  ind1 get exch ind2 get sub exch } bdef
+/tri_to_matrix {
+  2 0 asub 3 1 asub 4 0 asub 5 1 asub
+  dup 0 get exch 1 get 7 -1 roll astore } bdef
+/compute_transform {
+  dmat dtri tri_to_matrix tmat1 invertmatrix 
+  smat stri tri_to_matrix tmat2 concatmatrix } bdef
+/ds {stri astore pop} bdef
+/dt {dtri astore pop} bdef
+/db {2 copy /cols xdef /rows xdef mul dup 3 mul string
+  currentfile 
+  3 index 0 eq {/ASCIIHexDecode filter}
+  {/ASCII85Decode filter 3 index 2 eq {/RunLengthDecode filter} if }
+  ifelse exch readstring pop
+  dup 0 3 index getinterval /rbmap xdef
+  dup 2 index dup getinterval /gbmap xdef
+  1 index dup 2 mul exch getinterval /bbmap xdef pop pop}bdef
+/it {gs np dtri aload pop moveto lineto lineto cp c
+  cols rows 8 compute_transform 
+  rbmap gbmap bbmap true 3 colorimage gr}bdef
+/il {newpath moveto lineto stroke}bdef
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    39    94   280   146
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0000 2748 csm
+
+  477   996  2894   618 rc
+86 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 sr} bdef
+/c1 { 1.000000 1.000000 1.000000 sr} bdef
+/c2 { 0.900000 0.000000 0.000000 sr} bdef
+/c3 { 0.000000 0.820000 0.000000 sr} bdef
+/c4 { 0.000000 0.000000 0.800000 sr} bdef
+/c5 { 0.910000 0.820000 0.320000 sr} bdef
+/c6 { 1.000000 0.260000 0.820000 sr} bdef
+/c7 { 0.000000 0.820000 0.820000 sr} bdef
+c0
+1 j
+1 sg
+   0    0 3672 2755 rf
+6 w
+gs 477 1044 2846 570 rc
+/mwscm { [/Indexed /DeviceRGB 63
+  <
+    000000 040404 080808 0c0c0c 101010 141414 181818 1c1c1c 202020 242424 
+    282828 2c2c2c 303030 343434 383838 3c3c3c 404040 444444 484848 4c4c4c 
+    505050 555555 595959 5d5d5d 616161 656565 696969 6d6d6d 717171 757575 
+    797979 7d7d7d 818181 858585 898989 8d8d8d 919191 959595 999999 9d9d9d 
+    a1a1a1 a5a5a5 aaaaaa aeaeae b2b2b2 b6b6b6 bababa bebebe c2c2c2 c6c6c6 
+    cacaca cecece d2d2d2 d6d6d6 dadada dedede e2e2e2 e6e6e6 eaeaea eeeeee 
+    f2f2f2 f6f6f6 fafafa ffffff 
+  >
+] setcolorspace } bdef mwscm
+gs np 477 1045 mt 0 569 rl 2845 0 rl 0 -569 rl cp c np
+[2845 0 0 569 477 1045] cc
+<< % Image dictionary
+  /ImageType 1
+  /Width 500 /Height 100
+  /BitsPerComponent 8
+  /Decode [0 255]
+  /ImageMatrix [500.000000 0 0 100.000000 0 0]
+  /DataSource currentfile
+  /ASCII85Decode filter
+  /RunLengthDecode filter
+>>
+image
+i;i]Tmf<1bq#^NroDf!p!<N<)qud-)!WiB'oDnjkrW30(!sAc+"U,#3!s/K(ec5mT!<N?,"pb,5"pY>9
+"9S]+qZ$g$!WrQ/#71;8"UG>:"9S`"!QP0E!<N?+"U>>4#lt;;r<EB0$4HhA#7CkG#mq%K%K6hB%1<FG
+"9SZ*mJmk#!WrT2#n.:S&.]6Z#mUV9!WggO"9AN)!X&E)r<3?/#7:kM&cNFK&J#9V"p=u.jT$J*!<N?+
+"pYA=#6tG:"9S`/"pk_N()n;;+<DI;&If$N!s7H^p]9pcq>pNrr<*$#qZ6Hl%KQS3!s8Z/"U"r1!s/K(
+o`,[,!<N<)!sA`1"pP;;"pP56!s/K(f)Q!U!WrQ/#71;8#7(P="9S]+!W2p%!<N?+"pbP7$3geB"pG)1
+!qZN:!!WH*!sJo8$N1>4$N:>L$4@:Q%hK6]%1EUQ$k<dZ&.]6Z#mUV9!Wh]h&ci%9"UGGE%hTEd%h/jO
+"Tnf,eGodS!WrQ/"pXr0":5GG&JP-Y#SRaY$3p\9!<M<_"p"c-"U55>rX0PM#R:M9"9f#;%MK["+XA<W
+*Z>_'$O6e9iW/`So)Sajq#^EqrW;iqqu?j#!<N?*qud-)!s/K(p&Gg.!<N<)"9\l4#6tM@#m^eA"U"o/
+!S7;`!<N?+"pYD?$4."E"pG)1!<N)u%fl_6"U55=$4@1I#R1G8"8i6!"8r<#!R:ZM!<E6)"pbPEr=&`8
+rX/f:%M09P'*8aW%fQnG%M00`&.T*U#6b22!U]pm!<NB.#R_+RrXoGI%LWOH"9JVT!!rZ-!sAf5#RLhF
+r<X#B$kEpa()@Vu&If'P"9SZ*k5Z_-!WrQ0#n%1P%h9$V#mUY<"pYJG'H/&=-7:)`*>]:r#R(=i!;HTe
+!!**$rW;]or;us!!<N?#!WE'%!<E6'"8i9)!s/N)!VZR1!<E6(!sAc3#6tM@$4@4K#m^_=!s/K(fDlNb
+!WrQ/#7(VC$4-tC"U"o/!<N-!"p"c-"9o,<rX&c7#R1G8quccu!s8W,!r`5I!#Ye=!sAf7$OmRV%h9$W
+$k3[Y',;9!().Amr=02G&.f?^$jd.B!s/Mk!"o;6!sJr;%1a$`&J#<X#R(;3!S7;n!<E6)"pbPD$k3XS
+$O[:L$kEp`'c%Mt&.JsO"9SZ*k5Y_f!X&]5$P!aI&f;/i$OI%B"pYJG'H/&=-n-Mh*uP_$#mLLj!;Z`g
+!<*!!!q?Bd!r;p"!WiH+rWE?+!s/K(pAbU&!<N?*"9eu7#RLhGr<ro=#mUV:!W`>S!!WH)!X&Z2#lP&8
+#R:P:!s/N)!WE''!<N?+"U>>4#n%"D"pG,3!sA`1"pY&3#mLS;"U"o/!W`>L!!`N+!sJo9$P!%F*=`Mf
+%M09g(`=5/().>k%LimX%hB-Z$O?q>!s&Gj!"o;6!sJo9$k<dZ%h9!T#6b22!S7;V!<N?,#7:kLrX]bS
+%L`^Q$k<g]',2)l%h&aK"9S]+k5Z_-!X&`8%1j0f()7Jo%13@F"pYJF',_l;-RgGh*uYh'$3gUk!;Z`g
+!!E<'!WiK$"Si/s!rW6#!r;ou!Wr9%!s/N)!VZR&!<E6("9eu7#RLhG%/gV?$OR.D"9SZ*fDlQc!<N?+
+"pYD>#mgkB"pG,3!W`?$!!WH)!WrT1#Q=u1#6kA1"9\l4#7(V6#mgkC#6k>7!s/K(gAq-PrW!o=!<N?+
+"pkYH%M''[%LimY&JQ$")]K\3'G1ibrX9,C%1EUN#6b53!<MTg&ci"8"9o,=$k3[U$jm7E"9S]+f)Qoo
+!X&]5$P!a]',(rg%L`^Q$k<dZ&J,H^$4$h=!s/K(kl;t0!<WK1$P!da(Dmr'&e59T#6kD>%1sBs+seT`
+,Tdp=%LNCChZ3WVnc/mq!<N?*"9\o,"T&;u!r<!"!Wr6"!<N?#!s8T+!<Mop(]a[>!sJl6#RLhG$k3XU
+%1N[P#R1D6!<LdP"p"c,!sJl6r!3i="pG,3!W`<%!!**%!sAc2r<<6*r<*<."pYD@$OcqB$O[:J#R:M9
+!s/N)!T*nM!=8f0"9o,=$k3[Vr='2H&eu6%*#ok6'G1f`$iC>9#mUY;!s/Mi!!WH*!sJl7$N:D<$4$k?
+!s/K(f)Qrp!X&]6$kO$c'bh;n%L`^P$OdIR%LigS#mUY;!s/N)!U9Xj!<E9+#R_.U(B,-R((q,c#lY#>
+#R_.W)BU.K,U+9H'+P?R"O-oM!<E6("9eZ,!<`Q)"8Dou!sAN*rWE-$rW3!"qu[$&!W`>r!"/f/!sAc3
+#7(VC$OltC#Rh(I#6b53!<LdP#6=i,!sAc3#Q+iA#6k>7!s/K(!!!$#!WrN-"9er3"TAK-"9f#9$4ICA
+%L`dT$4-qA"U"o/!W`>^!<*!"!Wr?'rW<'"#6Fr/"U>;?$iUPG$OdIS&JQ$")]KY2'+bT[$2k,7#6k>7
+!s/K(li74j!<N?,"pb,5#6tG:"9S]+!S@A`!<E9*#7:nO',;8t'+k]_$N:A0$4@.G#6k>7!s8T+!<MNe
+,QRoJ"U>DF&eu3"(DRPm$O?q?"U>>C&Jc<,+<V^E((gu^"p<*M"T\W*!sAc*"Tnl1!sAK'rW3!"!<WH&
+"TAN!!rN-$!Wr?%p]([&!WiK."pYD?$4@7?$jR.I#R1G7!WggO#QXr-!sAc3#71;8#7(P="9S]+!WE'$
+!<E6'p]DE;"U>>A%1Wp\&J5Qb%LidP#R1G8"9S],!<M<_"9AN)!X&?'!WrK*rW*o=!sAc4#RLeE#mq"I
+%1j0g(`=2-'bLo`#m^G6#6b86"9S]+!U9Xr!<E6("9er5"pG/5!s/N)!S@A`!<E9*#7:nO',2/q'+bT\
+$2b&-#lY&8"pP57"9S`-!<Murr;l]o,QRoI":#8C&/,co'b_,f$3p_;"9f&=%MBNp)]K\3'+YHV"U!!L
+"T\W*!s8]*"Tnl1!sAN(qZ-d#!WrQ&"SDis"TAK*!WiB'p](X%!<N?+"pYD?#n$V=#RUkD#6b54!WgdN
+#6=l-!sAf5#lP&6#R:M9!WiE$!<*#p!XJl2"pYJD%M'0M&e>Qc%h9!T#m^b?"U"o/!<M?`"T\Z,"9eu.
+"q1Y="9S],!<N<)"9f#.#7q.H#n%4T',;8u'bV#c#mUY5"TAK*!WiB'kPt_d!<N?*r<3*%rW<'"g&MBZ
+!WrQ1#n.=VrY#GI%h&aL#5n`)#6"l,#R:S="U"o/!<N-!r;cp#!rW/s!!`N+"9o,>%M8UP(_@/b#R1D6
+!sAf6$P*ja()@Vu&.JpM"9QgJ"9AN)!X&<&!WrK*q#LKt!r`<!"Sr5t"9\f/!W`>s!"&`-!WrQ/"pYD?
+$2k2:#m^b>"9S]+!Rq)^!<E6("9f#9#mq"G#R:P:!s/N#!;QX&!WrQ/#71bI%hTHQ'+Y]f&.]3Y$OR.E
+"pG)1!<MEb"p"`+"9eu7rWio;"pG,3!W`<'!WrQ.r<3f<"pbMD%M06d'+k``$3p_;!sAK'rW2-]!<E6#
+!r2rt!W`<&n,W7bo`-<>!<N?,#71bJ&.oKc%h/jO"pG,3!sA`1"pYD?$47.J#m^_<!s8B$rW<$#rW3*$
+!W<!C!<N?+"pkYH%M'$Y$OI%A!s8T,"9o/?%M03a&.]0V#6b22bQ%bH!<N?*r<*3)!s/Q'!WE)u!<E6'
+rWDcqr<3B."9S`-!<Mrq#QXu.!sAf5#7187#RCY>"U"o/!<LUK#6=i,"9eu8$2t8:#mUY;!s/K(q#L<n
+$j$J5"U>>A%1Wp]&ek6Y%hfTh&J,H^$jm:G"U"l-!U9Xt!<N?,"pbMB$OR1G"pG)1!W`?$!r`<$";(eA
+#71bI%M''[$jm4C"9S],qZ5aXrW3!"!<WH%"9\f/!W`>n!!**$q?$6h,m",N"U>>A%1WmZ%L`[M"pG)2
+!WrN-"U55>$OmRU%1ERL"p>&+!WiH,"T8K-"9\f.!<N0"#6=i,!sJl7$N:D9$4$h>"8r93!sJl7$4I@Q
+$k!@H"U"l-bQ%_G!<N?"!s8T+!<N&trW*$$!r`<#"S;j$"9\f.!<Mrq'EJ49!sAc3#7(SA#RCY>"U"o/
+!<LRJ&ci"7!sAf5#RLhE#R:P:!s/K(p&GX)!<N<)"U55>$OmRW&J>`kr=o_T'GD)j%L`XK"Tnf,lMq.j
+!<NB-#71e;$jI(G#6k;5!r`5u!rW3("9f#9$N:D;$4-q@"9S`#!TX7[!<iN+!sAc2rWWN0"9S],!VHEq
+!<N<)"8r?'!sAN(q#M-1!WrN."pbPD%1NdV$jm:G"U"r,!XAf1"U>>B%M8UO"V2%L#R1G1!s8Z0"pb)4
+"pY>8!s/K(rW!`8!<N?+"pYA=#6tG9!s/N)!<N<)"U582#mLY?"U"l-!QtHD!<MutrW2iq!s&E(!r`<$
+"9AZ0p'(^)"U"o/!<Mop#6=l-!sAc3#Q=u6#6tG:!s/N)huNKPqZ%60!<N?+"U55<#m^e@"U"o/!<Mlo
+'*/+8!WrT1#71_F%1Wm\&el&r(]G6Z(D[\t%h&aL"9SZ*li7Uu!<WH/#RUtL%LigR#R1D6!rW/q!X&T.
+"U552#R(G;"U"o/oE"+TrW*0(!sAc3#Q=u5#6k>6!W`>r!!NB)!sAc2r<<9+"S;d-"9f#9$4I@R%LigS
+#mUV:"8r94!sAf6$P!a^'GV;p%h&aL"o\W-"U55=$iUP?$OR.D"Tnf,!WE'&!<E6("9e]-!sA`/!rN'%
+!WrQ/#5nc1"pG,3!WgCCrW2s!r;l]orW*6*!WrN-"9eu$"pG/5!s/N)pAbF!!<N?+"U552#R:S="U"o/
+!<M0[r;lftq#LHqrW*-'!sAc3r<EH0"U"o/qZ6Nn+oq]G!sAc3#7(VC$OdLU&JGlq)&aG6)]BP/&e>?U
+"Tnf,li77k!<WH/#R_(?%L!7K#R1G7o)\sq!sJN*!sA]-!r;rp!r`5d!;up&!WrQ/#7(\9$O-qD#6b22
+!VcX!!<N?+"U>>4#mLY?"pG/5"S`-("pbPE%M/OM"qM.N#R1G7r;mN4"9o,=%1s9i(Ddi$&Io0Sr<<f=
+#n%1Q&.oHa%1<IH"9S]+r;Zj!!WE0""9&B!!<WB*"9n]-"U,#2!W`>C!;QZi!<*!*!WiH+"9\l3"pXi-
+#R1J:"U"o/!<Mop&-2h7"9eu7#7(P>"pG,2!Wh9\!s&E(!r<#s!rE!$!WrN-"oSW-"U"o0r;uisrW"/D
+!<N<)"9eu7#7(VB$4ICU',;?&*$-1D*ZQ"3&If$N"9JVj!"f54!sAf6$4I@R%1ERL"pG)2rW;s!qZ?Tr
+!<N?"!<E6'qZ?p%!W`>j!;lj2!WiH,"U>>A$k<aV$jm7E"9SZ*q#CU"!X&Z3#n$Y?!Xf>Ar!3-*&dJ[J
+$4@=T&el&q'+k``#mLM7rW3Z6"9f#;%1j0g(`F8/'bV#b$2t/A#n%1R&el&r'b_/h$O?q=!Wi/upAkO"
+!!**%!sAc3r<EK1"U"o/!Q>';!VHF#!<E6'!s8Z/"U,)7p'1g,"U,#2!W`>r!!WH)!WrQ0#6"i3"pG,3
+!W`>^!!E<'!WrQ""TAK(!Wr9#!s/Q,"T8N'"T&<#!rE!%!WiH,"U=r2rWj8G$4IFX'c7l1+!DdM*Z>e,
+%LNCC!WhWf#6=i,"9f#:$iUP;$OI(C"T8E'"9e]-"9\i0!Wr<$quZ]q"9JW,!sJQ+"U"r1!W`>m!<*#u
+!r`9+"9eu8$4ROF&-i[R$3p_:!Wi,t#6=l."U>>A%K6kD%L`^P#mgqG$iLJf$O[@P&/#]p)B0S3'bLo_
+#6b22!WrQ/#7:nO',DH()]BP/&e>BX#RCbG%M9Bk)?(N[(DIGj$3p\8!VcZo!W)j.!<E6)"U55<#mgkB
+"p>#0!OVn1!<E6'"9&E*"U,)7p'1g,"pG,3!W`>r!!WH)!WrQ/#6"i3"pG,3!W`>_!!WH)!WrQ/"o8E-
+"U,#3!s/Q&!<WB)!sA,t!s8W,!r`3)!WiH,"U55.#SdXR%M9Bk)]g+F+s7pG(D72b"p=u.lMqn*!WrT1
+#RLhG$4-tC"U"o0"9\l4"pY>:"U"o/nc9:'!s8Z0"pYA=#6k>7!s/K(p&P$l!s/N+"9&E9"U,)8#n.:T
+&eYcf%1<FF!s/N"!"Ar1!sJr;%1a$`&eGQ_rX8l<%M'-M&KMDo&J>fq)]g+F*uu45&.AgJ"9S`/"UGGE
+&JQ$"rYums(_mYn$jm:J$k<mb)&jV=*uu::'+YHU"Tnc+nGj1&!<N?,#71_F$k*LM#6b53!<MinqZ4b<
+"p"`+!s8Z/rWN<,#5/9+"pP56!s/Q'!Vl^,!<E6("9eu6#6kA9"9S]+!TX4b!<N?+"U55.#R:S>"pG,3
+!Wr<$!s/N+"9&H%"oAK+"U"r1r;m9-"9f#9#mgqF$2t2F#mq+Q',DK,+!DdM*?#\*%1*4A!WhTe"p"c-
+"9eu7rWii9"pG,4!sA`2#71;8#7(P<"9S]+!W)lq!=&Z-!sAc3#7:>9"pkM="9S]+q#L?o"Te`-!sAf,
+#6"i=#RLhH%hTEf&eGN\#R1D5!Vudr!<NB.#n.=V',2)m&J#?]%hK?f()Ic&()7T$)BBqF-71#^*>]=t
+#mLP9"9o,>%MBKo*$-1C*?,e/&.K!S$4@=U'c@u5+X/'P*#KA#$O?n<!<M]j#6=l."U>>A%K6kC%L`XK
+"Tnf,pAjmfb5_\H!<N?*"T8N'#58?-"pP56!s8T+quQ]q"T\W*!sAf*"p>)4!s/Ma!!iT+!WrQ0#7(Y4
+$4."E#6k;5!WiB'rW3?-!sAc2"pP;;qZmW9"pG,3!s/Q,"U55=$N:DN$4."E#mq(O&eu9(*ZlIF)]08#
+$j["=!WhTe"T\W*!sAf*"p"l1rW<9+"U>;?rX/r<#R:M8!W`?!!<*!5!WrQ/"pYGA$OdIR$k!@H"U"l-
+!W2rs!=8f/!s8Z/"U52;q[!c?$OmUY&eYcf%1<FF!s/N#!!iT+!X&]6$kF!M'EJj[rX]2E'G_Q*rZ*:)
+)]Kb<+XJNd.OZPa)AEYg#6k>9#RV%S()n;<+sJ-N)Aa%t%/pSJ$kF!f)]p7K,U4EP(_dJg#6b21!V$.&
+!<NB.#R_+S&ebli%LWRI"9JW!!;$<9!!WH)!WrN-"T8N'#5AE-"pP57"9Sc)!rN'(!!!$#!WrQ/r!!9-
+"9S]+j8]qr!<NB-#7(VD$OdFQ%1EXQ$4-q@"9\Q'$3LD6"U5/9#RLeEr<ic9#m^b>"TAKI"9f#:$4I=P
+$k!CL#mgqI%M9Bk)B9b;)]0;%%LNFE!s/Mh!!E<'!WiK$"T/?)"U55>%/p\@$OR.D"9JT)qZ%E5!<N?+
+"U>;?$OmRV&.f?]$OI"?!s/N%!$_LF!WrN-"9eu6#71_F$k3XS$k!FO%1Wm[&J,E\$3p_:!Wi/u)$'a?
+"9o/@%hTHh'GD)k&.oQk)BL%G,9nE3+ZLYl-n6c!.OH8V'FtQW#6kG@%2'Eq+=&9\,pFEL'bLo`#mgqJ
+&/6!&+<r-V+s.a?'+P?S"9JVo!!iT+!sAi9%1s<R('kTd%13=C!s&Gu!:p69!!E<'!WrQ("T/Gr"p5#4
+"9eW)rW;rt%0?V7"U5/9"pP56!s/Ma!'(&\!X&Z3#mq%L%1WjY%LrpU$4$h>!s8T+!s8Z0"pP;<#mq%K
+$k3XU%1EUO#R1G8!s8Z1#71bIrXKeT$k!CL$OdLV',DE&)AsA,&e>?U"p>#0!UTmc!WE/t"9&?+!s8]3
+#n%4A%L3FN#mLM7!Wi3!(]aX=!sAf6#n%.O%hK<c&eGQ^$3p_:!Wi9#'EJ49!sAc3#6tM@$4I@S&.oHb
+%LrCG!"Jl:#7LqF"p>#/!W)j*!<N?+"pkYI&.oNf&cN=K&eu6(+XJNc.4?SC,r[/!.P!"u,p4*?%gr[L
+#RUtO'cS8A.4Qeq,Tdp=&.AmO#RUtO'Gqf3+X/'O*#TJ&$jd+@!Whfk'EJ7;"UGJH&f)<%(`!_p$O?n<
+!Wi,tnH$o8"T\W*!WrQ%"Sr<!"p"l2q#gd%!s/Q&!=])4"9eu6#6kA9"9S]+j8]Pg!<NB-#71_G%1WpJ
+&-i^U%1<II"U+f,('FdF#7(SA$4@7O%M'']&.]6[$OI%Br<+;K#71bI%M''[%LigS$k*UW&el)t(D[\t
+%h&aL"U"l.!<MWh!<E5o!YbY9!WiH-#71bI%M'$Y$OI%@!s/N$!"8l0!sAf6$4I@S&.oQS'*f*[%13=D
+!s8B$(BO[B"pYD?$4@7O%hTHh'bh;n%h/pT$iUP>$OR.E"Tnf,qZ%$*!<N?+"pbPE%M'*^r=9DN'cA)=
+-nHu'/Lr7t-7:2?-o*(m*>fG"$OI+H$kF!h*[E0c/M/Fu*uP_&$O?tB#n.=X(E+;8+!)@<'bLo_#6b22
+!V$-q!<N?,#R_.V(B,0W()%2d#R(;3!Vufd!R:]E!<E6'qZH]uo*,*t('OjE!s/N)!<N<)"9eu6#6kA9
+"9S]+j8]nq!<N?,#7(YF%1a!]&J5Qb%1<II"o\W6"U52;#mq%K$k3[W&.ndP"qV7R$4$h>rWEi;#71bI
+%M'*^%h9'Y%1WjZ&JP-X$PO*_$jm7E"9S`-!r`5l!!<6&!Wr3#rW;uu"p+l0"pkYHrXK/B$OI"?!s/N%
+!#P_;!X&Z3$4ICU&J>`j'GD,l%h&dM"Tni)!=f/5"U55>$OdIS%hK?f(B,-T().>j$k!FA#mU_@"pG,2
+!<N)u$3://!sAc3#RLkIr='>I%1Wp`)':.S/hf"6/h8=s-2o/F,9S!E'bLl_$471O&f)E0-7^]$/Li"e
+(_R8a#6kA<$4RR](E",0)&Eu!%LWOG"9JVn!#,G8!sJr<%h]Wp)&O,%%grXH!s/N"!:U$7!!**$r;u]q
+qZQg#$3g\>#7(S?"pG,3quR9/"9eu6#6kA9"9S]+irD:E!WrQ0#RLkJ%M'*_&J,H^$OI%A"U"u5#71_G
+%1NdW%hB3`&eYik&ePW`$OI%A"9Sc1"pbPE%M'*_&J,NP%fm4RrXoML&.T*U#R1G8"TAK*!WiB'o`,-r
+!<N?+"T8K,"9\f.!rN''!WrQ0#RUt=%0m7J#R1D5!<N-!(]a[?"9o/?%M03c',2,o'+tid$OI%@!s8H&
+%fuh9"pbPE%M'*_&ebur)?(Qd)&<hq$jm7G#6kA9"9S],!W<!+!<E6'!sAc3#7(SAq?f.i%hfd$,UtE$
+1,1C3-R9lY+!)FA(_mVm$k!FO%M9Bl*?lj\/M/J$+rh@0$j[%@"U58@%M9BR'abWf%h/jO"p=u.!Up'p
+!<E9+#7:nP'`JjR'G1c]#6b22!Vl`c!R1WD!VQTl"9&E5"U,)8#RC_D#mgkB"p>&,!WrN-"U4l0"U,#2
+!s/M`!"&`-!X&Z2#RUtL&,m+D%h9!T#R:83"pP;=$OmRVr"&oA&JG$U'G:re$OI%A"9S`/"U>>A%1a!^
+&eb0Uq@EoC%1ERL#6k>8r<*6*!s/K(p&GR'!WrQ/"pYD>#6tD8!s8?#"Tec0#7(\9$O7"E#6b22!<N-!
+(BFR>"U>AC%hTEf'GD,m&J,E\$4$h=!rW-D!WrT2#n.:T&J>`k'c.`,*?H4?(_dMi$3pb="U"o0!W`?"
+!!`N+!sAc3#7(&17gB;*$4RR_*$Qd_0/,%2.4$,Y*#]Y1'b_,g$k!FO%M09i)BL(L-n6\p,Tdm;%LNFE
+"9\l5#n%1Q&.oHa%1<II"U"o/!Ug"&!<E6)"pkYI&J>`i&Io3U"p>#0!Vl`c!U'O\!UBaa!V6Bl!sSl3
+"pYD?$N1>9$4$k?"9\W)!WrN-qum3+!s/K(iW'Sl!WrQ/#71_G%1WmZ%LidP#6t/2#6kG@%1a!^')N7L
+&ebom'+tle$jd.B"TAK/"U55>$k<g]')iOR&eYcg&.]9]$k!CJ#6t/2rWWQ1"U"o/!<Mrq)Z^!B"9o);
+$4@4K#m^_<!s/K(!!**%!sAc4#lY,7#R:M9!s/N$!#GY;!sJo:$kEp_',(uj&.]3Y$4$h=!s8E%+T_`L
+#RV"O&JGim'c%W)*$-1C*#TJ&$jd.B"9S`-!W`?"!!`N+!sAc4#RUJ;/-uRf#6kA9"pP>@%hom',q1As
+/1Dni*Z>h0'+kcc$k!CL$OmUZ'c7l2+X?t4&0`27'bCcZ"U"o0"9eu8$4HhA#R^qE"pG)1!Wh]h#QXr-
+!sJo9$P!(G#S%7M#6b54!WhupoE"4WpAsX]n,`Li&H`.>"pYD@$OdIR$k!@H"p>&,!W`B*qud-)!s/K(
+iW*0`!<N?+"pYGA$k*RS$k!@I"pG,5"U>>B%M06d'+toi&.oKe',)&n&ePT^#mUV9!s/Q-"U>>A%1j*b
+',2,o'+tlf%LigR#m^b?"U,)7#6tM>"pG,3!W`>t!!`N+"9f&<$k<1G)@QrY"p>#0!<<*#!<N?+"U5/9
+"pP56!s/K(r;[W7!<N?,#71eK&.oNe&.]6Z$OI(C"Tni(!?V@F"UGJF&/#Wj'bqK$)B9e?*ZQ%4&.AjL
+"9S],!<N&t#6=i,!sJo9$N:G;$OR1G"pOu/('OmK$kX6o+=&<_-RBoW)AX#!%h/pSrWrl<$P!a_(E+87
++9!Ah*ul.5&If$N"9\W)!s8Z1#Q4o5#6k>7!s/K(n,WCf'*84;"9f#:$4@7M$4-tB"U"o0!qH?d!UTma
+!W<*!!UKgb!WE/o!=/`/"9eu7#n%1?%0[+H#R1D6quZ`t!s/N)!T3qh!<E6("9o):$47.K$4-tB"o\W.
+"U>AC%h\dS!>6"C&.B-`',2)n&J#9V#6b5/!XSr3"pbPE%M06drY,YP&eGQ_$OR1F#6"c."pP>=rWrc7
+#6b54!Wi,t,QRoJ":#5A%hTEe&J#<X#R(;3!<E0#!<E6(!sA`1"9\f/!Wr?%!<<-!!@%XJ"9o/?%1`s\
+%h9$V$4$k@"9S]+!<<*#!<N?,#RV"O&JP-X%i#lu)]]t?)]08#$j[%?!r`5s!"f55!sAf7$OmRV%h9!T
+#R1G8rW=5G#7:nQ()n;<+sA'L)Aa)"%h/mR#R:S?#n%4U'c7kf*"*]((`!br%13=D!s8H&!s/Q-"T8K.
+"9\f.!W`>n!;urr!r`9("9eu7r<NK1"pG20"98Pn!;Z`b!;cfn!r`5f!<*#s!rW/u!"&`-!WiH,"pYGB
+%/p\@$k!@I"p>#0rW2s!!!E3%!<E5Y!!iT+!WiH,"pYG5#n7.F"pG,3!sAc4$4IFWrY#nW&J,H`&.oNg
+'GM2m%h&aL"U"])#Qk57#R_(P&JG'V#SI^[%L`[N#6t,1!sSu:$N:D;$4$h>!s/N"!#,G8!sJr<%M9?h
+'bh8l$jd+@!s&H%!!**$rW<$#rW;iq#6Fu1"pYGB%/p\C$jm:G"pG,3!W`?#!$2.B!sJo9$k<g\&eYik
+'c.`+)]KY2'+YHV"Tnf,!Vl^#!<N?,#RV"OrXf>G%1<FG"9\W)#Qk58$4[[`(`NAm+rM13'+bW^$OI%C
+"pYGB%MBKn)&aD2(`*o#&.T*T#6b22quQcuqucp"rW2ZlrW*$$!r`<$"TAK("9e]-r<<6*r!!-)n,W7b
+nGrIfpAt?r!U]se!Vuls!W2p3!<E6("9o);$4@7O$k*IL#6b54!rE#t!r`5V!!`N*!WrQ/"U=r2!sSo4
+"TAK2"9f#:$k<g\&ePZcrXKhW&/#Wj',(rf$jd+@!s/K(!WiK.#71bI%h\dR#S@UX%1<II"pOu/"9eu8
+#n-_@#7ChC"U"l-!W)j2!<N?-#Rh4W'c.]''bUua#R(;3!W2rs!W3#u!VZX.!sJl7#mq%J$4-tC"U"o/
+!W`?"!!rZ,!sAf6$4ICTrX]YR&el)t(`4&'&Io-Q"Tnf,!Vl^-!<NB.#R_+S&ebli%L`XJ"9\T(#6Y29
+$4RO[(&\m['bh;o&.T*U#R:P=#n%4T'Gp`c%2KWj&.T*U#R1D6!W`?#!;urr!rE#n!<*!&!WrN-"U4i/
+"U,&4"9Sc("9Sf3"pb)4mf<1bnc8Uhq>pX!r;m!#!U]pi!<E6'qu[$&!W`?"!!rZ,!WrQ/#7(VCrX/r<
+#m^_=!s/Pt!SdYY!<E6'!sJT,"U5,6"9Sc*!Xf)5"pbSG%hK9_%hARJ!Y,bRrY#PM&.T'S"p>#0rW*9+
+!sAf6#n%1Qr=B2E%1ERL#6b;1"9\l4#RUt=$jR.H#6b53!<N&t'EJ7;"pk\L',DE&(`!bq$j["=!Wi,t
+q>pQsqucm!&H`.>"pYD?#m^b?"U"o/!W`?!!$2.A!WrT2#n%.N%1WjY&.oQi'bqDq%h&aL"Tnf,!Vl^_
+!<NB.#n.=V',2)l%h&aK"9S]+!<N<*"U>AC%M03c'GV>u'bqAo%L`XL#6tMA%1j0f()7Ms&.T*U#R:M9
+!s/K(q>g?mquZiuqZ%60!<N?+"U52;#mgqF#m^b>"9eW)#Qt;8#RLkH$k)M(q>p-erW2is!<WH&!W`<&
+mJm=i!<N?#!s8T+!<N&t#6=l-!sAf5#lFu4#R1G8!s85ugAq0Q"9JW,"9e]-!X&W.rW3?+!WiK.#71bH
+rXBJK$k!FO%1a$`'+tlf%13@F"9SK%'*87>"pbPD%1WmZ%LigS#m^b>"o\W-"U55=$iUP>$OI%A"9JT)
+qZ%<2!WrT3$kF!e(`=2,'+bQY"p=u.pAk0n"9JW,"9e]-!<`Q'!s/T/#5nc3"pG,3!s/K(q#C[$!WrQ0
+#71_FrX9DK%1Wp]&eP]d%13@F"9S],!<N#s&HMq9"pbSH&J>`i&Io0S"p>#*!>GS<"U>;?$k<g]'c.])
+)&O)$%h&dD#SROR%hTEf'+k`a$OI%B"9S],!<Mopr;cp#!rW6#!Y5;4!!!$#!WiH-"pbMC$k<1G"q:qH
+#6k;5rW3B."9o,=$k<dZ&+9Mo!V?Bk!V?Hm!U]pj!<E6("9&E)!s8W(!W2p&!<E6("9eu6r!*B0"U"o/
+!rE#P!;urt!X]#3"9\l3"9\f/!rW-*!WrQ0#71_F$iC>N$OmRW&J>Ze%L`XK"Tnf,!<<-$!WrQ/#71_G
+r='8G$OR1G#6k>8"9\l4#71b:$O-qD"pG)1!Vud1!<N?,#R_+T'c.]'()%2e#R1A4!VQKt!<E6("9f#/
+#6P/6"9e]+!sA`1#6"i4"pG,3!WiB'q#C^%!<NB-"pbMB$N:DE$k3XU%hB-Z$OI(C"U"o0!r`5u!!`N+
+!sJr;%1iFM2@g6(#R(;3!<E0#!<E6("9o,=$kEsd)&s\=*?#_,%LWRK#mq(N%hK<a%h/mQ#6k;5!WiB'
+o`,-r!<N?+"TAQ,"9S`-r;dr@!sAc4#n.:T&ebrn'+tfb$3p_;!s/N+"9o/@%h\dSmf<.aoDnjko`G*n
+m/R7i!WiH+rWEB,!s/N)!W2p1!<E6'!sA`1"U5/7"U"r1!s/Q#!SmbT!WE0"!s&N-qum0*!s/Q%!<iN,
+"9f#8qZm<2$4@:RrX]>F%13@F"9SZ*rW!3)!<N?,"pbMCr!Wc;$4."E#6t,1%0d%C#mgqF#R:M9!s/N"
+!#,G7!X&]6$kO$c'bqDp%LWOG!s/Ms!!WH*!sAc4#lY,F#R:P;"9S`/"U52:#RCY>"U"o/!<N#srW*3)
+!sJl7#n$S<!=TD9%1WdS$4-tC"pG/5!s8T*!W<!2!<N?+"pkYH%M'$Y$OI"?!s/N%!#5M8!WrQ0#R_+U
+(`XYC,U+<L((gu`rX'5G%1WmZ%LidP#R1G8!s/N)!VQKt!<E6("9f#/#:Ti\"9S],!<N<*"pbPF&/,fr
+)B0V5(DIDi#mUS8!WrN.#7:qQ'G_K#mf<.aoDnjkpB(6nm/R7i!<N?*rWE9)!s8H&quH]s!s/N+"8i<$
+"8N#s!T*k\!<E6'!sAN*rWW6)"9eo2!s8?#"9JZ."U4c-":#2>$k<1G#Rh(I#6b22!<N0"#QXr-!sJl7
+#n-Y>#R_"I$4-tC"pY&1$jHqA#RCY?"p>#0!<Mur'*/.:"UGGE&.oNf&J#9V#6b22!VZR)!<E6("U>>@
+$OdCM#mUY<rWEW5#7(VC$4-tC"U"o/pAkL#!sAc4#RUt6$j-kE$46\;"pYA;"U"o/rW*]5!!**%!sJo9
+$4@7M$4-q@!s/K(quA2I!<N?,#7:qT)':+O-mp5\)&*Vk$O[@P%M''[%1ERM#6k>7"9S],!<Mop-34/M
+"U55=$4@1I#R1G7!s/Q,"U>AE&eu9(+!DgO+<275&.8aIrW<H0"UGJH',DE&)".J"!VHHk!W)rq!UB^f
+!<E6'quZs$!r`6!!<*#s!rW5m!r`5Z!!`N*!WrQ."U4l0qZdB2"U"o/!<E0#rW**&!WrQ&":t_@#7(YE
+$k*LN#mUV:!W`?"!!`N+!sJl7$4H\=rX/i9#m^b?rWW3("U,#2!WiDt!"o;5!sAf6$4ICT%h9!T#R1D5
+!VQL'!<E9*"pbPE%1WgU$4$n9"UtY@#mq(M%1EUN#6b54p&YF#"9o,<$OunA!t>\J$i12L#m^_="9S]+
+!<<-$!WrQ/"pbJ@#RCV<"9JW*q>_00!<NB.$4[ag+=/Hd.4-2W((q/W%MK?a&J,H_$k!@I#6kA9"9\f.
+!<Mur#6=l."9o,>%/p_c$k!=F"U"o0"U>>C&Jc<-,:4ff-m^#W(D7/`"p>#1"9o,?%hf`s)B%uDp]:!e
+o)\+V!<E6#!r`<$!W`<&rW)ltp&b3orW;s!!s/N)!TF(b!<E6("9eu7#Q+i7#mgkC#6k>6!W`?#!<*#t
+!r`94"9\o6#RLeE#m^b>"9S]+qu@$(!<N?,#71_G%/gY5$j@"G#m^_>q?7!)!s/N)p&G[*!WrQ0#RUqJ
+$k!CJ"p>#0!VQL'!<N?,#71bI%M'$Y$OI+<"p>/;$OmXG&-WOP#mUV:p&bO&"U>>A%1a$I&I&dX%h9$W
+%/^PH$k!@H"p>#0!<E0$!<N?*"9nc/"U,#2!s/Mu!%J!N"9o/B',hu>.4Qbn+WM:3&J,Ne',2,o&eGN]
+$OR1H#R:P;"9S]+!Vud,!<NB.#R_(Q&J>Ze%1<FGrWFAJ#R_1Y)B^=T/1rS-.O?2U'FkHS"9S`/"UGJH
+',DE&)".J"!V?Bd!Ta:^!<N#urW*$"!<*#o!r;p"!WiH+qud-)!WiB'j8]Gd!<N?,"pYD?q$IB6#m^_=
+"9JT)qZ-KorW30("9f#.#6kA9"9S]+!W2p'!<E6("U>>A%/128$k!CJ#6kD1"U,#2!s/K(p&G[*!<N?,
+"pYD?#m^b?"Tnf,!VQKu!<N?,#71bJrXTbS$jm7F#7(VE%M9?g'GD&g$jd.B"9e]-!<rc+"U>5;$4RLX
+',:?Z#S[pb&J,H`&.ngQ&J,E\$4$h=!s/K(!!**%!WrQ("9el0!WiB'p])fF!WrT4%2'L!,:4fd,Tn$B
+'b_5p()If)(DRPo%LigT$O[:J#R1D6!W`?"!%@pL!sAi9%1j-d'bh8l%13=D"9eu9%1sBs,:P6"1G^a;
+-mBTE%giLDrW<E0#7:qQ'G_K#mf<+`o)SXgi;ifW!!;lq!<N?#"9&Au!<`H*!sAc+"U,#3!s/K(j8]Mf
+!WrQ0#RLhG$k3(BrX&l:#R:M9!W`>s!;lj.!WiH,"U,)7"U,#2!WiB'qu@!'!<N?,#71bHp'h06$4-tC
+#Q=o3"U,#2!W`>o!!NB)!sAc3r<EK1"U"o/!VHF;!<N?+#71bI%M''Z$jm:H#RLnL&eu3#)&Eu!%LWOI
+"pP;<r<WH0rW``8#n.:U',;<#)#bBY(`4#''+tok'`JgU'G:rd$4$h=!W`<%!<*#q!r`5r!<*!>!WrT3
+$P4$k+!MpS+<;@:'bqK$)B9b;)]0>(&J4pP$4[LR$4$h=!s/K(rW"_T!<N?,#R_+T'c.Z%'G1f_#R1G9
+"pk_O(`t%S0Jk[F1G:1$)\`bh"p>#0!sAf7$k<mK'CZ"q!R1W:!<WB)!sAN*"Tni.!W`?$!"]/3!WiH,
+"U,)6"U"o/!W`>a!#bk=!X&Z3#n%.N%LijU$k!FM$4-tB"U"l-!V?Bk!<N<)"8`3(!s/N)!W)j%!<N?,
+#7(YEq@*?4"q1nJ$4-tDrW`W3"U"o/!<Mfm"T\W*!sAf+"pG/5!s/K(o`-EA!<WH/#RUtL%LigS$4-tE
+$P!a`)&jS9)Aa%u$jm7G#mq%K%1N^R$N:><$4IFX'G_N()]\ht(*"51(D[`$(Dn#-(`!br%13=D!s/K(
+rW)]oquHQo*<H9E":#8C&f)B**ZZ4<(D[c&)&s_A+WqgF(_m_^&dT'[%13@E"9JZ&!@\'P"9o,?%hf]q
+(`*o"%LWOH"U,):%2'L",qCZ+2Dm9C-m9KB%LE=BrW36*"U>>B%fR".!;6Hm!;QZG!!**$r;cft!WiE*
+qZI$(!WiB'rW!-'!<N<)"9nc/"9eo1!s8H&k5ZD$!WrQ0#R_%N%hB-[%1EUO$4-tC"p>#0!<MclrW*!#
+rWE-&"Tni.!W`?!!!`N+!sAf6#n$M:r<r`8$4?\;#7(P="U"l.!V??q!<N<)"9n`."U,#2!W`>o!"/f/
+!sJo9$4@7M$OZk>/IDpu'H%l4+<MUA'bLl_$47.M%hTEe&J#<Z$47.M%hTKl)&jS<+<_mN*ZQ*t(_7K&
+)]Te7(D@>g#mLM6!<Mclr;l`r$j-S7"pbSH&JPus(Dcub%Mfm$+!MsV,9\*H(DRVurY5\Q&e>BW#6b23
+quS;L!sJo9$kO'f(`4&(&e59T"pG/7#Rh:]*@!!c1,C^?/1)GU&e#$L"9&?-!sAc4#mq%K$h45i!<<,m
+!R^uI!<`H*!sAc*"U,#2!s/K(r;[<.!WiH,"U,)6"U"r1!Wr?%kPthg!WrT2#n%4@%h0!W$OR1H#R:P;
+"9S]+nGi^n!<N<)"8i9)!s8T*!W2p%!<E6)"U58/$1eK.#R:P:!s/Mr!!WH)!WrQ/#5nc1"p>#0!<Mfm
+"p"c-"9f#9r<`H/1C=O$',MW1+sJ0O)AWqq$k!IR&JPus(D[Yr%L`^Q$k<g^'c7l1+<i$U,9\-K)AsD2
+)u^ib*#TM)%LWOG!s/Mq!<*!#!WrQ""=F?W#RV"O&.oNe&J>`l)''kG-71#_*uc%4'c%Q$(DRSq%13@F
+"9eZ*.KfkX"pbPF&/,cp(D[\s%13=D"9\l5$P*pi+=/Kh0.ne'+rh=/$O6h;r;m*("9eu7rWr&po`5$m
+qZ6Ztr;k=H"p"`+!WrN-qum6,"9S]+!W<!%!<E6("9eZ,!X&W.rW<$!l2V%i!WrT2$4IFD%h9'Y$jm:H
+#6kA9"9S]+!V$-o!<E6'!sAc*"U,#2!s/K(r;[$&!<N?+"U=f.r<W?.$jm=L$k!FM#R:M8!Whro"p"`+
+"9eu8rWrc7#6b54!Whlm"T\Z,"9f#,#=8\'%1s<n*[)aR+s.a>&e5?Z%M9Bk)B9_8(DIDi$k!FP%hTHj
+)&s_B,UF]\+<;C=)&aG7*Zc=@(_dMi#mLM6!VHEt!<E6("9\l4r<E?-#6"cE"pP>>$4I=P%1Wm\'H%o7
+,UOi`+W_O<()7Va(C(]i&Io0T#6t)0rWWl<#n%4S',;8t'G:ob#mLS4";D%H%1s?p+=&<`-mg,Y(_R;c
+#6Y/,!WiH+"T8Mp!;6Eo!!)ruq?$WskQ(J\o)Saj"Tec."9eu."pP56"9S]+!W<!$!<E6'"8`6#"8i3$
+!<MNe)$'a>"9f#;$k3[W%LigR#mUY="U"r1!W`>l!"f54!WiH,"U5/9#6kA9"9S]+qu@$(!<N?+"9er5
+#6"f*#6"i0#RLhGr<ro=#mUV:!W`>q!"]/4!sJl7#mq%I#m^_=!s/Mp!!NB(!WrN-rWP(^"pYGB%MBQt
++<r-W+s%X;&Io6Z%h]Wr*ZlIE)AWqq$jm=L$k<j_()e2:,:"NY+<;C"(]bNorZ):a(_mVl#mLM6!VQLE
+!<E6("9f#9#mq%J$47(F#6k>8"pP;<#RLhG%1a*g*$?IO,U+<L(`!f"(&esQ'b_/h$OI+<#Q+iV#mq%L
+%hTHh'bh8l%13@F"9S`/"U>AE&f)B,+X/*Q*#KA#$j[%?!sAE%qucHhpAk9p!;uro!r`5d!;HTf!<*!&
+!WiH,"U4l0#6b86!s8T*!W2p$!<E6'!sAK)q?$g$!W`>h!!iT+!X&Z3#n%1@%13LN#mUY<"9\f.!r`5l
+!<*!'!WiH,"U551#R1M<"Tnf,!W2p$!<E6'!sA<$&d8FC#7(VC$k*RR$OI%A"9JT)pAbF!!<NB-#71e;
+$jR.H#6b53!<Mcl9`Y7r!WrN-"9eu7#n.@Z)''kF,U4EO(_[Gi$k3^\(`XV@+Wh[?'+YKY#mgqH%M09i
+)BL"F+s7pG(`!i%(E",1)]BP-&If$N"9JVt!!rZ-!sAf6$4I@RrXT8E$jm:G"pG/5rWNr>#7(YG&JZ0(
++!;[I)]0;'&eYlV'E\sZ%1E+@!X];Cr<s2G%M03c'GV;q&J#9V#6b80!uM.F#R_+S'c7i.)]9G*&.JsP
+"pG/5"9Sc%!q?9b!<<,u!W<'#!sAN(rW2?c!<E5t!r`5q!<*!'!WiH,"9eu."pP56"9S]+!Vucu!<E6'
+qZH]u"9S`-!<MTg&ci%9"9f#:$4@7N$OR1F"p>&2rW<'"o)KL+!<N<)"9\l5#RLeE$4-tC"U"o/!W)lr
+!Vc`q!sSl3"pYD@$iUP=$4-q@"9JVt!!`N*!sAf6$4QnC#7LqF"p>#/!V-6i!@@jL!s8Z0#7:nP'cJ,:
++sJ0O)ANho$k!IS',MW1+X%pI(D@8d#lY&N#mq+Q',DK+*Zc=?(_m\s',22u(`=/+'+bQY"p=u.pAbp/
+!<NB.#R_(Q&ebrn'+tid$OI%A"T8E5"9eu8$P!db)&jP7)&Eu!rXT#@&H37C%h9$H$3CVF%fHn@&.fEe
+'`JjR'bh5j$jd.B"TAK:"9f#:$OmX[',2,o&J#<Y#m^b@rWWN0"9S`-!rW/h!:p6j!rW6#!W`<&m/R4h
+!<N?#!s8T+!<N#sr;d*(!WrQ."U4l0#6b86!s/N)!Vufq!<E6'r<*$%r<3?-!s8T*!Ug!n!<N?+"U>;>
+rX&l:#R:M9!s/Q%!V6:!!<E6("9\l4#7(VCr<if9#R1D6!Wi)spAt6p&-E";"pYGA$O[:J#R1G7!Whup
+&ci"8"9o,=$k3[U$jm7E"9S]+n,WFg$3C;4"UGJG&f)B+rZF3B)Aa"s$jm=L%M9Hp*?Q@D)AWno$3pb=
+"U55>$kEsc(E")-().Am%hB6b'GVAu'+k]^#R(;3!VZR0!<N?,#7:nP'G_N')&O,'&Io0S"p>&,!XAf2
+"pk\K&et<\%29Ec%1EUQ$k3[V%1N^E$3U_F%M09N'*Ap`()[#g#T"3h%h&dM"pOu/%L!%A#RLhH%1WmZ
+%LigRq$@93#6b54!W`>h!;$<k!rN-$!Wr?%mJm@j!<N?*r<*0(!Wr?%!<<,t!WE-%!s8]*"UPA;"U,#2
+!s/K(p](<q!WE-(!s8Z/"U4i/"U,#2!W`>k!!`N*!WrQ0#7187"pbG;"9S],r;lHh(BFO<!sAc3#7(VC
+$OdIR$k!CJ"pG)1!VQNf!<rT,!sJl6#lY,7#R:M9!s/Ms!!`N*!X&]5$4QnC#Rh%G"p>#0!<MZi-34,K
+!sAf6$kF!f)BBk?*?#_-%h&dN#RLnM',MQ,*#]V,%grXIr<*`:#71bJ&/#Zk'+tid%1EXS%hS^Q#S@RU
+$3p_:!Wi#q/HGnU"pk\L'GhZ-*Zc:>(DIDh#mLM7!W`<'!WrT2#n%4S&J5Qb%1<LL#RCb7$N:>W$4@=T
+',;9!(D[c&(`FA7*?6"8'bUua#mUY<"U5/9#7(SA$2Y)/#n@:M$k3[V%1<LK"p=u.!UKg[!WE/u"9&B$
+!Ug!l!<E6(!sJT,"9\i0!Wr3!r;m''!sAc("U,#2!s/K(pAbO$!<N<)!sA`1"pY&3"pP88"9S]+n,O"#
+!WrQ/"pYD?#m^b?"U"o/rW2rtq>pHn$ipA1!sAf5#RUqJ%1W:H#Rq1L#R1G7!WhZg#6=i,!WrQ0#6"i3
+"pG,3!W`>q!!`N*!X&Z3#n-_@"q(_B"U"l.q#U-g0ED4W"9o/A&/5p!*#on8(D@>g#mUY=#7:kN',;<"
+()%5f#mUV9!s/Q-"U55>$kE7I#Rq1M$4.%I$kE7I#S%:N#R1D5!<Mop(BFR?"pteO()e28+X%pJ)AWqp
+$3p\9!rW-(!WrT2#RUt=$j-kD#RC;4q?I62#n.:U'GhVb)%IQ(*?QCI+<MR@'bLo`$2k/-$2k/.#8%4I
+$4ICU&ebok&.JsP"Tnf,li?_[r;up"rW3*$!U]ps!<N<)"9er5"pG,4!s8B$rW<!"!<`Q'"U5)3!s/N)
+!VZR"!<E6(!sAc2#5\W0"pG,3!W`>m!!WH)!WrQ/#Q+i1#6k;5!r`6!!;urt!rW0!!"&`.!sAf5#n%.O
+%fHnE%LigR#R1D6!WhWf"T\W*!WrT'"U"r1!W`>o!!WH*!sAf6$2t89#m^_=!s/Q&!<E6'r;lWm'*/.:
+"U>AD&JQ$!)B'G.'+bQZ#Q=lQ"pYJD%hTEe&J#9W#6b22!W`?(!sAf5#RUnH$47(F#6tM@$4QnC#7LtH
+#6b22!VQL/!<NB/$4[[a)BL"F+s7pG((q)a#6Y/,!<iN+!sJl6r<NH0"pOl,qum?1#71bJ&eu3#r>IF1
+*?QFL,U=TW*>oS(%L`^P$OdFQ$k*LM#R:P<"U5/9#n.=W'c7f+(_mVm$3p\9!<MQfp&Y*nrWE-$rW2Hf
+"p"`+!sAc2r<<B."9S],rW*$$!rE)q"9el0!WiB'p&G@!!WiH,"U52:r<NZ6#6k>7!s/K(oDnjk&HW%;
+"U52;#mgkB"pG,3!W`?#!<*#u!WW?%!rE!(!WrT2#n%1Q&H*1J&.T-W#mUV:!W`>f!<*!#!WrQ("9\f/
+!W`>n!!WH)!WrT1#Q=u3#6k>7"8`0!!s&H)rW2fp,ln&L"UGJG&JQ#u(`*o#&.JsO"U"o0"9f#:$OdIR
+$k!@H"Tni(!<iN,!sJl5r<EQ3"pG29#RLn<$jR.I#R1D6!Whup+TVWI"pteO()e28+X%pJ)AWqp$3p\8
+!<E0#!<E6(!sAf,"p>)5"9Sc)!rN-,"9\o7$P!a_(E!,h',hf1+<r3\-mp;a*>oP'%h9'[&H37F%h9!S
+#R:83'*\^M%MBQs*ZuRH)AWnn#mCD4!UKg\!VZZp!Ug!m!<E6("9f#/#6P/6"9\W)!W`?(rWDis"Tni.
+!W`>q!!iT+!WrQ0#6tP6#mpqD#6tG:"9S]+!VcZl!>,A7!sAc4#RC_C#R:P:!s/K(r;[!%!<N<)"9&E*
+!s8T+rW*9+!sAf6$OmXZr=]MN&.T-V#R1G7!WhKb!<E5t!W`<&nGi^n!WiH,"o\]."U,#2r;m!%"8i9)
+!s/N)!Vud1!<N?,#R_+S'G_K#'b_,f$3p_;"9&?3!sJl6#RLeC#6k>6!W`?$!<*!'!WrN-"9eu-":kY?
+#RLkI%1EUO#R1D6!Whup*ruEG"pk\L'GhZ-*Zc=?(DIDh#mLM6!<E0#!<E6'"8`3&!s8W$!WE-,!s8]3
+#n.@X'c-cb*#KS7+=&<`.k2qn+WM=5&eP]g'GVAu'G1ia#m^G5'*egQ&f2N2,pt#b*uYh($3p\8!UKg]
+!Vc`p!U]pl!<N<)"9f#/#6Y57"9Sc(!W`B*quliurW3*$!VHEt!<N?+"pYD?rX'&?#m^b?"U,#2!WiB'
+quHWqquRE3"9eu7#RLeC#R:M9!s/K(r;Zs$!<N?+qumQ5!s/N)!<N?+#71eL&JY3Z$PX6d%L`[L"p>#0
+!TsIX!Up'l!<E6'"8i9&!sAK'!WrQ/r!!9-"9S]+q>_31!WrT3$P!a^'GV;p&.JsP"U"l.rW*H0!sA`1
+"pP57"9S]+!W)j!!<E6'q?%93"U>;?$k3[U$k!@G"9S]+p&Gm0!WrT2$4[X^(Dn#-(`*ku%LNFE!s/N&
+!!E<'!WrQ&"9JZ,!r`6"!;lj:!WrQ0#R_(Q&ebrn'c%W*+!W-`/M/J$,Tdp@rY-Lk(`F>3(`!_o$O?q?
+"pbSI'c\DG/1iG&,T[a6$j["=!UKg\!Vulr!U]pm!<E6("9eu6rW`N0"U"r)!WW?""TAN$!r`5n!!`N*
+!X&Z3#R^M<$47(F#6k>7"9S],q#UEqqu[')"9eu7r<NT4"pG,2!Wi6""p"`+!sAc3rW`N0"U"r+!YtkA
+#7:nO',;9!()7Jo%LWRJ"Tnf,!TO.[!UBab!<E6'rWE$!%Kch;"pbJ@#RCV<"9JT)qZ%91!WrT2$4RLX
+&eYcf%1<FG"9S`&!<<2u!s8T+!<N#sr;lft&d&4="pYGC%M'*]%L`XK"Tnf,p&H08!<NB.#R_+R&el&q
+'G:re$O?q>!W`<%!!**%!sAc*"U,#2!s/K(q#E_^!<N?,#71bI%hK9a&ebut*?lj]/M8V)-6X?G()@](
+*$-1D*?#\*%13@G#71hP)'C=[1,La=-m9KB%1*1?!WhWfp]:9oquQ0b&HMn6!sAc3"pYA;"pG,3!WiE%
+!W`B*r<*-'"8r<!!V??s!<N?+"pbMCrX9,A$4-tB"pG,4!sAN(quHm$!WrQ%"9\l3"pYD4#R:S>"U"o/
+!<N-!"p"`+!sJl6rWiW3"pG,3rW3f:"U>AD&JGor(D[`!&.JsP"p>#/!Qb?9!>#;6!sJl7$4@4K$4$h>
+!s/N#!#,G8!sAf7$OmUX&.]3X#mLP8!W`?#!;urt!r`5q!;urs!XJl1"9eu8$OmXG&I/gU$4$e;!Whro
+'EJ7;"U55?%1Wm[&.]6Z$4$h=!s8B$"9JZ."U=r2"pP56!s/K(p]*S\!WrQ/#71_F$k3XU&/,j"+XSZj
+/hJP"+WM@9(Dn)4+X83T*Z5Y'$jd1G$P*sm,qUo33B&]E,TIO0$3gV7!UBa]!W<)u!UB^r!<N<)"9eu6
+#6kA9"9\f.rW*$$!r`9%"TAN&!rN)i!"f55!sAf6$4@7O$k!CJ#6k>8r<*-'"8`-$!s8])"oJT%#6kA:
+"U"o/!W2p%!<N?+"U>>4#oj3U"U"o/!WrQ/#RV%R',DB#().Al$jd.B!s/MC!;QX-!WrQ0#RUqJ%1EUO
+#R1D5!<N)u'*/+8"9f#:$OdIR$jm:G"Tnf,!Vl`o!VZTm!WE0!!tk_>"pYGC%M9<e&eGN\#R1D5!VHEu
+!<E6("U55>$iUP>$OR1F"p>#0quI?1!sAf5#mgqF#mUY;!s/K(q#E\]!<N?,"pYD?$47.L%M0?m+!`9d
+/M&=s+<).5()\)7,:4`_+WM:2%LWUN%2'L#.5<bC4?>>P-6<s7$O6h;!UBa\!<<3!!UB^i!<E6'!sAf+
+"pG/6"9S],r;cp#!rN-$!Wr<$mf3Rn!WrQ0#RUt=$j6qE#R:S4"oSQ)!sAN("Tni0"U52(#6tG;"U"o/
+!<N)u-34/M"9o):#mptF#6k;5!WiH,"U>AD&/,co()7Jo%1<FG"9SZ*^]4W@!<N?+"pbSFrXK/A$4$h=
+!s&H"!!WH*!sAf5$2t89#m^b>"9S`)!Ug$e!<E6'rW<0("T8K9"pYD@$kEp`'+tle$O?q>!Whon.00JP
+"9f#9#mgqF#m^b>"9S]+!<<*#!<NB.#RUqJ%1N[P#R1D6!W`?!!!iT+!WrQ/"pYD4#W;tr$P!dc*?lgZ
+.Oc\g*>oV-'c7o5,UXuf,Tdp>&.K$W%hos-.l04M5<LkY-m0B?%1*4@!pTdW!UB^i!<E6(!sAf,"pG/6
+"9S`-qZ6NprW2Bd%KQV5"9o,<$O[@N$4-qAq#pd%"T/?("9eu7pBV'1#6k>8"9S]+!W)j$!<N?+"pYJ6
+$6'9W"pG)2!WiH-#7:kM&JGim'+k]_#mUV9!Wg"8&ci%9"9o/?%1WmY%1<IH"9S]+qZ$g$!<N?+"U=o1
+"pP56!s8T+rW2Nh$3://!WrN-"9eu6r!*f>#RLkJ%hTEf&eGN\#R1D5!V??r!<E6("U551#R:S="U"o/
+!<N0"#6=l."U>AC%fR"E%L`[L"U"o/q#LX#!WrQ/#5\W_#RV"P'cJ/=,pjo^*Z>e.',23#+!`3_-mg)X
+(_[Gj%h]Wu,qUu95<h:j0e+@d'FtNU"9[ohqZ6Ztr;l3a%fl\4!WrQ."U,)6"U"r1!r`3$!!)ot!<N?$
+!UKdj!<N?+"U>A4$3CM>#5eZ'"p+r3"TAK."9eu7#RC_CrX/W2#m^b?"U,#2!W`>u!$qXI!sAf5#RLhF
+#m^_=!s8T+!sJl8$P!^[&ePZb$jm7D"9JT)^&SB=!WrQ0#R_(?%L3CL#R1D6!<N#s"T\W*!sAc*"T\`/
+r<*$#rW2Wk$ipD2!sA`1"pYD?#n$Y>rX'/D$k3^Y&J5Qb$jm4C!s/Mq!"f55!sAc3#RC_C#R:P;"9JW*
+rW!T4!<NB.#R_+S&ebli%L`XK"Tnl+!rW-,!WiH-"pYD?#m^h9#;c_p%MBQs+!DdM*?#\,&J,Ng(`aeI
+-n$De*uYn.&J>cq+!rTt4$Gkl3&3!0*>]:r#R1Cr!;llr!rW/d!<*!%!WiH,"T/E,"9S],!<N)uq>oj]
+&ci"7!sJl6#RLeC#6k>8"9\l3r!!N4"9\f/"9eu7#RLh7$47(F#6k>7!s/N)!Vud5!<N?+"U>;>$47(F
+"pG,3!WiH,"pbPE%fQtE%1ERL"p>#0!SIJP!U'Lr!<E6)"pbPD$k3UQ$4$h=!W`>t!!<6&!Wr-!!<`Q)
+!s8T+!<Mop%KQS3!sAc3#7(VC$OmRUrXT2C%1N^S%1`@J#S%:O#R1D6!<Mfm"p"c-"9o,<rX&l:#R:M9
+!W`?$!##A6!X&]6$kO$c'bh;m%13@F"U+c+rW36*"9eu8$2t;m$4-tC#7(YF&/,iu*#on7'bV#d%1Wsc
+)BU4O-RU/_*>oV-'c.f3-S@594?PY`1+X^n)&!Je#6a>mquQZrrW2BdrW*0(!WrN-"T8K-"9\f.!<M!V
+"p"`+!sAc3r<EB."U4l.&d8FC"pY>:"U"r1!sAc3#7(VBr!Ec;#m^b?"9S],!<Mur%fl\4"9f#9#mq"G
+#R1G8"9&?*!sJl7$4HhA#R^qE"p>#0!<LsUp]9X[&-2h7"U55>$4@1J#R1G7!Wi#qrW2s!rW<0("T8K-
+"9\f.!<Mrq('+I="9f#:$4I@S&.oNg'GM2n&J#?]r!`l>$4-q@!s/Mq!"o;5!X&]5$4@7O$k!CJ"p>#0
+!WE'4!<E6)#7:nO',;8t'+k]^#mUY=rWW3&"9f#:$Om"E3=Q?&#R:S?$4RO['c%Q"'+bW^$471P',MW3
+,UOia+s.dC(`4/3+t"rt2E3ZT1b^F,+;tt+$O?q%!;llq!rW/f!<*!$!WiH+rWN0'"U"o0!W`>g!;Z`l
+!!NB(!WrQ/r!!B0"9\f/"9\o+"ptM:"9S`/"9eu7#lY,=$47(G#R:P;"9S]+!VcX*!<E6)"U>;>$47(F
+#6b54rW3W5"9f#9#mq"G#R:P:!s/K(g].?U!Vuiu!<MrqrW2`n&-2e5"9eu8#RLbB"pG,2!<Minr;d''
+!WrQ/#5nc2"pG,3!W`>u!"K#2!sAf6$4ICU&ebuq)#bBc(`*o#&J#?\$k*LM#R:M9!W`>o!"o;6!sJo9
+$k<dZ%h9!S#6b22!WE'2!<E6)"pk\L&el&p'+k]_$46\;+9r,U"pG/7#71bI&.oNe&.K!R#R:S?$4ICU
+&J5Qa$jut>,RFkj'H%o7,UF`]+Wh^E*$-4I-S$i*1GgmB/h/1k)\s"o#R0Mor;lcsr;l?erW*$$!r`<$
+"TAQ/"9\f.!W`>i!;urt!r`5s!"8l/!WrQ."U5/7"U"u,!s/T."o\]-"U"u,!sJf1"U52:qZmH4#6k;5
+!WiB'p](L!!WrQ/#7188":5;;"9\T(!s8Z0#5nc2"pG,3!W`>W!!E<'!WrQ("9el0!WiB'r;cTnq#CNu
+!WrQ/r!!9-"9S]+nc0:'!<N<)"U52<#mptF#6k;5!Wi3!&-2e5!sAf6$4IFX'G_N(*$,#"&KMf.().>k
+%1ERM#R1G8!s/Mp!"o;6"9o,>%1j*a&J,BZ#R1D5!W<!/!<NB.#R_+S&eboj&.K$Uq[+,G#RCY@#n%1R
+',2/q&eGKZ#R:P=#RLk;$nD\m#R:P;"pYGD&JZ3*+X86X,9e9R+<_sU-RpZ!/hS_,.OZPb)\s"o#R0Mo
+quQ`tr;l<d!s&E(!r`<#"TAQ/"9\f.!W`>k!<*#u!r`9&!Wr?%qu?m$!<N?+"T/E/"9S`-!WrN-"TAQ,
+"9\f/rW39+!sAc2"pXu1"U5/7"9S`)!Vl^4!<E6("9o);$4@4K#m^_<!s/N)!WiH+"T8K-"9S`-!<LsU
+%06J2!sAc2"pG/5!s/Q$!WE-#"9&?&!<N#s"9AN)!X&?'"9S],!<M]j#6=l."9o);$iUP>$OI%A"9JT)
+rW"5F!<N?+"U>AC%h]To)BBnB+sS<V+Wh[B(DIGk$jm7E"U"o/!V-4(!<NB.#n.=V',2)l%h&aK"9JT)
+rW!0(!WrT2$4IFD&0_Vp$k*LO$k3[V%1EUO#mgtK%h]Tn(D[\s%LWOH"U,)7#Q=u2#6tG:rWEN2#7:qR
+()e5;,Q8te,6B,:-i5;!-RL)_*Z>b)$j[%&!;$<[!!<6&!Wr?'q#gg&!s/K(nc8Rg!s/N+"9&E+!s8T*
+!W2p#!<E6("T/E)"9\i)!W`B*rWE6("8`-#!sAN*r<30*rWNB,!s8W'!W2rr!=o56"U55>$OdFO$4$h>
+!s8E%!<N?"!s8T+!<LsU%fl\4!sAf5#7(P>"p>#0!r`3%!WiK%"9S`-!Wi,trW*$$!r`<$!W`<&n,N[o
+!WrQ0#n%4A%L*@M#mLP8!rN'1!WrQ/#71eL&eu6&*ZuXP-2o5&,U+?N)&<hq$jd.B"9S]+!V69s!<E9*
+"pk\K')iRN&e>BW"p=u.!WE'(!<E6)"pbPDr=&r>$O[@P%M8UO&e>H\$O[@Q&JQ#u)&O)$%grXIr<3$%
+&-N(;!WiH,"UGJH',MT0+sck.%O<8D+sJ0Q*ZGq0%grXHlN$SYmK!4e!<N?%"8N'&!s/N)!VHHi!<`H*
+!s8])"U,#3!s/K(r;[!%!<N?+"o\]1"U"r1!WiE$!r`<$!rN)u!r`;u"9AT,rW;fp#6Fr/"9f#:$N:G<
+$OR.D"Tni'!W3#u!S[SZ!<E6("9o):rWr]5#6k;5r;m''"9\o-"pG/5!s/N)q#LBprW<$!mf4[8!WrT2
+#n.:S&.]6Z$3p_;!WiB'!WiH,"pYGC%M9Bk)BBqE,prR=%jiPG*uc%2&.JpN"Tnf,!V-4)!<N?+"pk\K
+&JGil&J#9V"p=u.!W<!'!<N?+"pYD?r!FAN$k<g]',2)m&.T-Y%M06f(`=5/((q,c#R(A,!s&H)rW*K1
+!sAf7$kO*i*$6@L,UE@8#:(Q>+sA'M*r[/c*#f_0&Io-Q"R?'^!UB^f!<E6'q?$^#r<!-'!W`>r!<*#r
+!Z(qA"9eu6#6kA9"9S]+!<<*#!<N<)"9nc/"9er3!s8B$quZTnr;u`roE#R+"9eu8$4@7O$k*IK#6b22
+o`<bH#QXr-!X&Z3#R^P=$jm:G"U"o/!WrQ/"pb,5"pY>9!s/K(p]1-kmf3Uo!<N?,#7:kLrX]8D$jm7E
+"9\W),Qe/Q"pbPE%M09h(`OM>,:+]c.4HYm,pONP)&3_m$3p_:!Whil'`e=:!sAf7$P!^[&ePZb$O?q>
+!W`?#!!WH)!WrQ/#6"i:#RC_D$k<j_'c%Mu&eP$Q'+kop)&aD1'bUu`#6b22!W`<'!r2j*!WrT2$4[X_
+)''eB,5i_j+sJ0P*?6$s)@.2t()%2e#mLOs!;ll]!!**$rW;isrW3*$!VZQp!<N0$qu[')"9eu7rWj#>
+"pG)1!<E0#!<E6'!sAf,"p>)5"9S_u!W)lo!W<)g!sSl3"pYGA%/p\B$jm7F"U"l.!<L[Mr;d]9!WrQ0
+#RLkI%1EUO#R1G8!s8Z0"pbP7$3geA"p>#0!V69k!U]qK!<E6)"U>AC%M'*]%L`[M"pG,3!sA`1#7(YF
+%M06e(E"/4+<i'X-R^Aj-7'lZ*>oS(%13=C!s/Mp!#>S9!WiH,"pbPE%M'*]%L`[L"U"o/!W2p%!<E6'
+!sAc+"WdjQ#n%4T'G_K#'b_/j&.oQk(`F>3(_mVl$3p\9!r;rq!"8l0!sAf7$kF!e)&s[o*tfV8*#]\3
+(Ddo*(D[\s%LWOG"3U]D!V?Hm!VcWt!<E6("8`3;"U,)8#RLeC#R1G8!s/K(!!**%!WrQ/rWWQ1"9S`-
+!<MQfr;lm!!s8W."TAT!"9o#6#7(YE%/p\@$OR.E"U"o/rW1XOr;lm!#6P&2"U55>%/p\=$jm:G"o\W7
+"U52<$4I=N$4-q@"9JVr!;Z`h!<*!0!WrQ/#71bI%M'$Y$OI(Cqun>M#71bH%M06e'c.]*)]^"D,:+W_
+-7'l\*ul+3&.JpM"9S]+oDf^/!<N<)"9eu7#mq(M%1EUO#R:M9!s/K(quH]s!<N?%!t5;9"pbSG&JGlp
+()7P_&eG]l(`FA6)]0;%%1*4A!W`>q!"Ar1!sAf6$P!a_()Ro-r#5hY)&X8-()Hib#8S!c%LNFE"4mMQ
+!VHHl!Vc`o!VcWu!<E6("9eT*!sSr7#lP&I#R:M9!s/K(!!**%!WrQ/"U5,6"9S],!<MKdrW*-'!s8Z0
+ncf4%#RLhHrXB5D$OR.E"U"o/!W`>T!!<6&!Wr?'rWEB."pYD@%/p\E$k!@H"pG,5"U>;?%/p\@$OR.D
+"9JT)p&P$lrW<'"q#LBp&-;n8!sAf5#mq(M%1EUO#RC;4'F+mM$4@:R&J>cm()@]')&aJ9+<g\.$mHf7
+)Aa%t$jd+@!s8H&pAbR%!WiH,"U,)7#7(Y7$4$qD#6k>7"9S`)!W2rr!=])3!sAc4#n.=W'GV>srY#hW
+()\)5+!)C>'bCcZ"Tnf,p&GO&!<N?,#71bJ&/#Wk(%rCP(Ddo+)&O/(&Io-Q"U!HYq>p<jo)\Ob#QXu/
+"9er5"pb)2!XAr9r<Wu?#6b54!W`<%!!**%!sAc+"U,#3!s/K(kl:qh!<N?+"U55+#lFo@#RLhH$k3UR
+$OI(D"pG,3!WiB'g].NZ!<N<)"9eW++9i#T#RUqJ%1N^R$4$k@"U,)8#n%.N%LigR#R1D6!<Mop!<E6#
+!r`<$!W`<&r;cft&HW"9!sA`1"pYD?$4@4K#m^h8#71YB$4@7P%hTEgq@s/L(`FA8+T<Ml+<DL?'bLo`
+#R1D6rW<'"q>^d%!WrQ/"pP;;p^$j(#R1J:"9S],!<N#srW*9+!sAf6$4RLXr"BYW(E+;:+sS6Q)AWnn
+#R(;3!VZR%!<E6("U>>A%1Wp]r=])A'G;#l',2/t(`=84*#fb2'+YHV"U!KZp]:*hp&Xgd#lt&.!sAc3
+#7(V4#6>)9rWrc7"pG,3!Wi9#%KQS3!s8Z/"U"r1!s/K(kl:qh!<N?,"pbP1$3:G>r!3?1$4HhA%1<LL
+#R:S="U"o0!W`>Y!!iT+!WrQ/"pYD4#lOu1#RLhGrX8o;$4-tCrWWH0#mq+?%0m7J#R1D5!<Mrq"9AN)
+!sAH(!WrN+qZ.'+!s8Z0"U5/9#7(V6#lt;;r<F/F#mq%L%M'*_&ebro'bh;p&eYil()\&3rZ;Lh*#]V,
+&.AmN"p>)."9&?&!<N-!"p"c-"9f#9r!<?/q$.33#R:S="U"o/!VcX;!<E6("9o,>%1a!^&ebrp)BBtI
+-RU2`*#B1q#R(;2!VcX$!<E6("U>>A%1iCL)A!Dh%LijW%hK?f()Ru2*ZlIF*#KA$$j["=gAq!LpAjsh
+o)Jsq!<NB-"pb&3r!30+"pY>9!s/K(rW!'%!<N<)qud''!s8H&l2V(j!WrQ/#71_Fq[<T8$OR4Ir<NH2
+$4?b?%LNOL#RCY?"pG,3!s/K(j8f&X"p+l0"pYGArX/u=#m^eA#RC_Dr<i]7$4.":#6G/<$iUP=$4-q@
+"9JVu!"Ar1!sAc3"pY>:"U"o/rW*6*!WrQ/"pYG2$2t22#7(54$O6nC$OdLU&.oKe'E/[_'+tlg%hB3`
+',DH)*?H7B)]0;%%LWRJ#5eW-"9\f.!rN'&!X&Z3#n$Y?":GPC#RC>5%0m.F#mq"G#R:M9!s/Mu!$;4B
+!WrT2#n%.O&.oQj)''kI.4Zns,T[d8$j["=!<N#srW+AJ!sJo9$kEp`'GM2n&.T*V$47.M%hTKl)]g+G
+,9n?Q)AWnn#mCFd!;urt!r`5p!;HTd!"T)3!sAc3#7(VB#RCY?"pY#2#6kA9"9S]+!WE'%!<E6'"8i9'
+!s8W$!U]po!<N?+"pbPD%1W:H"q;"M$k!CKr!3<0$2t;0#m^eB#6tD8!s/Q'!U0U]!WE-)!sJl7$4ICC
+%LNXQ$4-tC#7(VC$N1>6$4.";#6G/;$2t89#mUY;!s/Mu!!WH*!sAc4#lY,5#R:M9"8r9*!sJl7#mq(=
+$kNdR#m^b?"pG/7#7(YF%M06N')iO\&ePZc%1EXS%M9Bk)B9b<*#]V,&.JsPr<N<-"U>58"9S`)!=f/5
+"U>>A%1WmZ%L`[M#Q=o;#71_G$k3UQ#mUV:!W`>s!$)(@!X&Z3#n%1Q&JQ$#+=/Hg/hSY$*uP\##R(;3
+p]1s.!WrQ0#n.@Y()Ro+()%5h$iLAF$P!a`)''kF,pjo_+<)(.%1*4@g]7<Sr;uoup]1'io)K1"!WrQ/
+"pYD?#m^eAq?@--"U"o/!<N-!%06J2!s8Z/"U"r1!s/Q!!V$-r!<N?+"pbPE%1`@J#7_1P$k!CK#lFr*
+#l=o3#RCV<"9\W)r;l<drW2s!rW<Z6"U55?%1a$`&ePZb$jm:>#6P5<$4HhA!t,GB#lP#,#R1M<"Tnf,
+!VcX!!<N?,#7(\9$P*RM#6b54!WrN."pbPE%M/OM"qM1P$OI(CrWNZ6#7(\H%hTEf'+trW&Jbog%L`^P
+$4@:R&f)?(*??(:((q)c$2t22#n-_@"UbYC"pG,-!ZqOK#RV"O&J>Ze%LWRJ"pP;<$4ICT&.]6Z#mUV9
+!Wi#q*WZ<E"9o,=$kEsc)''nK/2&\1.jc>T&e#$L!s/K(r;um!-NjV[$kO*i)]]q=)&<hp$OI%C#R_+T
+()n>?,pt&e,9Rp@&I\pK"5NtU!W<*!!VcZn!WE0!!V??r!<E6("U551#Qb59#5eW/"9\f/!W`?"!!NB(
+!WrQ.rWNB,"9Sc%!rW/k!!iT,!sAf6$4ICB%gNRR%1EUN#RC52r<Ec;#RLeE$4-tC"pG,3"8r<#!V$-n
+!<E6'!sAK)*sDfQ#n%4S&el&q'G:oc$4$k@"pYD@$OdIR$k!CJ#PnW."U"o/!Wi&r#6=i,"9o,=$iUS<
+$OR.D"TAK`"9o,=%1a$a'GM2n&J#9W#R:P;"U52<$OmXZ&eblj&J,H_%1EUO#m^eC$P!da)&jS9)]08$
+%1E.A'akH]&.oKc%L`XK"Tnf-!sAf7$P!dJ'+5B_$jm7F#7(VE%M8UP#7q@Q#R1D5!VZR5!<E6("U>AC
+&/,j!+=&Be0/"q-,p!j7$j["=rW3-'"9eT*-O'ha%hfd#+<i!P*#K>"$O?tB#RV%S()nA@-7:/e+s%U9
+%grXH"5X%U!W<*!!VcZo!W3#u!V??s!<E6("9eu7rWiW3"pP57rWE<*!s/Q'!W2p+!<E6("9er5"U,#3
+"8r<"!s&H)rW2Wk(]a[?"9o,=$OmRV%h9'Y$k!CJ#6k>8"9eZ,"U5/9#RLh:$3UY@#6kA2"TAK*!WiB'
+o)K!r!<N?+"9eu-"r@LN$OmX\'c.]'()%5g$O?tA"pYD?$Om"D":PVC#6t/2r<*3)!WiDs!!`N+!sAf7
+$P!(F":Y_F#6k)0#6b>=$kEsb(B,*T'b_/h$jm7FrWY.`#n%1Q&J>]g&.]3Y$OR1G#6tG<#R_+T'c@r1
+*#]V,&.AmP#n%1R',;<"'b_)d#mLP3"!7XM#n.=V',2)m%h&dN#6tMA%1a'b'GD)i$jd+@!Whup)$'d@
+"U>AD&JZ0(+XJNe/M/J#+WD.,$3p_5!s8Z0"pb#2-OC+i&f2N2,UOi_*uYh($O?q@#7:nP()n>>,UF][
+*ubt.%13:B!oF"U!WE/u!VcWq!<N#u!<E5m!!WH*!sAc2#5nc2"pG/5"9Sc*!r`5t!!NB)!WrQ/rWWE-
+"U+`*r<*6*!s/K(oDfX-!WrQ0#71bH%1WjW%1EUN#R:P;"9eZ*rWE?-"pYD?rX&c7#R:P<r<3B."9S],
+!<Mfm#6=l."9eu7#Q4o4#n%1R',DGa)%@Ar&If'Q"pG/7#71bHrXB&?$4$k?"9eZ*!s/N)!VQL(!<N?+
+#71bI%M'$Y$OI%ArWEi<#RV%R'GhT))AsA,'+bW]#mgJ7%g`RO%M'*^%h9!U$4$nB#6"cS"pbSH&eu9'
+*#fb2&e5<W#mq+Q'Gqc/*#f\-%grXH"9S`/"pkYI&cNFZ&J#9W#R:S?$4ROZ'GV;p%h&aK"9JVt!$hRH
+!sJo;%MBNq*[)dV-n-Pk+rqI4%1*4A!sA`2#RUqJ%1NaF$RQ;o'H/&=-RgGi+;tt*$O?q@#71eM'cA#7
++X%sL)]'.u$O?n<!oO(W!W<)t!VcZo!<E6'rW<0&!r`5m!!WH)!WrQ/"oJQ/"U,#2!s/Q'!Vl^!!<N<)
+"9nc/"U,&4"9Sc*"TAQ."9\f.!<Min('+I="9f#9$4@7O$k*LN#m^b?"U"o0quR')!sAc3#7187!XK#9
+qZ[3-"9S],!VHEs!<E6)"U583$2t8C$OmUZ'c.`+)As;)&.JsO#6"c8#7(YE$k3UQ$4$h>!sAN(r;lQk
+#6=l."9o/?%K6h?%1<II"o\W<"pbSH&JZ*")B0S4(DIJm%1<LLrWiT4$4@:A%0m:L$4$k@"U4i--j9k`
+%MBKn)B0S2'G1c^#mq%M&f2N0+X%pH(D7/`"p>#1"9o,=%1iFM((Ui^#mUY=#RUtN&ebrm&e>BW"p=u.
+pAbX'!<N?,#R_.V(E4D=,Q8rP+s7jB'+YHU"U"r3"pk\J&J>`j&eGQa&/#`t+XSWf.4$)T'FtNU"U,)9
+$P!db)&sY:)]9D(%h&^J"9JV`!;urq!rW/o!<*!"!Wr?'!<N?%!V69q!<N<)"9eu-"pG/6"9S],rW2co
+"T\Z+!sAf,"p"l2qud$("o\]0"U"o/!Whup#lt&.!sAc4#RLk;$OR4I#R:P;"9S`-!rW-)!WiH+"9eu7
+r!<6+rWi`6#6b54!W`>q!!`N+!sAf5#n$V=(^pia&JGos)&aA0'bV#c#mLP9"9eu7#n$Y>"ptYA"U"o/
+quQBh#6=i,"9o,=%/p\=$jm7E"o\W0"pbPG&JQ$!rYc([(DRSq%h/pT$N18<$47.K$47(E"pG//"![jL
+"9f#;%M9Em)&X8,&e>BX#mq(O'H%r9,U=QT)&!Je"pFo-'*SUI$OmRV%LidP#6k>9#71bJ&H3:I&.T'R
+"p=u.p]19o56:rl#Rh4W(E+;9+<VaI*#]S+%grXI"9\l4#n.@Z(E",0(_m\s&el0&+XJNc-R9cO'+G6P
+"U"u6#n.=W(&f!V()%8i$O?q>!s/M_!!**$q#^KqpAk0n!<N?%!s&H)rW2Tj#6=i,!s8Z0"o\]2"U,#2
+!WiB'pAb<s!<N?+r!!!$$O$\<#6tG;"U"o/!VQKu!<N<)"9o):q[!K5#6k>7!s/Q"!<rT-"9eu6#Q=u2
+#6tM?r!<Q5#6b54!Whup#6=l."U>;?$iUPY%1NdY&el)u)&X8,'+bT[#6b54!sAc3#71\D#mgh@"9S`)
+!Ug!m!<N?,#7(\9$P*RM#6b54!sAc4#n.=W'c-cc$PsQm'+tlf%LigS$N(28#RCY>"U"o0quSh["U>AD
+&/5lr(D[\r%1<IJ#n.@[)BU1N-6jTN'FtNU"9S]-"9f#:$4@7N$4-qA"U"u5#71eKrXT5D$jd.B!s/N"
+!<*!o!WiH-"pk\K',DH)*#on9(`!et%LWOH"U"r4#Rh7Z)BL%G+W_R>'bhB"*$?LR-6s`S((gr\"U"o1
+"U>>B%M06c&J,E\$4$h=!s/M_!<*!"!Wr?'rW<'"o`,!n!Vuiu!<M`k&HMn6!WrQ."U,)6"U"r1!W`>q
+!!iT+!WrN-"9eu."9\f0"9f#.#6kA9"9S]+!VcX"!<E6("9eu7qZmK5"pG,3!s/N)!W2p&!<E6'!sAc3
+r<N<-!"&Q1#71V>"9S]+!VcX$!<E6("U>>@$k3+E+q>(o&el&s(D[`!&.K!Q"p>#0!WrQ/"pYA=#6tG:
+!s/K(m/R=k!WrQ/#71;8!sf,9"T8E."9o,>%1j-c'`JgK'GD/Z&eP]e%h/pS#m^b@"pP56!s8T+r;eAL
+!sAf7$kEsb'bqAo%LWRK#7(\J'H%r9,U=QT)&*Pf"p>#0!WrQ/#71;8$O?tA"9\f0"9o);$iUP>$OI%A
+"9JT)quH]s$j$J4!sAf5$4IFX'c6id#T"3h&Io3V#6t/1*X)cU%hos*,q1;l,p40E()@])*?ZOM+<;:4
+%LNFDrW<<,"U>>A%/p\A$OR.E"U"o/!T="\!<E6'quZs$!r`5n!<*#s!r`5j!!NB(!WrN-qum6,!s8T*
+!VHEq!<E6("8rB%!tGG:"U52:#R:S="9S]+!VcX"!<N?+"U52:rWic7#6kA9"9S`-rW2iq#QXr-!sAc3
+#7(25!XT2@rX/o;#m^_=!s8E%q>^j'!<N?,#7(YE$k3+E%h9*^&el&q'G:rd$O?q>"8r90!s8Z0"U5,6
+"9S],!UKdj!<E6("9f#/#6Y57"9Sc*!XSr4"pbPF%M03ar"9VU',2,o&eGN\#m^b?"U"o0!Wr?%,ldoG
+!<N?,#RV"P&J>]g%L`[M"pP;>%MBQt+!DdL*#B4s#mLP2!WrN-"U4i/$3^P7!s/Q,"9o):rWrc7#6b54
+!Wi6"rW*H0!s8Z/"U52<$OmUZ'E/^s'G:re$jm7E"U"o0"9f&>&f;`</2&\0.O?/T(DR]&)B9b<)]08#
+$j["=rW3W5"9eu7#RLeC#R:M9!s/K(huEfZ!<W*"!s/N)!VHHe!V$-o!<E6'!s8])"U5)4!s/N)!VHEp
+!<E6'p]CU$"U552#R1M<"Tnf,!VcX!!<N?+"U552#RL_@"pG,4!s8T+rW2iq#lt)/!sAf5#7(V7#n74K
+$O[@N$4-tB"Tnf-q#Lm(!!**%!sAf6#mq%JrX8l<%M'0N&dT'[%1<FG"Tni)!<WB)!sAN*"9S`-!WhQd
+$ipA1!sAc2"pP56"9\Q'%g)t>#RUqJ%1WjY&.oNg'`JjW'G:rd$4$h>"9S],!<N&t#6=l."U>>A%K6kT
+%L`[M"pG/7#Rh4X(`OG7)]08"$O?n<!r`3%!WiK%"9AT,quQp%"9n]-"U,#2!W`?$!"]/3!WrN-"U52;
+#mq%L%M06O&g7hu%L`[M#6b54!s/Q-"ptkU*$d$h1c7'A-QsEF'GM8trYQOh'+bQY"p=u/!<E6'!sAc2
+"pP57"9S],!<M*Y!s&E(!r`9%"TAK'!r`5m!;QZb!!WH)!WiH,"T8K-"9S`-!<Mfm!<E6#!r2p#"9eu7
+rWi]5"pG)1!<Mur"p"`+!sAf5r<NT4"pG/5!sAN(rW2lr#lt&.!sAc3#RCb8$3:MBrX9#>$4-qA"9Sc&
+!rE!'!WrQ/"pbMAr<`W7$k3^G%gNRQ$4$h>!s8<"q>pZu!U0Rf!<E6'!sJQ+!sA]-!r`3C!WiH-"pYD?
+$4@7O%M'-b'c.]((DRPn$jd.B!s/N)!Vud$!<E6)"U>>ArX9VO#mUY<"9\l5#n7FZ()Ic&'+bQY"p>#0
+r;cp#!rN0"!rW-$!WiK%"9\f.!W`?$!"T)2!WrQ/#7(VC$OdIS%hS[O#S7IT$OI%B"9\T(+9McP$P=0s
+-S@572`*09+WD11&eYil'GD)i$jm4C!s8B$!<N?"!s8T+!<M$W!s&E(!r<!!!r`5l!;lld!!E<'!WiK'
+"TAQ/"9\f/!W`>o!!**$rW;lt!sAc3#Q=u5#6k>6!W`>t!!WH)!WrT1#Q4o1#6k>7rWE*#rW2os#QXr-
+!sJl6#n$Y>q[<Z:$4-tC"U+T&!<N?#!<rT-"9eu7#Q=u2#mgqHr<ru?$4$k?"9S]+!WE)n!TsFc!<N<)
+"T8K+"9S`-r;dH2!WrQ/"pYD?$4@7P&/,cprYZ%Z'G1c]#6b22!<Mur%KQS3!sJl6#mgqF#R:P:rW<`8
+"U>AC%hTEe&J#9W#6b53!rN)u!r`<$!rE#p!W`<&qu@0,!WrQ0#RUqK%M'*_')`Ie&eGQ_$OI%A"9S],
+!<E6("UGPM)'LF_2)mNO/ghbZ'bU<S#S%7M#6b22!<N-!rW2s!rW1dS!s&E(!rE'#!Wr?%rW)]okPtbe
+!<N?*"T/E-"9\f.!W`>o!!<6&!Wr-!!sAc3#Q=u5#6k>6!W`>t!"K#1!WrQ0#6tM?#6k>7"Sr3$!Wr?%
+rW!6*!WrQ/#7(YE%/UJ>$k*LN#R:P;"TAK/"9\l3"9\f/!rN'%!WrQ."oSW;#6tM?#mq"G#m^b>"9S],
+!<N)uquPjY"T\Z,"9\o-"p>)4!s8W'!?;.B!sAc3#7(VC$OmX['c7f,)Aj2%%LWOG!s/Mu!#GY:!WrQ/
+#6tM?#6tD8!s8T,!sAf6$4HhB#Rh(I#R1D6!Wr9#!<N?"!s&H)oE"ji%06J2"9o,=%1a$`',22[(((`h
+&Io3V#R1D6!rW-5!X&]7%MTj+.53S:2)-U,*Z#J$r!iuA$jm7E"9JT)q>gEof`2*T!<N?"!s&H)nH%kS
+"9AQ*!sJK)"p>&2!WiB'oDf!p!<N?*r<3*%"9\i2"pb,5"pY>9!s/K(p](Hu!WrQ/#6"i1"pP56"TAN%
+"9JZ-!r`3.!!**%!sAf5#n%.Nr!j/F$k!CK#6k>7!s8Z/"oSW."U,#2!rN'$!WiH+r<*6,"U5/9rWi`6
+#6k>7!s/Q'!SdYc!<E6("9o)9#RCY>"U"o/r;di=!sAc3#7(VC$OmUZ'c.`+)As;(%h&^J"9JW!!!WH)
+!WrQ/#6"i1"pP56"9&?*!sAc4#RUJ;#RLbA"pG,4!sAE%!<WH%"9JZ,!r`5l!#u"@!sJo:%1j-e()Rl+
+)B'J1(DIJm$jm4D"9S`)!>GS;"U>DG'c\DH/ho+9/LM\['bLuT%L<LP$OI%A!s/MI!!**$rW<$#!<N>u
+!Vuls!UB^i!<E6("9\o,"pbA9"9S`-!W`>q!!iT+!WrN-"9eu+":PG<#6tM>#6k;5!W`>s!!NB)!WrQ/
+rWWT2"U"r1!sAc*"Tnl1!s8B$#m(23"pbPD%1WmI%hB-Z$k!@I"pG,3!sA`1"pb,5":#,7!s8?#r;up"
+"9\i2"U=o1"pP57"9S],qZ5UT"p"c-"9o);rX&i9#R:M9!s8H&)Zg*E"U>;>$4@7O%hTKl)&aD2(D@>g
+#mLM6!VcX1!<N?+"U52;#R:S<"9S`-!WrN-"U550#S..F"pP57"9\f/!WiH+"9n`."pG/5!s/K(o)LQI
+!X&]6$kEsc(`F>5*$$%>)]9D)&.K!Q"p>#0!W`?("9o,?&Jc?1-S$f$.jlM\(D@AZ%LN^W%LidP#6b22
+!R(NE!<N0$rWE-$q>pQsrWE-$rW2?c"T\W*!sAf,"q(Y?"pG/5!s8T+!<Mop"T\W*!sAc*"oJK("U=o1
+"pP56!s/K(p](X%!<N?*"9\l3"9e]+!X&W0r<<B."U"o/r;dT6!sAf5#n%.N%M''[%LidQ#R:M9rW<9+
+"U52;rWrl:#6b54!W`<%!;cfq!X&T."9f#.#6b;9"U"o0r;us!i;bM3!X&Z3#n%.N%1ERM#6b22!W`?(
+!sJl7#n%.N%1Wp]'G_N')&O,&&.AjL"9JW"!!WH)!X&Z3#lY,5#R:P;"T8E)"9eu7r!<-(!X8i4r<*3+
+"pYG5#mLY?"U"o/!V6:!!<NB/$4RR](E+86r>l@f*#]Y/&e>EY#R1D6rW3]7"U>AE&f2N2,q(2j,p=6F
+'G:<T$P3m^&.]3W#R(;3!R(NE!<N0$rWE-$qZ-^!!r<!$!WiB'li77k!<N?+"U521#7:Y>"U,#2!s/N)
+!VcX%!<E6("9er5"pG2/"9J`1#6"i2"pG,3!Whup!s&E(!r)j!"9f#.#6Y57"9S`(!>>M9"9f#9$4@7O
+%LrpW$jm:G"pFl,"9\l4#RUJ;#71Y?"9S]+!W2rp!<rT,!sAc3#Q4o3#6kA9"9e]+!s/N)!TO.l!<E9*
+"pkYH%hK9_%1<II"U"`*)Zp3I#71bI%Ls![&/#Wk(Dmu*'bV#b#R1A4!Vl^"!<N?,#7(\9$Od@K#6k;5
+!sA`1#7(Y8$31D1#lP&9#R:P;"U5/:#n-_@#7:bB"U"l-!V?@"!<WH0$4RR^(`FA7r#Q4d)]9G+&e>BX
+#6b80!u;%E#n.=X(`XYB,U=QU*#B;$%h9*]')iOL&J#9V"p=u.bQ%YE!WE0"!s&H)q>gX!!sAK)rW<3'
+!<MNe"p"`+!sAc3qZdE3"U,#3!s/N)!Vl^!!<N<)"9nc/!<iZ)"9AZ0rWWN0"9S],!VHEn!<Mut"Tni0
+"U552#R(G;"Tnf-r;d0*!sAf5#mq%JrX9;F$4-tB"U"o/!WrQ/"pbP7$3geB"pG)1!VQL!!<E6("9eu8
+$2t8@#m^b?"pG/5"9S`-!<M6]#QXu/"U>AC%h\dR&J,BZ#R1D6!WrN."pkYH%hK<O&J#Kf'c%T%().>j
+$O?n<!Wi,t(BFO="9o,=$k3[U$jm:G"U"r3"pYGA$iUPC$OR4I$4@4M$k!FL#lY&=#RUtL%hB-Z$OI%A
+!s/Mq!"8l0":#8C&JQ$!)]Tjr*AJNQ)Aj5(&J#9V#6b55"U55?%M9En*$-4F*uu78'+bW_%M06e()@Vu
+&.JsO"9SZ*bl@bF!WE0"!s&H)qZ-d#!WrQ&"9el0!WiB'li77k!WrQ/"pP>3#RUeA"pP56"9S]+!Vl^'
+!<E6("9er5"U,#3rWE-&rWNH."9S]+!V?Bg!WE-'!sAc3#Q=u4#6k>7!Wr<$#Qb&0"U52;#mpS<"pkP?
+"pG,3r;m*("U55=rX&i9#R1D6!Whro#6=l-"9f#9$N1>A$4-tD#6tG;"U"o/!<M9^*!$*C"UGGE&/,`m
+'G:rd$3p_;!s8Z0#71eK&/"gQ%MKNk()7Mr%h&aL"9SZ*q>`MV!WrT2#n.:S&.]6Z$4$h>"U52<$OmRV
+%h9$W$O[@P%M''[%1ERM#RLhH%M03b&J#<X#R(;3!V?@#!<NB.#n.=W'c.]))>tI.)]K\6(`!et%LWOH
+"U,)9$4RO\(E"/4*?5t7'bV#d$k*UW',;<#(DRPm$O6h;!<LFF!<E6#!W`B*rW;rt!s/N+"8i9*!s8T+
+!<MNe#QXr-!sAc3#7(56#mU\>"pG,3!WiDu!!NB(!WrQ.r<30(q?-^""9S`-!<MZiqZ-j%!sAc3#Q=u3
+#6k>6!r`3-!!**%!WrQ/"pYD4#R1M="pG,3!r`3(!WrQ/#71;8"pbG;"9S]+o`,3t!<NB-#71e:$j$eE
+$N:>;#RCY>"9S]+!Tj@f!<N?,#R_+S'`Jj['G:ob#mLM8!sAc4$4IFV&eb-V%29Kk'bh;n%LWOH"9JW"
+!!`N+!sJr;%1iFM":kqL#RC>5%L<CN%hK<b&.]6[%1Wm[rXfGI%L`[N$4@:R&cNFK&Io0T"p=u.oDf:#
+!WrT2$4RLY',2/rrY@7*(`=51)&O,&&.JsP"pP;=$kF!e(`F>4)Aj5'&.T'T$4@:S',DE%(DRPn$O?n<
+!<LFF!<E6#!W`B*rW;os!s/N+"8r?*!s8T*!UB^n!<E6("9eu6#6tM?rW`Z4"U,#2!W`>u!!E<'!WiK%
+"9AT,quZg!!<N?%!UKgc!<`H+"9f#/#6kA9"9S]+!WE''!<E6'!sAc+"TSc+"Tnl0!s8E%"Te`-"U552
+#R1M<"Tnf,!VHEu!<E6)"U>>A%/p\:$k3(B#RUnE#6k;5!WhE`&ci%9"U>AE&JPus(D[Yq%13=DrWEH0
+#71eK&.oQR'*&aG'aYQe%h/jN"Tnf,q#EDU!WrT3$OmXZ&ePZb$OI%B"pYGB%M06d&ePZc%Ls!\&ebok
+&J#<Y$47.M&/#Wj'+tfa#mLM6!V?@!!<E6)"pbPE%M'-M&L\8*'GVE%)B'J0'bLo`#R:S?$4[X^(E+53
+)Aj2%%h/jP#RCbG%h]WV(C1`g%LNFE!s&GI!<*#q!r;ou!Wr3#!s/N)!U9Xi!<E6("9eu6qZd?1"U,#2
+!W`>t!!<6&!Wr6$!<N?$!W<)u!U9Xh!<E6("9eu."pG/6"9S]+quH]s!<N?%"9&H&!s&H)qZ-g$!sAc2
+rWWN0"U"o/!V??t!<E6)"U>>A%/p_4$jR.I#R:M8!WhE`&ci"8":#8C&/,cp(D[\s%LWOHrWF)B#71bI
+%hK<c&ebom'bqDr&Io0T"p>#/!Vl^#!<N?,#RV"OrXf\P%1<FH"pP;=$k<j^',(ujrXTMN&J>cl'+k`a
+$OR4K%1a'M'*f*Z$OI"?!Whlm2$!a\"9o);$4@7N%1NdX&/#]o(`=2-'bUua#m^eC$P*jb(`F>3(_mYo
+$jm7E"pYD@%1j3P'aGB`%1*7B!WgIE!<E5u!rW-#!!*!!rW<$#!<N?%!U9Xh!<E6'!sAf,#6"i5"pP56
+"9S]+!VcWq!<N#uo`=4U"T\W*!sAc+"U,#3!s/K(q>gKqp]CEqr;[<.!<N?*"9\l2"9S`-!<Mcl#6=l.
+"U55>$i:A2%1!@M#mUV:!W`>a!!iT,"9o,>%h]TU().Gp%LWOH"9S`/"pYGB%1Wm[&J>cU'F5<_%13@E
+!s/Mu!"K#2!sJo9$k<dZ%h9!T#lY#U#71bJ&/#Wh&J,H_%M'*`',(uj%h/mR#mq(N&.oNe%h/jO"Tnf,
+nc/pr!WrQ/"pYD>rWs\S$OmUZ'G_K$().>j$OI(E#n%7V()Rr.(`!br%13=ErWNf;#n%4S&eYcf%LWOH
+"9JVI!<*#s!r`6!!;urq!r`5a!!iT+!WiH,"9eu-"pP57"9S],!VQNl!<<3!!SdYV!<E9$!rrK'!s/N)
+!VZTf!Vucu!<E6'qu[$&!W`>m!!rZ-!sAc4#RLhFrX/`8%/gV?$OI%A"9JT)jo?"p!WrT2$4ROZ'GV;q
+&.T'R"pFo-$3^V=#n%.N%M'*`r=]GK%h&aL"Tnf,p](O"!<NB.#RV">%0I"G#RC>4%gE:H$kEm]&J,H_
+%1NdX&H37U%h/mR#RC_D$k3^X%LidP#6b22!V-3o!<E6'!sJT,rWXbU#RUtN&JGin'G:ob$4$kA#n%4T
+'GhT'().>i$4$h=!s8Z0#71bIrXK/B$OI"?!s/MG!;uou!rW/r!;?NV!!`N*!WiH+"9eZ,"p>&2!s/K(
+o`4ghf`2$R!Vuiu!<M3\rW2ourW2Nh#QXr-!sAc4#71;8%LNRP$k3XS$OI%A"9JT)jo?t6!<NB.#R_(Q
+&ebli%h/jN"U"o/!s8Z1#7(VC$k3[X&J>]g&.K!Q"p=u.!VZR'!<N?,"pbMB$OR1G#6k)0"9f#:$Om"E
+!=]J:$OI4N%M''[%1<LKrW`K1#n-_@"ptYA"U"l-mf3Fj!<N?$!sf#4"U55>$k<jJ&L\/!$4$k@"pbPF
+&/#Zl'b_/h$O?q>!s/N+"9eu8#mq%I#m^_=!s/Me!.Y
+~>
+gr
+36 w
+0 sg
+2 2 2 1 3 1 2 0 3 0 2 -1 3 -1 2 -1 
+2 -1 2 -2 1 -3 1 -2 1 -2 0 -5 -1 -3 -1 -2 
+-1 -2 -2 -2 -2 -2 -2 -1 -3 -1 -2 -1 -3 0 -2 1 
+-3 0 -2 1 -2 2 -2 2 -1 2 -2 2 0 2 -1 3 
+0 2 1 3 0 2 2 3 1 2 2 1 2810 1244 39 MP stroke
+1 3 1 3 2 3 3 2 2 2 3 1 3 1 3 0 
+3 0 4 -1 3 -1 2 -1 3 -2 2 -3 1 -3 2 -2 
+0 -4 1 -3 -1 -3 0 -3 -2 -3 -1 -3 -3 -2 -2 -2 
+-3 -1 -3 -1 -3 -1 -3 0 -3 0 -3 1 -3 2 -3 1 
+-2 3 -2 2 -1 3 -1 3 -1 3 0 3 1 3 2040 1221 40 MP stroke
+-1 -3 0 -3 -1 -3 -2 -3 -2 -2 -2 -2 -3 -2 -3 -1 
+-3 -1 -3 0 -3 0 -4 1 -2 1 -3 2 -2 2 -2 2 
+-2 3 -1 3 -1 3 0 3 1 4 1 3 1 3 2 2 
+2 2 2 2 3 2 3 1 3 0 4 0 3 0 3 -1 
+3 -2 2 -2 2 -2 2 -3 1 -3 1 -3 1 -3 2001 1225 40 MP stroke
+3 -1 2 -2 2 -2 1 -3 1 -2 1 -3 0 -6 -1 -2 
+-1 -3 -2 -2 -2 -2 -2 -2 -2 -2 -3 0 -3 -1 -3 0 
+-2 0 -3 1 -3 1 -2 2 -2 2 -2 2 -1 3 -1 3 
+0 8 1 3 2 2 2 2 2 2 2 2 3 1 2 1 
+3 0 3 0 3 -1 2 -1 2204 1069 37 MP stroke
+-3 1 -2 2 -2 2 -1 3 -1 3 -1 3 0 3 1 3 
+1 2 1 3 2 2 2 2 2 2 3 2 3 0 3 1 
+3 0 2 -1 3 -1 3 -1 2 -2 2 -2 2 -3 1 -2 
+1 -3 0 -6 -1 -3 -1 -3 -1 -2 -2 -2 -3 -2 -2 -2 
+-3 -1 -3 -1 -3 0 -3 1 -2 0 -3 2 2247 1511 39 MP stroke
+2 2 2 2 3 1 3 1 3 1 3 0 3 -1 2 0 
+3 -2 2 -1 3 -3 1 -2 2 -3 1 -2 0 -6 -1 -3 
+-1 -3 -1 -2 -2 -3 -2 -2 -2 -1 -3 -2 -3 0 -3 -1 
+-3 0 -3 1 -2 1 -3 2 -2 2 -2 2 -2 2 -1 3 
+0 3 -1 3 1 3 0 3 2 2 1 3 2253 1484 39 MP stroke
+3 -1 2 -1 3 -1 2 -2 2 -2 1 -2 1 -3 1 -2 
+0 -9 -1 -2 -2 -3 -2 -2 -2 -2 -2 -1 -3 -1 -2 -1 
+-3 0 -3 0 -3 1 -2 1 -3 2 -2 2 -1 2 -2 2 
+-1 3 0 8 1 3 1 2 2 3 2 2 2 1 3 2 
+2 0 3 1 3 0 2353 1289 36 MP stroke
+-3 0 -2 1 -3 1 -2 2 -2 1 -2 3 -2 2 -1 3 
+0 8 1 3 1 2 2 2 2 2 2 2 2 1 3 1 
+3 1 2 0 3 -1 3 -1 2 -1 3 -2 2 -2 1 -2 
+1 -2 1 -3 0 -8 -1 -3 -2 -2 -1 -3 -2 -1 -3 -2 
+-2 -1 -3 -1 -3 0 2355 1324 36 MP stroke
+3 1 3 0 3 0 3 -1 3 -1 3 -2 2 -2 2 -3 
+2 -3 1 -3 1 -3 0 -3 -1 -3 -1 -3 -1 -3 -2 -3 
+-2 -2 -3 -2 -3 -1 -3 -1 -3 -1 -3 1 -3 0 -3 1 
+-3 2 -3 2 -2 2 -1 3 -2 3 -1 3 0 6 1 3 
+1 3 2 3 2 2 2 2 3 2 3 1 2469 1274 39 MP stroke
+-3 1 -2 2 -3 2 -2 3 -2 2 -1 3 0 4 -1 3 
+1 3 1 3 1 3 2 3 2 2 3 2 3 2 3 1 
+3 0 3 0 3 0 3 -1 3 -2 3 -2 2 -2 2 -3 
+1 -3 1 -3 1 -3 0 -3 -1 -3 -1 -3 -2 -3 -2 -3 
+-2 -2 -3 -2 -3 -1 -3 -1 -3 0 -4 0 -3 1 2476 1214 40 MP stroke
+-3 -2 -3 -1 -3 -1 -3 0 -3 0 -3 1 -3 1 -3 2 
+-2 2 -2 3 -1 2 -1 3 -1 3 0 7 1 3 2 3 
+1 2 3 2 2 2 3 2 3 1 3 0 3 0 3 0 
+3 -1 3 -2 3 -2 2 -2 2 -3 1 -3 1 -3 0 -6 
+-1 -3 -1 -3 -1 -3 -2 -2 -3 -2 2524 1307 38 MP stroke
+1 -3 -1 -2 -1 -3 -1 -3 -1 -2 -2 -2 -2 -2 -3 -1 
+-2 -1 -3 -1 -3 0 -3 1 -2 1 -3 1 -2 2 -2 2 
+-2 2 -1 2 -1 3 0 8 1 3 2 2 2 3 2 1 
+2 2 2 1 3 1 3 0 3 0 2 -1 3 -1 2 -1 
+3 -2 1 -2 2 -3 1 -2 0 -3 2549 1505 38 MP stroke
+-2 -1 -3 0 -3 -1 -3 1 -2 0 -3 1 -2 2 -2 2 
+-2 2 -2 2 0 3 -1 3 0 5 1 3 1 3 2 2 
+2 2 2 1 3 2 2 1 3 0 3 0 2 0 3 -1 
+3 -2 2 -1 2 -2 1 -3 1 -2 1 -3 1 -3 -1 -2 
+0 -3 -1 -3 -2 -2 -1 -2 -2 -2 -3 -2 2558 1523 39 MP stroke
+-1 3 -1 3 0 5 1 3 1 3 2 2 2 2 2 2 
+2 1 3 1 3 1 3 0 2 -1 3 0 3 -2 2 -1 
+2 -2 2 -3 1 -2 1 -3 0 -8 -1 -3 -2 -3 -1 -2 
+-2 -2 -3 -1 -2 -2 -3 0 -3 -1 -3 1 -3 0 -2 1 
+-3 2 -2 2 -2 2 -1 2 2656 1233 37 MP stroke
+3 0 2 0 3 -1 3 -1 2 -2 2 -2 2 -2 2 -2 
+1 -3 0 -8 -1 -3 -1 -3 -2 -2 -2 -2 -2 -2 -2 -1 
+-3 -1 -3 0 -3 0 -3 0 -2 1 -3 1 -2 2 -2 2 
+-2 2 -1 3 -1 3 0 5 1 3 1 3 1 2 2 2 
+2 2 2 2 3 1 3 1 2643 1207 37 MP stroke
+2 -3 2 -2 1 -3 0 -8 -1 -3 -1 -3 -2 -2 -2 -2 
+-2 -2 -2 -1 -3 -1 -3 0 -3 0 -2 0 -3 1 -3 1 
+-2 2 -2 2 -2 2 -1 3 -1 2 0 6 1 3 1 3 
+1 2 2 2 2 2 2 2 3 1 3 1 2 0 3 0 
+3 -1 3 -1 2 -2 2 -1 2628 1212 37 MP stroke
+-3 1 -2 2 -3 2 -2 2 -2 3 -1 3 0 3 -1 4 
+1 3 1 3 1 3 2 3 2 2 2 2 3 2 3 1 
+4 0 3 0 3 0 3 -1 3 -2 3 -2 2 -2 2 -3 
+1 -2 1 -4 1 -3 0 -3 -1 -3 -1 -3 -2 -3 -2 -3 
+-2 -2 -3 -2 -3 -1 -3 -1 -3 0 -3 0 -4 1 2730 1350 40 MP stroke
+1 3 1 3 2 2 3 3 2 1 3 2 3 1 3 0 
+4 0 3 0 3 -2 3 -1 2 -2 2 -3 2 -2 2 -3 
+0 -3 1 -4 -1 -3 0 -3 -1 -3 -2 -3 -2 -2 -3 -2 
+-3 -2 -3 -1 -3 -1 -3 0 -3 0 -3 1 -3 1 -3 2 
+-2 2 -2 3 -2 3 -1 3 -1 3 0 3 1 4 2743 1326 40 MP stroke
+1 -3 1 -3 1 -3 0 -3 -1 -4 -1 -3 -1 -3 -2 -2 
+-3 -3 -2 -1 -3 -2 -3 -1 -4 0 -3 0 -3 1 -3 1 
+-3 1 -2 3 -3 2 -1 3 -2 3 0 3 -1 3 1 3 
+0 3 2 3 1 3 3 3 2 2 3 1 3 1 3 1 
+3 0 4 0 3 -1 3 -1 2 -2 3 -2 2 -3 2706 1320 40 MP stroke
+3 0 3 -1 2 -1 2 -2 2 -2 2 -3 1 -2 1 -3 
+0 -5 -1 -3 -1 -3 -1 -2 -2 -2 -2 -2 -3 -2 -2 -1 
+-3 0 -3 0 -2 0 -3 1 -3 1 -2 1 -2 2 -2 2 
+-1 3 -1 2 -1 3 0 3 1 3 0 2 2 3 1 2 
+2 2 2 2 3 1 3 1 2 0 3 0 2756 1475 39 MP stroke
+-1 -3 -2 -2 -2 -2 -2 -1 -3 -1 -3 -1 -2 0 -3 0 
+-3 0 -3 2 -2 1 -2 2 -2 2 -1 2 -1 3 -1 3 
+0 5 1 3 1 3 2 2 2 2 2 2 3 1 2 1 
+3 0 3 0 3 0 2 -1 3 -1 2 -2 2 -2 2 -2 
+1 -3 1 -3 0 -5 -1 -3 -1 -2 2742 1499 38 MP stroke
+-3 0 -2 1 -3 2 -2 2 -2 2 -1 2 -1 3 -1 2 
+0 3 1 3 0 2 1 3 2 2 2 2 2 2 2 1 
+3 1 3 1 2 0 3 -1 3 -1 2 -1 2 -2 2 -2 
+2 -2 1 -2 1 -3 0 -8 -1 -3 -2 -2 -1 -2 -2 -2 
+-3 -1 -2 -2 -3 0 -3 -1 -2 1 2819 1177 38 MP stroke
+2 -2 2 -3 1 -3 1 -3 0 -3 -1 -3 -1 -3 -1 -3 
+-2 -3 -2 -2 -2 -2 -3 -2 -3 -1 -3 0 -4 0 -3 0 
+-3 1 -3 2 -2 2 -2 2 -2 3 -1 2 -1 3 -1 4 
+0 3 1 3 1 3 2 3 2 2 2 2 3 2 3 1 
+3 1 3 0 3 0 3 -1 3 -1 3 -2 2 -2 2823 1201 40 MP stroke
+2 1 2 1 3 1 3 0 3 0 2 0 3 -1 2 -2 
+2 -1 2 -3 2 -2 1 -2 0 -3 1 -3 -1 -3 0 -2 
+-1 -3 -2 -2 -2 -2 -2 -2 -2 -1 -3 -1 -3 -1 -2 0 
+-3 0 -3 1 -2 1 -3 2 -2 2 -1 2 -2 2 0 3 
+-1 3 0 3 1 2 1 3 1 2 2 3 2 2 2855 1380 40 MP stroke
+3 -1 3 -1 3 -1 2 -1 2 -2 2 -3 1 -2 1 -3 
+1 -3 0 -3 -1 -3 -1 -2 -1 -3 -2 -2 -2 -2 -2 -2 
+-3 -1 -3 -1 -3 -1 -2 1 -3 0 -3 1 -3 2 -2 1 
+-2 3 -1 2 -2 3 0 3 -1 2 1 3 0 3 2 3 
+1 2 2 2 2 2 3 2 2 1 3 0 3 1 2867 1272 40 MP stroke
+-2 3 0 3 -1 3 0 3 1 3 1 3 2 3 2 2 
+2 2 3 2 3 1 3 1 3 0 3 0 3 -1 3 -1 
+3 -2 2 -2 2 -3 1 -2 1 -3 1 -3 0 -7 -1 -3 
+-2 -2 -1 -3 -3 -2 -2 -2 -3 -1 -3 -1 -3 -1 -3 0 
+-3 1 -3 1 -3 1 -2 2 -3 2 -1 3 3080 1544 39 MP stroke
+-1 2 -2 2 -1 3 -1 2 -1 3 1 3 0 3 1 2 
+1 3 2 2 2 2 2 1 3 1 3 1 2 0 3 0 
+3 0 2 -2 3 -1 2 -2 2 -2 1 -2 1 -3 1 -2 
+0 -3 -1 -3 0 -3 -1 -2 -2 -2 -2 -2 -2 -2 -2 -2 
+-3 0 -3 -1 -2 0 -3 0 -3 1 -2 1 -3 2 3155 1509 40 MP stroke
+1 -2 1 -3 1 -2 0 -3 -1 -3 -1 -3 -1 -2 -2 -2 
+-2 -2 -2 -2 -2 -1 -3 -1 -3 0 -2 0 -3 1 -3 1 
+-2 1 -2 2 -2 2 -2 2 -1 3 0 2 -1 3 1 3 
+0 3 1 2 2 2 2 3 2 1 2 2 3 1 3 0 
+2 0 3 0 3 -1 2 -1 2 -2 2 -1 2 -3 3129 1487 40 MP stroke
+1 2 3 2 2 2 3 0 3 1 2 0 3 0 3 -1 
+2 -1 3 -2 1 -2 2 -2 1 -3 1 -2 1 -3 0 -3 
+-1 -3 -1 -2 -1 -3 -2 -2 -2 -2 -2 -1 -3 -2 -2 0 
+-3 -1 -3 1 -3 0 -2 1 -3 2 -2 1 -2 3 -1 2 
+-1 2 -1 3 0 6 1 2 1 3 2 2 3162 1366 39 MP stroke
+-2 -1 -3 0 -3 -1 -3 1 -2 0 -3 1 -2 2 -2 2 
+-2 2 -1 3 -1 2 -1 3 0 5 1 3 1 3 2 2 
+2 2 2 2 3 1 2 1 3 0 3 0 3 0 2 -1 
+3 -2 2 -1 2 -2 1 -3 2 -2 0 -3 1 -3 0 -3 
+-1 -2 -1 -3 -2 -2 -1 -2 -2 -2 -3 -2 3141 1392 39 MP stroke
+0 3 1 3 1 2 1 3 2 2 2 1 2 2 3 1 
+2 0 3 1 3 -1 2 0 3 -2 2 -1 2 -2 2 -2 
+1 -2 1 -3 1 -3 0 -2 -1 -3 -1 -3 -1 -2 -1 -2 
+-2 -2 -3 -2 -2 -1 -3 -1 -2 0 -3 0 -3 0 -2 1 
+-3 2 -2 1 -2 2 -1 3 -1 2 -1 3 0 2 3186 1084 40 MP stroke
+2 -1 3 0 2 -1 3 -2 2 -2 2 -2 1 -2 1 -3 
+0 -2 1 -3 -1 -3 0 -2 -2 -3 -1 -2 -2 -2 -2 -2 
+-3 -1 -2 -1 -3 0 -3 0 -2 0 -3 1 -2 1 -3 2 
+-1 2 -2 2 -1 3 -1 2 0 8 1 3 2 2 1 2 
+2 2 3 2 2 1 3 0 3 1 3169 1066 38 MP stroke
+-1 3 1 3 0 3 1 2 1 3 2 2 2 2 2 1 
+3 1 3 1 2 0 3 0 3 -1 2 -1 3 -1 2 -2 
+2 -2 1 -2 1 -3 1 -3 0 -2 -1 -3 0 -3 -1 -2 
+-2 -3 -2 -2 -2 -1 -2 -2 -3 -1 -3 0 -3 0 -2 0 
+-3 1 -2 1 -3 2 -1 2 -2 2 -1 3 -1 2 3278 1176 40 MP stroke
+0 -2 -2 -3 -1 -2 -2 -2 -2 -2 -3 -1 -2 -1 -3 0 
+-3 0 -3 0 -2 1 -3 2 -2 1 -2 2 -1 3 -1 2 
+-1 3 -1 3 1 2 0 3 1 3 2 2 1 2 2 2 
+3 1 2 1 3 1 3 0 3 0 2 -1 3 -1 2 -1 
+2 -2 2 -2 1 -3 1 -2 1 -3 0 -3 -1 -3 3245 1176 40 MP stroke
+3 -1 2 -2 2 -3 1 -2 1 -3 1 -3 0 -6 -1 -3 
+-2 -3 -1 -2 -2 -2 -3 -2 -2 -1 -3 -1 -3 -1 -3 0 
+-3 1 -3 1 -3 1 -2 2 -2 2 -2 3 -1 3 -1 2 
+0 6 1 3 1 3 1 3 2 2 2 2 3 2 3 1 
+3 0 3 1 3 -1 3 0 2 -2 3251 1464 38 MP stroke
+2 2 2 3 2 2 3 1 3 1 3 1 3 0 3 -1 
+3 -1 3 -1 3 -2 2 -2 2 -3 1 -2 1 -3 0 -10 
+-1 -3 -2 -2 -2 -3 -2 -2 -3 -2 -3 -1 -3 -1 -3 0 
+-3 0 -3 1 -3 1 -2 2 -3 2 -2 2 -2 3 -1 3 
+0 3 -1 3 1 3 1 3 1 3 3285 1060 38 MP stroke
+0 -9 -2 -3 -1 -3 -2 -2 -2 -2 -3 -2 -3 -1 -3 -1 
+-3 0 -3 0 -3 1 -3 1 -3 2 -2 2 -2 2 -2 3 
+-1 3 0 3 -1 3 1 3 1 3 1 3 2 3 2 2 
+3 2 2 1 3 1 3 1 4 0 3 -1 3 -1 2 -1 
+3 -2 2 -2 2 -3 1 -3 1 -3 3249 1066 38 MP stroke
+-2 3 -2 4 -1 4 -1 3 0 4 1 4 1 4 2 3 
+2 3 3 3 3 2 3 2 4 1 4 0 4 0 4 -1 
+3 -1 4 -2 3 -3 2 -2 2 -4 2 -3 1 -4 0 -8 
+-1 -3 -2 -4 -2 -3 -3 -3 -3 -3 -3 -1 -3 -2 -4 -1 
+-4 0 -4 1 -4 1 -3 1 -3 3 -3 2 1624 1376 39 MP stroke
+2 -3 2 -3 1 -4 0 -8 -1 -4 -2 -3 -2 -3 -3 -3 
+-3 -3 -3 -2 -4 -1 -3 -1 -4 0 -4 1 -4 1 -3 2 
+-3 2 -3 2 -2 4 -2 3 -1 4 -1 3 0 4 1 4 
+1 4 2 3 2 3 3 3 3 2 4 2 3 1 4 0 
+4 0 4 -1 3 -1 4 -2 3 -3 2 -3 1587 1346 39 MP stroke
+-3 -2 -3 -2 -3 -1 -4 0 -3 0 -4 0 -3 2 -3 2 
+-3 2 -3 3 -2 3 -1 3 -1 3 0 8 1 3 2 3 
+1 3 3 3 3 2 3 2 3 1 4 1 3 0 4 0 
+3 -1 3 -2 3 -2 3 -2 2 -3 2 -3 1 -4 0 -11 
+-1 -3 -2 -3 -2 -3 -3 -2 1802 1160 37 MP stroke
+-3 2 -3 2 -2 3 -2 3 -1 3 -1 3 0 7 1 3 
+2 3 1 3 3 3 3 2 3 2 3 1 3 0 4 0 
+3 0 3 -1 3 -2 3 -2 3 -2 2 -3 1 -3 1 -3 
+1 -4 0 -3 -1 -4 -1 -3 -2 -3 -2 -3 -3 -2 -2 -2 
+-4 -1 -3 -1 -3 0 -4 0 -3 1 -3 1 1831 1517 39 MP stroke
+0 1 -3 1 -3 2 -3 3 -2 3 -1 3 -1 4 2170 1597 8 MP stroke
+-1 3 0 4 1 3 1 3 2 4 2 2 3 3 3 2 
+3 1 4 1 3 0 4 0 3 -1 4 -1 3 -2 2 -3 
+3 -2 1 -3 2 -4 0 -3 1 -4 -1 -3 -1 -4 -1 -3 
+-2 -3 -3 -3 -3 -2 -3 -1 0 -1 2140 1614 30 MP stroke
+3 -2 2 -3 3 -2 1 -4 1 -3 1 -4 -1 -3 0 -4 
+-2 -3 -1 -3 -3 -3 -2 -2 -3 -2 -3 -1 -4 -1 -3 -1 
+-4 1 -3 1 -4 1 -3 2 -2 2 -3 3 -1 3 -2 3 
+0 4 -1 3 1 4 1 3 1 3 2 3 3 3 3 2 
+3 2 3 1 4 0 3 0 4 0 3 -1 3 -2 2254 1281 40 MP stroke
+-3 2 -2 2 -2 3 -2 4 -1 3 0 10 2 4 1 3 
+3 3 2 2 3 2 3 1 4 1 3 1 4 -1 3 0 
+4 -2 3 -2 2 -2 3 -3 2 -3 1 -3 1 -3 0 -4 
+-1 -3 0 -4 -2 -3 -2 -3 -2 -3 -3 -2 -3 -2 -4 -1 
+-3 0 -4 0 -3 0 -4 1 -3 2 2301 1199 38 MP stroke
+1 -3 1 -4 1 -3 0 -4 -1 -3 -1 -4 -2 -3 -2 -2 
+-3 -3 -3 -2 -3 -1 -3 -1 -4 0 -4 0 -3 1 -3 1 
+-3 2 -3 2 -2 3 -2 3 -1 3 -1 4 0 7 1 3 
+2 3 1 3 3 3 3 2 3 2 3 1 4 1 3 0 
+4 -1 3 -1 3 -2 3 -2 3 -2 2 -3 2270 1169 39 MP stroke
+-3 1 -3 2 -3 2 -2 2 -2 3 -1 4 -1 3 0 7 
+1 3 1 3 2 3 2 3 3 2 3 2 3 1 4 1 
+3 0 3 -1 4 -1 3 -1 3 -2 2 -2 2 -3 2 -3 
+1 -3 1 -4 0 -3 -1 -4 -1 -3 -2 -3 -2 -3 -2 -2 
+-3 -2 -3 -2 -3 -1 -4 0 -3 0 -4 1 2766 1201 39 MP stroke
+3 2 3 2 3 2 3 0 4 1 3 0 3 -1 4 -1 
+3 -2 2 -2 3 -3 1 -3 2 -3 0 -3 1 -4 -1 -3 
+-1 -4 -1 -3 -2 -3 -2 -2 -3 -2 -3 -2 -3 -1 -3 -1 
+-4 0 -3 0 -4 1 -3 2 -3 2 -2 2 -2 3 -2 3 
+-1 4 0 10 2 3 1 3 2 3 2776 1166 38 MP stroke
+-2 3 -2 3 -2 3 -1 3 -1 4 0 7 1 3 2 3 
+2 3 2 3 3 2 3 1 4 2 3 0 4 0 3 -1 
+4 -1 3 -1 3 -3 2 -2 2 -3 2 -3 1 -4 0 -7 
+-1 -3 -1 -4 -2 -3 -2 -2 -3 -3 -3 -2 -3 -1 -4 -1 
+-3 0 -4 0 -3 1 -4 1 -3 2 2896 1150 38 MP stroke
+-3 2 -1 3 -1 4 -1 3 0 7 1 3 2 3 2 3 
+2 2 3 2 3 2 3 1 4 0 3 0 4 0 3 -1 
+3 -2 2 -2 3 -3 2 -2 1 -4 1 -3 0 -7 -1 -3 
+-1 -3 -2 -3 -2 -3 -2 -2 -3 -2 -4 -1 -3 -1 -3 0 
+-4 0 -3 1 -3 2 -3 1 -2 3 2897 1576 38 MP stroke
+2 -3 2 -3 1 -3 1 -3 0 -7 -1 -3 -2 -3 -2 -3 
+-2 -2 -2 -2 -3 -2 -3 -1 -4 0 -3 0 -3 0 -3 1 
+-3 2 -3 2 -2 2 -2 3 -2 3 -1 3 0 6 1 4 
+1 3 1 3 2 2 3 2 3 2 3 1 3 1 3 1 
+3 -1 4 0 3 -2 2 -1 3 -2 2911 1163 38 MP stroke
+2 -2 2 -3 1 -4 0 -3 1 -4 -1 -3 -1 -3 -1 -4 
+-2 -2 -3 -3 -3 -2 -3 -2 -3 -1 -4 0 -3 0 -3 0 
+-4 2 -3 1 -3 2 -2 3 -2 3 -1 3 -1 3 -1 4 
+1 3 0 4 2 3 1 3 3 3 2 2 3 2 3 1 
+4 1 3 0 4 0 3 -1 3 -2 3 -1 3 -3 2948 1461 40 MP stroke
+1 -3 1 -3 -1 -4 -1 -3 -1 -4 -2 -2 -2 -3 -3 -2 
+-3 -2 -3 -1 -3 -1 -4 0 -3 0 -4 1 -3 2 -3 2 
+-2 2 -2 3 -2 3 -1 3 -1 4 0 3 1 4 1 3 
+2 3 2 3 2 2 3 2 3 2 4 1 3 0 3 0 
+4 -1 3 -1 3 -2 3 -2 2 -3 2 -2 1 -4 2944 1469 40 MP stroke
+0 12 2 4 1 4 3 3 3 3 3 2 3 2 4 1 
+4 0 4 0 4 -1 4 -1 3 -2 3 -2 3 -3 2 -4 
+2 -3 1 -4 0 -8 -1 -4 -1 -4 -3 -3 -2 -3 -3 -3 
+-4 -2 -3 -1 -4 -1 -4 0 -4 0 -4 1 -4 2 -3 2 
+-3 3 -2 3 -2 4 -2 3 3011 1549 37 MP stroke
+3 -3 2 -3 2 -3 2 -4 1 -3 0 -8 -1 -4 -2 -4 
+-2 -3 -2 -3 -3 -3 -4 -2 -4 -1 -3 -1 -4 0 -4 0 
+-4 1 -4 2 -3 2 -3 3 -2 3 -2 4 -2 4 0 11 
+2 4 2 4 2 3 3 3 3 2 4 2 3 1 4 0 
+4 0 4 -1 4 -1 4 -2 2972 1522 37 MP stroke
+-4 0 -3 1 -3 1 -3 2 -2 2 -3 3 -1 3 -1 3 
+-1 3 0 7 1 3 2 4 2 2 2 3 3 2 3 1 
+3 1 4 1 3 0 3 -1 4 -1 3 -2 2 -2 3 -2 
+2 -3 1 -3 1 -4 0 -6 -1 -4 -1 -3 -2 -3 -2 -2 
+-3 -2 -2 -2 -4 -1 -3 -1 -3 0 3045 1178 38 MP stroke
+2 -3 1 -4 1 -3 0 -7 -1 -3 -2 -3 -2 -3 -2 -2 
+-3 -2 -3 -2 -3 -1 -3 0 -4 0 -3 0 -3 1 -3 2 
+-3 2 -2 2 -2 3 -2 3 -1 3 0 7 1 4 1 3 
+2 3 2 2 2 3 3 1 3 2 4 0 3 1 3 -1 
+4 0 3 -2 3 -2 2 -2 2 -2 3028 1145 38 MP stroke
+3 1 4 0 3 -1 4 -1 3 -2 2 -2 3 -3 2 -3 
+1 -3 1 -3 1 -4 -1 -3 0 -4 -2 -3 -1 -3 -3 -3 
+-2 -2 -3 -2 -4 -1 -3 -1 -4 0 -3 0 -4 1 -3 1 
+-3 2 -3 3 -2 3 -1 3 -2 3 0 10 1 4 2 3 
+2 3 2 2 3 3 3 1 4 1 3070 1335 38 MP stroke
+-3 -1 -4 -1 -3 -1 -4 0 -3 1 -4 1 -3 1 -3 2 
+-2 3 -2 3 -2 3 -1 3 0 11 2 3 1 3 3 3 
+2 3 3 2 4 1 3 1 4 0 3 0 4 -1 3 -1 
+3 -2 3 -2 2 -3 2 -3 1 -4 1 -3 0 -4 -1 -3 
+-1 -4 -1 -3 -2 -3 -2 -2 -3 -3 3112 1327 38 MP stroke
+-3 1 -2 2 -3 3 -2 2 -1 3 -1 4 -1 3 0 4 
+1 3 1 3 2 3 2 3 3 2 2 2 3 1 4 1 
+3 1 4 -1 3 0 3 -2 3 -2 3 -2 2 -2 2 -3 
+1 -4 1 -3 0 -3 -1 -4 -1 -3 -1 -3 -2 -3 -2 -2 
+-3 -3 -3 -1 -3 -1 -3 -1 -4 0 -3 1 -4 1 3198 1289 40 MP stroke
+-3 3 -2 2 -1 3 -1 4 -1 3 0 3 1 4 1 3 
+2 3 2 2 2 3 3 1 3 2 3 1 4 0 3 0 
+3 -1 3 -1 3 -2 3 -2 2 -2 2 -3 1 -3 1 -4 
+0 -6 -1 -4 -2 -3 -1 -2 -3 -3 -2 -2 -3 -2 -3 -1 
+-4 0 -3 -1 -3 1 -4 1 -3 1 -2 2 3208 1361 39 MP stroke
+-3 -3 -3 -3 -3 -2 -4 -1 -4 -1 -4 0 -4 1 -3 1 
+-4 1 -3 3 -3 2 -2 4 -2 3 -1 4 -1 4 0 4 
+1 3 1 4 2 4 2 3 3 2 3 3 4 1 4 1 
+4 1 4 -1 3 0 4 -2 3 -2 4 -2 2 -3 2 -3 
+2 -4 1 -4 0 -8 -1 -4 -2 -3 -2 -3 3243 1305 39 MP stroke
+-1 -3 -2 -3 -3 -2 -3 -2 -3 -2 -4 -1 -3 0 -4 0 
+-3 1 -4 1 -3 2 -3 2 -2 3 -2 3 -1 4 -1 3 
+0 7 1 4 1 3 2 3 3 3 2 2 4 2 3 1 
+4 1 3 0 4 -1 3 -1 3 -1 3 -2 3 -3 2 -3 
+2 -3 1 -3 0 -11 -2 -4 3232 1385 37 MP stroke
+4 2 5 1 5 0 6 0 4 -2 5 -2 4 -3 4 -3 
+3 -4 2 -5 2 -5 1 -5 0 -5 -1 -5 -2 -5 -2 -4 
+-3 -4 -4 -4 -4 -3 -4 -2 -5 -1 -5 -1 -5 0 -5 1 
+-5 2 -4 3 -4 3 -4 4 -2 4 -2 5 -2 4 0 11 
+1 4 2 5 3 4 3 4 4 3 5 3 1623 1176 39 MP stroke
+-5 -1 -5 0 -5 1 -4 2 -5 3 -4 3 -3 4 -3 4 
+-2 5 -1 5 0 10 2 5 2 4 2 5 4 4 4 3 
+4 2 5 2 5 1 5 0 5 -1 5 -1 4 -2 4 -3 
+4 -4 3 -4 2 -4 2 -5 1 -5 0 -5 -1 -5 -2 -5 
+-2 -4 -3 -4 -4 -4 -4 -3 -5 -2 -5 -1 1604 1235 39 MP stroke
+-3 3 -3 3 -3 4 -2 4 -1 5 0 9 2 5 1 4 
+3 4 3 4 4 3 4 2 4 2 5 1 4 0 5 -1 
+5 -1 4 -2 4 -3 3 -3 3 -4 2 -4 2 -4 0 -10 
+-1 -4 -1 -5 -2 -4 -3 -4 -3 -3 -4 -3 -5 -2 -4 -1 
+-5 -1 -4 1 -5 1 -4 1 -5 3 2443 1379 38 MP stroke
+-4 3 -3 3 -3 4 -2 4 -2 4 -1 5 0 5 1 4 
+1 5 3 4 2 4 4 3 3 3 5 2 4 1 5 1 
+4 -1 5 0 4 -2 4 -2 4 -3 3 -4 3 -4 2 -4 
+1 -4 0 -10 -1 -4 -2 -5 -2 -4 -3 -3 -4 -3 -4 -3 
+-4 -1 -5 -1 -5 0 -4 0 -5 1 -4 2 2483 1458 39 MP stroke
+4 4 3 2 4 2 5 1 4 1 5 0 4 -1 4 -1 
+4 -3 4 -2 3 -4 2 -3 2 -5 1 -4 1 -4 0 -5 
+-1 -4 -2 -5 -3 -3 -2 -4 -4 -3 -4 -2 -4 -2 -4 -1 
+-5 0 -4 0 -5 2 -4 2 -4 2 -3 3 -3 4 -2 4 
+-1 4 -1 4 0 9 2 5 2 4 2 3 2742 1232 39 MP stroke
+-5 2 -4 3 -3 3 -3 4 -3 4 -1 4 -1 5 0 10 
+2 4 2 5 2 4 4 3 4 3 4 2 5 2 4 1 
+5 0 5 -1 5 -2 4 -2 4 -3 3 -3 3 -4 2 -5 
+1 -5 1 -4 0 -5 -1 -5 -2 -4 -3 -5 -3 -3 -3 -4 
+-4 -2 -5 -2 -5 -1 -5 -1 -4 1 -5 1 2935 1392 39 MP stroke
+5 -1 4 -3 4 -2 4 -4 2 -4 3 -4 1 -5 1 -5 
+0 -4 -1 -5 -2 -5 -2 -4 -3 -4 -4 -3 -4 -3 -4 -2 
+-5 -1 -5 -1 -5 1 -4 1 -5 2 -4 2 -4 3 -3 4 
+-2 4 -2 5 -1 4 0 10 1 5 2 4 3 4 3 4 
+4 3 4 2 5 2 5 1 5 0 4 -1 2919 1334 39 MP stroke
+-5 3 -5 3 -4 4 -3 4 -3 5 -1 5 -1 6 0 5 
+1 6 2 5 2 5 4 4 4 4 4 3 5 3 6 1 
+5 1 6 -1 5 -1 5 -2 5 -3 5 -3 3 -4 3 -5 
+2 -5 1 -6 1 -5 -1 -6 -1 -5 -2 -5 -3 -5 -4 -4 
+-4 -3 -5 -3 -5 -2 -6 -1 -5 0 -6 0 -5 2 3003 1273 40 MP stroke
+4 -5 2 -5 2 -5 1 -5 0 -6 -1 -5 -2 -6 -3 -5 
+-3 -4 -4 -4 -5 -3 -5 -2 -5 -2 -6 0 -5 0 -6 1 
+-5 2 -5 3 -4 4 -3 4 -3 5 -3 5 -1 5 0 11 
+2 6 2 5 3 4 4 4 4 4 5 3 5 2 6 1 
+5 0 6 -1 5 -2 5 -2 4 -3 4 -4 2965 1218 39 MP stroke
+-5 2 -4 3 -4 3 -4 5 -2 4 -2 6 -2 5 0 5 
+1 6 1 5 3 5 3 5 4 4 4 3 5 2 5 2 
+6 1 5 0 5 -1 6 -2 5 -2 4 -4 4 -4 3 -4 
+2 -5 2 -5 0 -11 -1 -6 -2 -5 -3 -4 -3 -5 -4 -3 
+-5 -3 -5 -2 -5 -2 -6 0 -5 0 -6 2 3083 1477 39 MP stroke
+5 2 6 0 5 0 5 -2 5 -2 5 -3 4 -4 3 -4 
+3 -5 2 -5 1 -5 0 -11 -2 -5 -2 -5 -4 -5 -3 -4 
+-5 -3 -5 -2 -5 -2 -5 -1 -6 0 -5 1 -5 2 -5 2 
+-4 4 -4 4 -3 4 -3 5 -1 5 -1 6 1 5 1 6 
+2 5 2 5 4 4 4 3 5 3 5 2 3082 1413 39 MP stroke
+10 -12 2800 1256 2 MP stroke
+19 -4 2021 1225 2 MP stroke
+-20 0 2021 1225 2 MP stroke
+-8 -16 2212 1085 2 MP stroke
+9 16 2238 1495 2 MP stroke
+15 -11 2238 1495 2 MP stroke
+-2 -18 2355 1307 2 MP stroke
+0 17 2355 1307 2 MP stroke
+6 -19 2463 1293 2 MP stroke
+7 19 2469 1195 2 MP stroke
+-12 15 2536 1292 2 MP stroke
+-17 -2 2566 1507 2 MP stroke
+-8 16 2566 1507 2 MP stroke
+16 8 2640 1225 2 MP stroke
+3 -18 2640 1225 2 MP stroke
+-12 -13 2640 1225 2 MP stroke
+7 19 2723 1331 2 MP stroke
+20 -5 2723 1331 2 MP stroke
+-17 -11 2723 1331 2 MP stroke
+-1 -17 2757 1492 2 MP stroke
+-15 7 2757 1492 2 MP stroke
+2 17 2817 1160 2 MP stroke
+-14 -14 2837 1215 2 MP stroke
+10 -14 2845 1394 2 MP stroke
+0 -18 2867 1290 2 MP stroke
+17 10 3063 1534 2 MP stroke
+12 13 3143 1496 2 MP stroke
+-14 -9 3143 1496 2 MP stroke
+13 -10 3149 1376 2 MP stroke
+-8 16 3149 1376 2 MP stroke
+17 1 3169 1083 2 MP stroke
+0 -17 3169 1083 2 MP stroke
+17 4 3261 1172 2 MP stroke
+-16 4 3261 1172 2 MP stroke
+-9 -16 3260 1480 2 MP stroke
+17 -10 3268 1070 2 MP stroke
+-19 -4 3268 1070 2 MP stroke
+18 16 1606 1360 2 MP stroke
+-19 -14 1606 1360 2 MP stroke
+-14 17 1816 1143 2 MP stroke
+9 19 1822 1498 2 MP stroke
+21 4 2149 1593 2 MP stroke
+-12 -19 2266 1300 2 MP stroke
+12 19 2289 1180 2 MP stroke
+-19 -11 2289 1180 2 MP stroke
+6 20 2760 1181 2 MP stroke
+16 -15 2760 1181 2 MP stroke
+14 18 2882 1132 2 MP stroke
+15 14 2882 1562 2 MP stroke
+-15 -15 2926 1178 2 MP stroke
+-16 -15 2964 1476 2 MP stroke
+-20 -7 2964 1476 2 MP stroke
+24 7 2987 1542 2 MP stroke
+-15 -20 2987 1542 2 MP stroke
+0 21 3045 1157 2 MP stroke
+-17 -12 3045 1157 2 MP stroke
+5 -21 3065 1356 2 MP stroke
+-12 19 3124 1308 2 MP stroke
+9 19 3189 1270 2 MP stroke
+13 16 3195 1345 2 MP stroke
+-19 14 3262 1291 2 MP stroke
+-20 9 3252 1376 2 MP stroke
+13 -28 1610 1204 2 MP stroke
+-6 31 1610 1204 2 MP stroke
+17 24 2426 1355 2 MP stroke
+14 26 2469 1432 2 MP stroke
+22 -18 2720 1250 2 MP stroke
+10 29 2925 1363 2 MP stroke
+-6 -29 2925 1363 2 MP stroke
+12 32 2991 1241 2 MP stroke
+-26 -23 2991 1241 2 MP stroke
+11 32 3072 1445 2 MP stroke
+10 -32 3072 1445 2 MP stroke
+24 w
+/c8 { 1.000000 1.000000 0.000000 sr} bdef
+c8
+2 2 2 1 3 1 2 0 3 0 2 -1 3 -1 2 -1 
+2 -1 2 -2 1 -3 1 -2 1 -2 0 -5 -1 -3 -1 -2 
+-1 -2 -2 -2 -2 -2 -2 -1 -3 -1 -2 -1 -3 0 -2 1 
+-3 0 -2 1 -2 2 -2 2 -1 2 -2 2 0 2 -1 3 
+0 2 1 3 0 2 2 3 1 2 2 1 2810 1244 39 MP stroke
+1 3 1 3 2 3 3 2 2 2 3 1 3 1 3 0 
+3 0 4 -1 3 -1 2 -1 3 -2 2 -3 1 -3 2 -2 
+0 -4 1 -3 -1 -3 0 -3 -2 -3 -1 -3 -3 -2 -2 -2 
+-3 -1 -3 -1 -3 -1 -3 0 -3 0 -3 1 -3 2 -3 1 
+-2 3 -2 2 -1 3 -1 3 -1 3 0 3 1 3 2040 1221 40 MP stroke
+-1 -3 0 -3 -1 -3 -2 -3 -2 -2 -2 -2 -3 -2 -3 -1 
+-3 -1 -3 0 -3 0 -4 1 -2 1 -3 2 -2 2 -2 2 
+-2 3 -1 3 -1 3 0 3 1 4 1 3 1 3 2 2 
+2 2 2 2 3 2 3 1 3 0 4 0 3 0 3 -1 
+3 -2 2 -2 2 -2 2 -3 1 -3 1 -3 1 -3 2001 1225 40 MP stroke
+3 -1 2 -2 2 -2 1 -3 1 -2 1 -3 0 -6 -1 -2 
+-1 -3 -2 -2 -2 -2 -2 -2 -2 -2 -3 0 -3 -1 -3 0 
+-2 0 -3 1 -3 1 -2 2 -2 2 -2 2 -1 3 -1 3 
+0 8 1 3 2 2 2 2 2 2 2 2 3 1 2 1 
+3 0 3 0 3 -1 2 -1 2204 1069 37 MP stroke
+-3 1 -2 2 -2 2 -1 3 -1 3 -1 3 0 3 1 3 
+1 2 1 3 2 2 2 2 2 2 3 2 3 0 3 1 
+3 0 2 -1 3 -1 3 -1 2 -2 2 -2 2 -3 1 -2 
+1 -3 0 -6 -1 -3 -1 -3 -1 -2 -2 -2 -3 -2 -2 -2 
+-3 -1 -3 -1 -3 0 -3 1 -2 0 -3 2 2247 1511 39 MP stroke
+2 2 2 2 3 1 3 1 3 1 3 0 3 -1 2 0 
+3 -2 2 -1 3 -3 1 -2 2 -3 1 -2 0 -6 -1 -3 
+-1 -3 -1 -2 -2 -3 -2 -2 -2 -1 -3 -2 -3 0 -3 -1 
+-3 0 -3 1 -2 1 -3 2 -2 2 -2 2 -2 2 -1 3 
+0 3 -1 3 1 3 0 3 2 2 1 3 2253 1484 39 MP stroke
+3 -1 2 -1 3 -1 2 -2 2 -2 1 -2 1 -3 1 -2 
+0 -9 -1 -2 -2 -3 -2 -2 -2 -2 -2 -1 -3 -1 -2 -1 
+-3 0 -3 0 -3 1 -2 1 -3 2 -2 2 -1 2 -2 2 
+-1 3 0 8 1 3 1 2 2 3 2 2 2 1 3 2 
+2 0 3 1 3 0 2353 1289 36 MP stroke
+-3 0 -2 1 -3 1 -2 2 -2 1 -2 3 -2 2 -1 3 
+0 8 1 3 1 2 2 2 2 2 2 2 2 1 3 1 
+3 1 2 0 3 -1 3 -1 2 -1 3 -2 2 -2 1 -2 
+1 -2 1 -3 0 -8 -1 -3 -2 -2 -1 -3 -2 -1 -3 -2 
+-2 -1 -3 -1 -3 0 2355 1324 36 MP stroke
+3 1 3 0 3 0 3 -1 3 -1 3 -2 2 -2 2 -3 
+2 -3 1 -3 1 -3 0 -3 -1 -3 -1 -3 -1 -3 -2 -3 
+-2 -2 -3 -2 -3 -1 -3 -1 -3 -1 -3 1 -3 0 -3 1 
+-3 2 -3 2 -2 2 -1 3 -2 3 -1 3 0 6 1 3 
+1 3 2 3 2 2 2 2 3 2 3 1 2469 1274 39 MP stroke
+-3 1 -2 2 -3 2 -2 3 -2 2 -1 3 0 4 -1 3 
+1 3 1 3 1 3 2 3 2 2 3 2 3 2 3 1 
+3 0 3 0 3 0 3 -1 3 -2 3 -2 2 -2 2 -3 
+1 -3 1 -3 1 -3 0 -3 -1 -3 -1 -3 -2 -3 -2 -3 
+-2 -2 -3 -2 -3 -1 -3 -1 -3 0 -4 0 -3 1 2476 1214 40 MP stroke
+-3 -2 -3 -1 -3 -1 -3 0 -3 0 -3 1 -3 1 -3 2 
+-2 2 -2 3 -1 2 -1 3 -1 3 0 7 1 3 2 3 
+1 2 3 2 2 2 3 2 3 1 3 0 3 0 3 0 
+3 -1 3 -2 3 -2 2 -2 2 -3 1 -3 1 -3 0 -6 
+-1 -3 -1 -3 -1 -3 -2 -2 -3 -2 2524 1307 38 MP stroke
+1 -3 -1 -2 -1 -3 -1 -3 -1 -2 -2 -2 -2 -2 -3 -1 
+-2 -1 -3 -1 -3 0 -3 1 -2 1 -3 1 -2 2 -2 2 
+-2 2 -1 2 -1 3 0 8 1 3 2 2 2 3 2 1 
+2 2 2 1 3 1 3 0 3 0 2 -1 3 -1 2 -1 
+3 -2 1 -2 2 -3 1 -2 0 -3 2549 1505 38 MP stroke
+-2 -1 -3 0 -3 -1 -3 1 -2 0 -3 1 -2 2 -2 2 
+-2 2 -2 2 0 3 -1 3 0 5 1 3 1 3 2 2 
+2 2 2 1 3 2 2 1 3 0 3 0 2 0 3 -1 
+3 -2 2 -1 2 -2 1 -3 1 -2 1 -3 1 -3 -1 -2 
+0 -3 -1 -3 -2 -2 -1 -2 -2 -2 -3 -2 2558 1523 39 MP stroke
+-1 3 -1 3 0 5 1 3 1 3 2 2 2 2 2 2 
+2 1 3 1 3 1 3 0 2 -1 3 0 3 -2 2 -1 
+2 -2 2 -3 1 -2 1 -3 0 -8 -1 -3 -2 -3 -1 -2 
+-2 -2 -3 -1 -2 -2 -3 0 -3 -1 -3 1 -3 0 -2 1 
+-3 2 -2 2 -2 2 -1 2 2656 1233 37 MP stroke
+3 0 2 0 3 -1 3 -1 2 -2 2 -2 2 -2 2 -2 
+1 -3 0 -8 -1 -3 -1 -3 -2 -2 -2 -2 -2 -2 -2 -1 
+-3 -1 -3 0 -3 0 -3 0 -2 1 -3 1 -2 2 -2 2 
+-2 2 -1 3 -1 3 0 5 1 3 1 3 1 2 2 2 
+2 2 2 2 3 1 3 1 2643 1207 37 MP stroke
+2 -3 2 -2 1 -3 0 -8 -1 -3 -1 -3 -2 -2 -2 -2 
+-2 -2 -2 -1 -3 -1 -3 0 -3 0 -2 0 -3 1 -3 1 
+-2 2 -2 2 -2 2 -1 3 -1 2 0 6 1 3 1 3 
+1 2 2 2 2 2 2 2 3 1 3 1 2 0 3 0 
+3 -1 3 -1 2 -2 2 -1 2628 1212 37 MP stroke
+-3 1 -2 2 -3 2 -2 2 -2 3 -1 3 0 3 -1 4 
+1 3 1 3 1 3 2 3 2 2 2 2 3 2 3 1 
+4 0 3 0 3 0 3 -1 3 -2 3 -2 2 -2 2 -3 
+1 -2 1 -4 1 -3 0 -3 -1 -3 -1 -3 -2 -3 -2 -3 
+-2 -2 -3 -2 -3 -1 -3 -1 -3 0 -3 0 -4 1 2730 1350 40 MP stroke
+1 3 1 3 2 2 3 3 2 1 3 2 3 1 3 0 
+4 0 3 0 3 -2 3 -1 2 -2 2 -3 2 -2 2 -3 
+0 -3 1 -4 -1 -3 0 -3 -1 -3 -2 -3 -2 -2 -3 -2 
+-3 -2 -3 -1 -3 -1 -3 0 -3 0 -3 1 -3 1 -3 2 
+-2 2 -2 3 -2 3 -1 3 -1 3 0 3 1 4 2743 1326 40 MP stroke
+1 -3 1 -3 1 -3 0 -3 -1 -4 -1 -3 -1 -3 -2 -2 
+-3 -3 -2 -1 -3 -2 -3 -1 -4 0 -3 0 -3 1 -3 1 
+-3 1 -2 3 -3 2 -1 3 -2 3 0 3 -1 3 1 3 
+0 3 2 3 1 3 3 3 2 2 3 1 3 1 3 1 
+3 0 4 0 3 -1 3 -1 2 -2 3 -2 2 -3 2706 1320 40 MP stroke
+3 0 3 -1 2 -1 2 -2 2 -2 2 -3 1 -2 1 -3 
+0 -5 -1 -3 -1 -3 -1 -2 -2 -2 -2 -2 -3 -2 -2 -1 
+-3 0 -3 0 -2 0 -3 1 -3 1 -2 1 -2 2 -2 2 
+-1 3 -1 2 -1 3 0 3 1 3 0 2 2 3 1 2 
+2 2 2 2 3 1 3 1 2 0 3 0 2756 1475 39 MP stroke
+-1 -3 -2 -2 -2 -2 -2 -1 -3 -1 -3 -1 -2 0 -3 0 
+-3 0 -3 2 -2 1 -2 2 -2 2 -1 2 -1 3 -1 3 
+0 5 1 3 1 3 2 2 2 2 2 2 3 1 2 1 
+3 0 3 0 3 0 2 -1 3 -1 2 -2 2 -2 2 -2 
+1 -3 1 -3 0 -5 -1 -3 -1 -2 2742 1499 38 MP stroke
+-3 0 -2 1 -3 2 -2 2 -2 2 -1 2 -1 3 -1 2 
+0 3 1 3 0 2 1 3 2 2 2 2 2 2 2 1 
+3 1 3 1 2 0 3 -1 3 -1 2 -1 2 -2 2 -2 
+2 -2 1 -2 1 -3 0 -8 -1 -3 -2 -2 -1 -2 -2 -2 
+-3 -1 -2 -2 -3 0 -3 -1 -2 1 2819 1177 38 MP stroke
+2 -2 2 -3 1 -3 1 -3 0 -3 -1 -3 -1 -3 -1 -3 
+-2 -3 -2 -2 -2 -2 -3 -2 -3 -1 -3 0 -4 0 -3 0 
+-3 1 -3 2 -2 2 -2 2 -2 3 -1 2 -1 3 -1 4 
+0 3 1 3 1 3 2 3 2 2 2 2 3 2 3 1 
+3 1 3 0 3 0 3 -1 3 -1 3 -2 2 -2 2823 1201 40 MP stroke
+2 1 2 1 3 1 3 0 3 0 2 0 3 -1 2 -2 
+2 -1 2 -3 2 -2 1 -2 0 -3 1 -3 -1 -3 0 -2 
+-1 -3 -2 -2 -2 -2 -2 -2 -2 -1 -3 -1 -3 -1 -2 0 
+-3 0 -3 1 -2 1 -3 2 -2 2 -1 2 -2 2 0 3 
+-1 3 0 3 1 2 1 3 1 2 2 3 2 2 2855 1380 40 MP stroke
+3 -1 3 -1 3 -1 2 -1 2 -2 2 -3 1 -2 1 -3 
+1 -3 0 -3 -1 -3 -1 -2 -1 -3 -2 -2 -2 -2 -2 -2 
+-3 -1 -3 -1 -3 -1 -2 1 -3 0 -3 1 -3 2 -2 1 
+-2 3 -1 2 -2 3 0 3 -1 2 1 3 0 3 2 3 
+1 2 2 2 2 2 3 2 2 1 3 0 3 1 2867 1272 40 MP stroke
+-2 3 0 3 -1 3 0 3 1 3 1 3 2 3 2 2 
+2 2 3 2 3 1 3 1 3 0 3 0 3 -1 3 -1 
+3 -2 2 -2 2 -3 1 -2 1 -3 1 -3 0 -7 -1 -3 
+-2 -2 -1 -3 -3 -2 -2 -2 -3 -1 -3 -1 -3 -1 -3 0 
+-3 1 -3 1 -3 1 -2 2 -3 2 -1 3 3080 1544 39 MP stroke
+-1 2 -2 2 -1 3 -1 2 -1 3 1 3 0 3 1 2 
+1 3 2 2 2 2 2 1 3 1 3 1 2 0 3 0 
+3 0 2 -2 3 -1 2 -2 2 -2 1 -2 1 -3 1 -2 
+0 -3 -1 -3 0 -3 -1 -2 -2 -2 -2 -2 -2 -2 -2 -2 
+-3 0 -3 -1 -2 0 -3 0 -3 1 -2 1 -3 2 3155 1509 40 MP stroke
+1 -2 1 -3 1 -2 0 -3 -1 -3 -1 -3 -1 -2 -2 -2 
+-2 -2 -2 -2 -2 -1 -3 -1 -3 0 -2 0 -3 1 -3 1 
+-2 1 -2 2 -2 2 -2 2 -1 3 0 2 -1 3 1 3 
+0 3 1 2 2 2 2 3 2 1 2 2 3 1 3 0 
+2 0 3 0 3 -1 2 -1 2 -2 2 -1 2 -3 3129 1487 40 MP stroke
+1 2 3 2 2 2 3 0 3 1 2 0 3 0 3 -1 
+2 -1 3 -2 1 -2 2 -2 1 -3 1 -2 1 -3 0 -3 
+-1 -3 -1 -2 -1 -3 -2 -2 -2 -2 -2 -1 -3 -2 -2 0 
+-3 -1 -3 1 -3 0 -2 1 -3 2 -2 1 -2 3 -1 2 
+-1 2 -1 3 0 6 1 2 1 3 2 2 3162 1366 39 MP stroke
+-2 -1 -3 0 -3 -1 -3 1 -2 0 -3 1 -2 2 -2 2 
+-2 2 -1 3 -1 2 -1 3 0 5 1 3 1 3 2 2 
+2 2 2 2 3 1 2 1 3 0 3 0 3 0 2 -1 
+3 -2 2 -1 2 -2 1 -3 2 -2 0 -3 1 -3 0 -3 
+-1 -2 -1 -3 -2 -2 -1 -2 -2 -2 -3 -2 3141 1392 39 MP stroke
+0 3 1 3 1 2 1 3 2 2 2 1 2 2 3 1 
+2 0 3 1 3 -1 2 0 3 -2 2 -1 2 -2 2 -2 
+1 -2 1 -3 1 -3 0 -2 -1 -3 -1 -3 -1 -2 -1 -2 
+-2 -2 -3 -2 -2 -1 -3 -1 -2 0 -3 0 -3 0 -2 1 
+-3 2 -2 1 -2 2 -1 3 -1 2 -1 3 0 2 3186 1084 40 MP stroke
+2 -1 3 0 2 -1 3 -2 2 -2 2 -2 1 -2 1 -3 
+0 -2 1 -3 -1 -3 0 -2 -2 -3 -1 -2 -2 -2 -2 -2 
+-3 -1 -2 -1 -3 0 -3 0 -2 0 -3 1 -2 1 -3 2 
+-1 2 -2 2 -1 3 -1 2 0 8 1 3 2 2 1 2 
+2 2 3 2 2 1 3 0 3 1 3169 1066 38 MP stroke
+-1 3 1 3 0 3 1 2 1 3 2 2 2 2 2 1 
+3 1 3 1 2 0 3 0 3 -1 2 -1 3 -1 2 -2 
+2 -2 1 -2 1 -3 1 -3 0 -2 -1 -3 0 -3 -1 -2 
+-2 -3 -2 -2 -2 -1 -2 -2 -3 -1 -3 0 -3 0 -2 0 
+-3 1 -2 1 -3 2 -1 2 -2 2 -1 3 -1 2 3278 1176 40 MP stroke
+0 -2 -2 -3 -1 -2 -2 -2 -2 -2 -3 -1 -2 -1 -3 0 
+-3 0 -3 0 -2 1 -3 2 -2 1 -2 2 -1 3 -1 2 
+-1 3 -1 3 1 2 0 3 1 3 2 2 1 2 2 2 
+3 1 2 1 3 1 3 0 3 0 2 -1 3 -1 2 -1 
+2 -2 2 -2 1 -3 1 -2 1 -3 0 -3 -1 -3 3245 1176 40 MP stroke
+3 -1 2 -2 2 -3 1 -2 1 -3 1 -3 0 -6 -1 -3 
+-2 -3 -1 -2 -2 -2 -3 -2 -2 -1 -3 -1 -3 -1 -3 0 
+-3 1 -3 1 -3 1 -2 2 -2 2 -2 3 -1 3 -1 2 
+0 6 1 3 1 3 1 3 2 2 2 2 3 2 3 1 
+3 0 3 1 3 -1 3 0 2 -2 3251 1464 38 MP stroke
+2 2 2 3 2 2 3 1 3 1 3 1 3 0 3 -1 
+3 -1 3 -1 3 -2 2 -2 2 -3 1 -2 1 -3 0 -10 
+-1 -3 -2 -2 -2 -3 -2 -2 -3 -2 -3 -1 -3 -1 -3 0 
+-3 0 -3 1 -3 1 -2 2 -3 2 -2 2 -2 3 -1 3 
+0 3 -1 3 1 3 1 3 1 3 3285 1060 38 MP stroke
+0 -9 -2 -3 -1 -3 -2 -2 -2 -2 -3 -2 -3 -1 -3 -1 
+-3 0 -3 0 -3 1 -3 1 -3 2 -2 2 -2 2 -2 3 
+-1 3 0 3 -1 3 1 3 1 3 1 3 2 3 2 2 
+3 2 2 1 3 1 3 1 4 0 3 -1 3 -1 2 -1 
+3 -2 2 -2 2 -3 1 -3 1 -3 3249 1066 38 MP stroke
+-2 3 -2 4 -1 4 -1 3 0 4 1 4 1 4 2 3 
+2 3 3 3 3 2 3 2 4 1 4 0 4 0 4 -1 
+3 -1 4 -2 3 -3 2 -2 2 -4 2 -3 1 -4 0 -8 
+-1 -3 -2 -4 -2 -3 -3 -3 -3 -3 -3 -1 -3 -2 -4 -1 
+-4 0 -4 1 -4 1 -3 1 -3 3 -3 2 1624 1376 39 MP stroke
+2 -3 2 -3 1 -4 0 -8 -1 -4 -2 -3 -2 -3 -3 -3 
+-3 -3 -3 -2 -4 -1 -3 -1 -4 0 -4 1 -4 1 -3 2 
+-3 2 -3 2 -2 4 -2 3 -1 4 -1 3 0 4 1 4 
+1 4 2 3 2 3 3 3 3 2 4 2 3 1 4 0 
+4 0 4 -1 3 -1 4 -2 3 -3 2 -3 1587 1346 39 MP stroke
+-3 -2 -3 -2 -3 -1 -4 0 -3 0 -4 0 -3 2 -3 2 
+-3 2 -3 3 -2 3 -1 3 -1 3 0 8 1 3 2 3 
+1 3 3 3 3 2 3 2 3 1 4 1 3 0 4 0 
+3 -1 3 -2 3 -2 3 -2 2 -3 2 -3 1 -4 0 -11 
+-1 -3 -2 -3 -2 -3 -3 -2 1802 1160 37 MP stroke
+-3 2 -3 2 -2 3 -2 3 -1 3 -1 3 0 7 1 3 
+2 3 1 3 3 3 3 2 3 2 3 1 3 0 4 0 
+3 0 3 -1 3 -2 3 -2 3 -2 2 -3 1 -3 1 -3 
+1 -4 0 -3 -1 -4 -1 -3 -2 -3 -2 -3 -3 -2 -2 -2 
+-4 -1 -3 -1 -3 0 -4 0 -3 1 -3 1 1831 1517 39 MP stroke
+0 1 -3 1 -3 2 -3 3 -2 3 -1 3 -1 4 2170 1597 8 MP stroke
+-1 3 0 4 1 3 1 3 2 4 2 2 3 3 3 2 
+3 1 4 1 3 0 4 0 3 -1 4 -1 3 -2 2 -3 
+3 -2 1 -3 2 -4 0 -3 1 -4 -1 -3 -1 -4 -1 -3 
+-2 -3 -3 -3 -3 -2 -3 -1 0 -1 2140 1614 30 MP stroke
+3 -2 2 -3 3 -2 1 -4 1 -3 1 -4 -1 -3 0 -4 
+-2 -3 -1 -3 -3 -3 -2 -2 -3 -2 -3 -1 -4 -1 -3 -1 
+-4 1 -3 1 -4 1 -3 2 -2 2 -3 3 -1 3 -2 3 
+0 4 -1 3 1 4 1 3 1 3 2 3 3 3 3 2 
+3 2 3 1 4 0 3 0 4 0 3 -1 3 -2 2254 1281 40 MP stroke
+-3 2 -2 2 -2 3 -2 4 -1 3 0 10 2 4 1 3 
+3 3 2 2 3 2 3 1 4 1 3 1 4 -1 3 0 
+4 -2 3 -2 2 -2 3 -3 2 -3 1 -3 1 -3 0 -4 
+-1 -3 0 -4 -2 -3 -2 -3 -2 -3 -3 -2 -3 -2 -4 -1 
+-3 0 -4 0 -3 0 -4 1 -3 2 2301 1199 38 MP stroke
+1 -3 1 -4 1 -3 0 -4 -1 -3 -1 -4 -2 -3 -2 -2 
+-3 -3 -3 -2 -3 -1 -3 -1 -4 0 -4 0 -3 1 -3 1 
+-3 2 -3 2 -2 3 -2 3 -1 3 -1 4 0 7 1 3 
+2 3 1 3 3 3 3 2 3 2 3 1 4 1 3 0 
+4 -1 3 -1 3 -2 3 -2 3 -2 2 -3 2270 1169 39 MP stroke
+-3 1 -3 2 -3 2 -2 2 -2 3 -1 4 -1 3 0 7 
+1 3 1 3 2 3 2 3 3 2 3 2 3 1 4 1 
+3 0 3 -1 4 -1 3 -1 3 -2 2 -2 2 -3 2 -3 
+1 -3 1 -4 0 -3 -1 -4 -1 -3 -2 -3 -2 -3 -2 -2 
+-3 -2 -3 -2 -3 -1 -4 0 -3 0 -4 1 2766 1201 39 MP stroke
+3 2 3 2 3 2 3 0 4 1 3 0 3 -1 4 -1 
+3 -2 2 -2 3 -3 1 -3 2 -3 0 -3 1 -4 -1 -3 
+-1 -4 -1 -3 -2 -3 -2 -2 -3 -2 -3 -2 -3 -1 -3 -1 
+-4 0 -3 0 -4 1 -3 2 -3 2 -2 2 -2 3 -2 3 
+-1 4 0 10 2 3 1 3 2 3 2776 1166 38 MP stroke
+-2 3 -2 3 -2 3 -1 3 -1 4 0 7 1 3 2 3 
+2 3 2 3 3 2 3 1 4 2 3 0 4 0 3 -1 
+4 -1 3 -1 3 -3 2 -2 2 -3 2 -3 1 -4 0 -7 
+-1 -3 -1 -4 -2 -3 -2 -2 -3 -3 -3 -2 -3 -1 -4 -1 
+-3 0 -4 0 -3 1 -4 1 -3 2 2896 1150 38 MP stroke
+-3 2 -1 3 -1 4 -1 3 0 7 1 3 2 3 2 3 
+2 2 3 2 3 2 3 1 4 0 3 0 4 0 3 -1 
+3 -2 2 -2 3 -3 2 -2 1 -4 1 -3 0 -7 -1 -3 
+-1 -3 -2 -3 -2 -3 -2 -2 -3 -2 -4 -1 -3 -1 -3 0 
+-4 0 -3 1 -3 2 -3 1 -2 3 2897 1576 38 MP stroke
+2 -3 2 -3 1 -3 1 -3 0 -7 -1 -3 -2 -3 -2 -3 
+-2 -2 -2 -2 -3 -2 -3 -1 -4 0 -3 0 -3 0 -3 1 
+-3 2 -3 2 -2 2 -2 3 -2 3 -1 3 0 6 1 4 
+1 3 1 3 2 2 3 2 3 2 3 1 3 1 3 1 
+3 -1 4 0 3 -2 2 -1 3 -2 2911 1163 38 MP stroke
+2 -2 2 -3 1 -4 0 -3 1 -4 -1 -3 -1 -3 -1 -4 
+-2 -2 -3 -3 -3 -2 -3 -2 -3 -1 -4 0 -3 0 -3 0 
+-4 2 -3 1 -3 2 -2 3 -2 3 -1 3 -1 3 -1 4 
+1 3 0 4 2 3 1 3 3 3 2 2 3 2 3 1 
+4 1 3 0 4 0 3 -1 3 -2 3 -1 3 -3 2948 1461 40 MP stroke
+1 -3 1 -3 -1 -4 -1 -3 -1 -4 -2 -2 -2 -3 -3 -2 
+-3 -2 -3 -1 -3 -1 -4 0 -3 0 -4 1 -3 2 -3 2 
+-2 2 -2 3 -2 3 -1 3 -1 4 0 3 1 4 1 3 
+2 3 2 3 2 2 3 2 3 2 4 1 3 0 3 0 
+4 -1 3 -1 3 -2 3 -2 2 -3 2 -2 1 -4 2944 1469 40 MP stroke
+0 12 2 4 1 4 3 3 3 3 3 2 3 2 4 1 
+4 0 4 0 4 -1 4 -1 3 -2 3 -2 3 -3 2 -4 
+2 -3 1 -4 0 -8 -1 -4 -1 -4 -3 -3 -2 -3 -3 -3 
+-4 -2 -3 -1 -4 -1 -4 0 -4 0 -4 1 -4 2 -3 2 
+-3 3 -2 3 -2 4 -2 3 3011 1549 37 MP stroke
+3 -3 2 -3 2 -3 2 -4 1 -3 0 -8 -1 -4 -2 -4 
+-2 -3 -2 -3 -3 -3 -4 -2 -4 -1 -3 -1 -4 0 -4 0 
+-4 1 -4 2 -3 2 -3 3 -2 3 -2 4 -2 4 0 11 
+2 4 2 4 2 3 3 3 3 2 4 2 3 1 4 0 
+4 0 4 -1 4 -1 4 -2 2972 1522 37 MP stroke
+-4 0 -3 1 -3 1 -3 2 -2 2 -3 3 -1 3 -1 3 
+-1 3 0 7 1 3 2 4 2 2 2 3 3 2 3 1 
+3 1 4 1 3 0 3 -1 4 -1 3 -2 2 -2 3 -2 
+2 -3 1 -3 1 -4 0 -6 -1 -4 -1 -3 -2 -3 -2 -2 
+-3 -2 -2 -2 -4 -1 -3 -1 -3 0 3045 1178 38 MP stroke
+2 -3 1 -4 1 -3 0 -7 -1 -3 -2 -3 -2 -3 -2 -2 
+-3 -2 -3 -2 -3 -1 -3 0 -4 0 -3 0 -3 1 -3 2 
+-3 2 -2 2 -2 3 -2 3 -1 3 0 7 1 4 1 3 
+2 3 2 2 2 3 3 1 3 2 4 0 3 1 3 -1 
+4 0 3 -2 3 -2 2 -2 2 -2 3028 1145 38 MP stroke
+3 1 4 0 3 -1 4 -1 3 -2 2 -2 3 -3 2 -3 
+1 -3 1 -3 1 -4 -1 -3 0 -4 -2 -3 -1 -3 -3 -3 
+-2 -2 -3 -2 -4 -1 -3 -1 -4 0 -3 0 -4 1 -3 1 
+-3 2 -3 3 -2 3 -1 3 -2 3 0 10 1 4 2 3 
+2 3 2 2 3 3 3 1 4 1 3070 1335 38 MP stroke
+-3 -1 -4 -1 -3 -1 -4 0 -3 1 -4 1 -3 1 -3 2 
+-2 3 -2 3 -2 3 -1 3 0 11 2 3 1 3 3 3 
+2 3 3 2 4 1 3 1 4 0 3 0 4 -1 3 -1 
+3 -2 3 -2 2 -3 2 -3 1 -4 1 -3 0 -4 -1 -3 
+-1 -4 -1 -3 -2 -3 -2 -2 -3 -3 3112 1327 38 MP stroke
+-3 1 -2 2 -3 3 -2 2 -1 3 -1 4 -1 3 0 4 
+1 3 1 3 2 3 2 3 3 2 2 2 3 1 4 1 
+3 1 4 -1 3 0 3 -2 3 -2 3 -2 2 -2 2 -3 
+1 -4 1 -3 0 -3 -1 -4 -1 -3 -1 -3 -2 -3 -2 -2 
+-3 -3 -3 -1 -3 -1 -3 -1 -4 0 -3 1 -4 1 3198 1289 40 MP stroke
+-3 3 -2 2 -1 3 -1 4 -1 3 0 3 1 4 1 3 
+2 3 2 2 2 3 3 1 3 2 3 1 4 0 3 0 
+3 -1 3 -1 3 -2 3 -2 2 -2 2 -3 1 -3 1 -4 
+0 -6 -1 -4 -2 -3 -1 -2 -3 -3 -2 -2 -3 -2 -3 -1 
+-4 0 -3 -1 -3 1 -4 1 -3 1 -2 2 3208 1361 39 MP stroke
+-3 -3 -3 -3 -3 -2 -4 -1 -4 -1 -4 0 -4 1 -3 1 
+-4 1 -3 3 -3 2 -2 4 -2 3 -1 4 -1 4 0 4 
+1 3 1 4 2 4 2 3 3 2 3 3 4 1 4 1 
+4 1 4 -1 3 0 4 -2 3 -2 4 -2 2 -3 2 -3 
+2 -4 1 -4 0 -8 -1 -4 -2 -3 -2 -3 3243 1305 39 MP stroke
+-1 -3 -2 -3 -3 -2 -3 -2 -3 -2 -4 -1 -3 0 -4 0 
+-3 1 -4 1 -3 2 -3 2 -2 3 -2 3 -1 4 -1 3 
+0 7 1 4 1 3 2 3 3 3 2 2 4 2 3 1 
+4 1 3 0 4 -1 3 -1 3 -1 3 -2 3 -3 2 -3 
+2 -3 1 -3 0 -11 -2 -4 3232 1385 37 MP stroke
+4 2 5 1 5 0 6 0 4 -2 5 -2 4 -3 4 -3 
+3 -4 2 -5 2 -5 1 -5 0 -5 -1 -5 -2 -5 -2 -4 
+-3 -4 -4 -4 -4 -3 -4 -2 -5 -1 -5 -1 -5 0 -5 1 
+-5 2 -4 3 -4 3 -4 4 -2 4 -2 5 -2 4 0 11 
+1 4 2 5 3 4 3 4 4 3 5 3 1623 1176 39 MP stroke
+-5 -1 -5 0 -5 1 -4 2 -5 3 -4 3 -3 4 -3 4 
+-2 5 -1 5 0 10 2 5 2 4 2 5 4 4 4 3 
+4 2 5 2 5 1 5 0 5 -1 5 -1 4 -2 4 -3 
+4 -4 3 -4 2 -4 2 -5 1 -5 0 -5 -1 -5 -2 -5 
+-2 -4 -3 -4 -4 -4 -4 -3 -5 -2 -5 -1 1604 1235 39 MP stroke
+-3 3 -3 3 -3 4 -2 4 -1 5 0 9 2 5 1 4 
+3 4 3 4 4 3 4 2 4 2 5 1 4 0 5 -1 
+5 -1 4 -2 4 -3 3 -3 3 -4 2 -4 2 -4 0 -10 
+-1 -4 -1 -5 -2 -4 -3 -4 -3 -3 -4 -3 -5 -2 -4 -1 
+-5 -1 -4 1 -5 1 -4 1 -5 3 2443 1379 38 MP stroke
+-4 3 -3 3 -3 4 -2 4 -2 4 -1 5 0 5 1 4 
+1 5 3 4 2 4 4 3 3 3 5 2 4 1 5 1 
+4 -1 5 0 4 -2 4 -2 4 -3 3 -4 3 -4 2 -4 
+1 -4 0 -10 -1 -4 -2 -5 -2 -4 -3 -3 -4 -3 -4 -3 
+-4 -1 -5 -1 -5 0 -4 0 -5 1 -4 2 2483 1458 39 MP stroke
+4 4 3 2 4 2 5 1 4 1 5 0 4 -1 4 -1 
+4 -3 4 -2 3 -4 2 -3 2 -5 1 -4 1 -4 0 -5 
+-1 -4 -2 -5 -3 -3 -2 -4 -4 -3 -4 -2 -4 -2 -4 -1 
+-5 0 -4 0 -5 2 -4 2 -4 2 -3 3 -3 4 -2 4 
+-1 4 -1 4 0 9 2 5 2 4 2 3 2742 1232 39 MP stroke
+-5 2 -4 3 -3 3 -3 4 -3 4 -1 4 -1 5 0 10 
+2 4 2 5 2 4 4 3 4 3 4 2 5 2 4 1 
+5 0 5 -1 5 -2 4 -2 4 -3 3 -3 3 -4 2 -5 
+1 -5 1 -4 0 -5 -1 -5 -2 -4 -3 -5 -3 -3 -3 -4 
+-4 -2 -5 -2 -5 -1 -5 -1 -4 1 -5 1 2935 1392 39 MP stroke
+5 -1 4 -3 4 -2 4 -4 2 -4 3 -4 1 -5 1 -5 
+0 -4 -1 -5 -2 -5 -2 -4 -3 -4 -4 -3 -4 -3 -4 -2 
+-5 -1 -5 -1 -5 1 -4 1 -5 2 -4 2 -4 3 -3 4 
+-2 4 -2 5 -1 4 0 10 1 5 2 4 3 4 3 4 
+4 3 4 2 5 2 5 1 5 0 4 -1 2919 1334 39 MP stroke
+-5 3 -5 3 -4 4 -3 4 -3 5 -1 5 -1 6 0 5 
+1 6 2 5 2 5 4 4 4 4 4 3 5 3 6 1 
+5 1 6 -1 5 -1 5 -2 5 -3 5 -3 3 -4 3 -5 
+2 -5 1 -6 1 -5 -1 -6 -1 -5 -2 -5 -3 -5 -4 -4 
+-4 -3 -5 -3 -5 -2 -6 -1 -5 0 -6 0 -5 2 3003 1273 40 MP stroke
+4 -5 2 -5 2 -5 1 -5 0 -6 -1 -5 -2 -6 -3 -5 
+-3 -4 -4 -4 -5 -3 -5 -2 -5 -2 -6 0 -5 0 -6 1 
+-5 2 -5 3 -4 4 -3 4 -3 5 -3 5 -1 5 0 11 
+2 6 2 5 3 4 4 4 4 4 5 3 5 2 6 1 
+5 0 6 -1 5 -2 5 -2 4 -3 4 -4 2965 1218 39 MP stroke
+-5 2 -4 3 -4 3 -4 5 -2 4 -2 6 -2 5 0 5 
+1 6 1 5 3 5 3 5 4 4 4 3 5 2 5 2 
+6 1 5 0 5 -1 6 -2 5 -2 4 -4 4 -4 3 -4 
+2 -5 2 -5 0 -11 -1 -6 -2 -5 -3 -4 -3 -5 -4 -3 
+-5 -3 -5 -2 -5 -2 -6 0 -5 0 -6 2 3083 1477 39 MP stroke
+5 2 6 0 5 0 5 -2 5 -2 5 -3 4 -4 3 -4 
+3 -5 2 -5 1 -5 0 -11 -2 -5 -2 -5 -4 -5 -3 -4 
+-5 -3 -5 -2 -5 -2 -5 -1 -6 0 -5 1 -5 2 -5 2 
+-4 4 -4 4 -3 4 -3 5 -1 5 -1 6 1 5 1 6 
+2 5 2 5 4 4 4 3 5 3 5 2 3082 1413 39 MP stroke
+10 -12 2800 1256 2 MP stroke
+19 -4 2021 1225 2 MP stroke
+-20 0 2021 1225 2 MP stroke
+-8 -16 2212 1085 2 MP stroke
+9 16 2238 1495 2 MP stroke
+15 -11 2238 1495 2 MP stroke
+-2 -18 2355 1307 2 MP stroke
+0 17 2355 1307 2 MP stroke
+6 -19 2463 1293 2 MP stroke
+7 19 2469 1195 2 MP stroke
+-12 15 2536 1292 2 MP stroke
+-17 -2 2566 1507 2 MP stroke
+-8 16 2566 1507 2 MP stroke
+16 8 2640 1225 2 MP stroke
+3 -18 2640 1225 2 MP stroke
+-12 -13 2640 1225 2 MP stroke
+7 19 2723 1331 2 MP stroke
+20 -5 2723 1331 2 MP stroke
+-17 -11 2723 1331 2 MP stroke
+-1 -17 2757 1492 2 MP stroke
+-15 7 2757 1492 2 MP stroke
+2 17 2817 1160 2 MP stroke
+-14 -14 2837 1215 2 MP stroke
+10 -14 2845 1394 2 MP stroke
+0 -18 2867 1290 2 MP stroke
+17 10 3063 1534 2 MP stroke
+12 13 3143 1496 2 MP stroke
+-14 -9 3143 1496 2 MP stroke
+13 -10 3149 1376 2 MP stroke
+-8 16 3149 1376 2 MP stroke
+17 1 3169 1083 2 MP stroke
+0 -17 3169 1083 2 MP stroke
+17 4 3261 1172 2 MP stroke
+-16 4 3261 1172 2 MP stroke
+-9 -16 3260 1480 2 MP stroke
+17 -10 3268 1070 2 MP stroke
+-19 -4 3268 1070 2 MP stroke
+18 16 1606 1360 2 MP stroke
+-19 -14 1606 1360 2 MP stroke
+-14 17 1816 1143 2 MP stroke
+9 19 1822 1498 2 MP stroke
+21 4 2149 1593 2 MP stroke
+-12 -19 2266 1300 2 MP stroke
+12 19 2289 1180 2 MP stroke
+-19 -11 2289 1180 2 MP stroke
+6 20 2760 1181 2 MP stroke
+16 -15 2760 1181 2 MP stroke
+14 18 2882 1132 2 MP stroke
+15 14 2882 1562 2 MP stroke
+-15 -15 2926 1178 2 MP stroke
+-16 -15 2964 1476 2 MP stroke
+-20 -7 2964 1476 2 MP stroke
+24 7 2987 1542 2 MP stroke
+-15 -20 2987 1542 2 MP stroke
+0 21 3045 1157 2 MP stroke
+-17 -12 3045 1157 2 MP stroke
+5 -21 3065 1356 2 MP stroke
+-12 19 3124 1308 2 MP stroke
+9 19 3189 1270 2 MP stroke
+13 16 3195 1345 2 MP stroke
+-19 14 3262 1291 2 MP stroke
+-20 9 3252 1376 2 MP stroke
+13 -28 1610 1204 2 MP stroke
+-6 31 1610 1204 2 MP stroke
+17 24 2426 1355 2 MP stroke
+14 26 2469 1432 2 MP stroke
+22 -18 2720 1250 2 MP stroke
+10 29 2925 1363 2 MP stroke
+-6 -29 2925 1363 2 MP stroke
+12 32 2991 1241 2 MP stroke
+-26 -23 2991 1241 2 MP stroke
+11 32 3072 1445 2 MP stroke
+10 -32 3072 1445 2 MP stroke
+6 w
+gr
+
+c8
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF
