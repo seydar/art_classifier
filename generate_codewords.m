@@ -7,7 +7,7 @@ end
 	artist_word(db, 'pollock',K,n);
 	artist_word(db, 'Rembrandt',K,n);
 	artist_word(db, 'monet',K,n);
-%	matlabpool close;
+    artist_word(db, 'picasso',K,n);
 
 end
 

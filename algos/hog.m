@@ -28,10 +28,8 @@ function H = hog(pixels)
   for n = 0:(nwin_y - 1)
     for m = 0:(nwin_x - 1)
       cont    = cont + 1;
-      angles2 = angles((n * step_y + 1):((n + 2) * step_y),
-                       (m * step_x + 1):((m + 2) * step_x));
-      mag2    =    mag((n * step_y + 1):((n + 2) * step_y),
-                       (m * step_x + 1):((m + 2) * step_x));
+      angles2 = angles((n * step_y + 1):((n + 2) * step_y), (m * step_x + 1):((m + 2) * step_x));
+      mag2    =    mag((n * step_y + 1):((n + 2) * step_y), (m * step_x + 1):((m + 2) * step_x));
 
       v_angles = angles2(:);
       v_mag    = mag2(:);
@@ -39,7 +37,7 @@ function H = hog(pixels)
       K   = max(size(v_angles));
       bin = 0;
       H2  = zeros(nbins, 1);
-      for ang_lim = (-pi + 2 * pi / B):(2 * pi / B):pi
+      for ang_lim = (-pi + 2 * pi / bin):(2 * pi / bin):pi
         bin = bin + 1;
         for k = 1:K
           if v_angles(k) < ang_lim
