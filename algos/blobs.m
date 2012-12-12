@@ -27,7 +27,7 @@ function [variance, avg, num] = blobs(im, thresh)
 
   variance = var(r);
   avg      = mean(r);
-  num      = size(r, 2);
+  num      = size(r, 1);
 
 end
 
