@@ -3,8 +3,8 @@ t a o Paper writeup
       -> statistical guessing
       -> literature review
   a o Blob detection speedup
-t a o Feature combination (council style)
-t a o Make HoG correct
+t d o Feature combination (council style)
+t a x Make HoG correct
   d o Blobs at different thresholds
 t m o SIFT Histograms
       -> fix saving

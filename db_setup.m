@@ -35,6 +35,7 @@ function db = db_setup(path)
     end
 
     image = struct();
+    image.name = name;
     image.image = img;
     image.features = features;
     image.add_feature = @add_feature;
