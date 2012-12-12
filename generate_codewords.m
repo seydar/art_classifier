@@ -26,8 +26,7 @@ list = dir(path);
   end
 
   size(new,2);
-  
-  tic
+
 
   feat = [];
   
@@ -41,7 +40,5 @@ list = dir(path);
 
 	[words, ~] = vl_ikmeans(feat, K);
 	save_path = ['./features/' art_name '.words.level.' num2str(level) '.mat'];
-	save(save_path, 'words');
-	
-	toc
+
 end
