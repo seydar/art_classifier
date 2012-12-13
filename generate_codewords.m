@@ -31,7 +31,6 @@ list = dir(path);
   feat = [];
   
 	parfor i = 1:size(new, 2)
-	%	disp(['Sift features from #: ' num2str(i)]);
 	    image = db.get_image(new{i});
 		I = single(rgb2gray(image.image));
 		[~, d] = vl_sift(I, 'levels',level);
@@ -40,5 +39,5 @@ list = dir(path);
 
 	[words, ~] = vl_ikmeans(feat, K);
 	save_path = ['./features/' art_name '.words.level.' num2str(level) '.mat'];
-
+    save(save_path, 'words');
 end

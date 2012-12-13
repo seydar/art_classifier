@@ -23,13 +23,14 @@ function [  ] = gen_sift_hist( artist_1, artist_2, K, levels )
     new{i} = list(i).name;
   end
 
-  size(new,2)
+feature_name = ['sift_hist' artist_1 artist_2 'level' num2str(levels)];
+  
   tic
 
   parfor i = 1:size(new, 2)
 	%disp(['Image #: ' num2str(i)]);
     image = db.get_image(new{i});
-	image.add_feature(['sift_hist.' artist_1 '.' artist_2 '.level.' num2str(levels)], sift_hist(artist_tree, code_book, K, image.image, levels));
+	image.add_feature(feature_name, sift_hist(artist_tree, code_book, K, image.image, levels));
     image.save_me();
   end
   toc;
