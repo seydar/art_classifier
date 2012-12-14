@@ -1,6 +1,6 @@
 function [hist_] = sift_hist(art_tree, code_book, K, image, levels)
 
-	[~, d] = vl_sift(single(rgb2gray(image)), 'levels',levels);
+	[~, d] = vl_sift(single(rgb2gray(image)),'levels',levels);
 	
 	image_clusters = [];
 	for j = 1:size(d,2)
