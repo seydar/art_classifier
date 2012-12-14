@@ -1,14 +1,20 @@
-t a o Paper writeup
+  a o Paper writeup
       -> false positives/false negatives
       -> statistical guessing
       -> literature review
   a o Blob detection speedup
-t d o Feature combination (council style)
-t a x Make HoG correct
+  d x Feature combination (council style)
+  a x Make HoG correct
   d o Blobs at different thresholds
-t m o SIFT Histograms
+  m o SIFT Histograms
       -> fix saving
       -> do at different sizes
-t d o Rerun data
+  d o Rerun data
   d o Graphical representation of data
+
+            hog    edge   lbp   corners   colorhist   sift
+picasso                                                 x
+monet                                                   x
+rembrandt                                               x
+pollock                                                 x
 
