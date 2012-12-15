@@ -13,8 +13,8 @@
   d o Graphical representation of data
 
             hog    edge   lbp   corners   colorhist   sift
-picasso                                                 x
-monet                                                   x
-rembrandt                                               x
-pollock                                                 x
+picasso              x     x        x          x           x
+monet                x     x        x          x           x
+rembrandt            x     x        x          x           x
+pollock              x     x        x          x           x
 
