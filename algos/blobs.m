@@ -11,9 +11,9 @@ function [variance, avg, num] = blobs(im, thresh)
     scale_space(:, :, sigma) = IL .^ 2;
   end
 
-  tic
+  tic;
   ss = nms(scale_space, 1);
-  toc
+  toc;
 
   r = [];
   s = size(ss);

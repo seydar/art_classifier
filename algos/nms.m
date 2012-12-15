@@ -18,5 +18,7 @@ function ss = nms(scale_space, sz)
       end
     end
   end
+
+  %ss = ordfilt3D(scale_space, 27);
 end
 
