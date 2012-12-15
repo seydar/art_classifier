@@ -1,4 +1,4 @@
-function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, n, T)
+function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f_test, f_train, s_test, s_train, T)
 
     % here, w is a vector of length L. ||w|| = 1
     % length(feat_names) = L, too
@@ -15,21 +15,26 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, n
     first_feats = {};
     second_feats = {};
     
-    for i = 1:n % for all of the training images
-        disp(i)
+    for i = f_train(1:end) % for all of the training images
         im1 = db.get_image(firsts(i).name); % get the ith image
-        im2 = db.get_image(seconds(i).name);
         im1_feats = {};
-        im2_feats = {};
         for j = 1:length(w)
             im1_feats = [im1_feats im1.features.(feat_names{j})]; % make a ROW of the features for each
-            im2_feats = [im2_feats im2.features.(feat_names{j})];
         end
         first_feats = [first_feats; im1_feats];
+    end
+    
+    for i = s_train(1:end) % for all of the training images
+        im2 = db.get_image(seconds(i).name);
+        im2_feats = {};
+        for j = 1:length(w)
+            im2_feats = [im2_feats im2.features.(feat_names{j})];
+        end
         second_feats = [second_feats; im2_feats];
     end
     
-    key = [repmat(0,n,1); repmat(1,n,1)];
+    
+    key = [repmat(0,length(f_train),1); repmat(1,length(s_train),1)];
     
     svms = {};
     
@@ -48,7 +53,7 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, n
     artist1_rate = [];
     artist2_rate = [];
     
-    for i=(n+1):length(firsts)
+    for i=f_test(1:end)
         im = db.get_image(firsts(i).name);
         wsum = 0;
         for j=1:length(w)
@@ -66,7 +71,7 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, n
         end
     end
     
-    for i=(n+1):length(seconds)
+    for i=s_test(1:end)
         im = db.get_image(seconds(i).name);
         wsum = 0;
         for j=1:length(w)
