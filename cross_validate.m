@@ -14,11 +14,11 @@ function [ tfr tsr ] = cross_validate( artist_1, artist_2, w, T )
     total_first_rate = zeros(10,1);
     total_second_rate = zeros(10,1);
     
-    parfor i=0:9
+    parfor i=1:10
        
        disp(['testing i = ' num2str(i)])
-       f_test = all_f_indices(mod(all_f_indices, 10) == i);
-       f_train = all_f_indices(mod(all_f_indices, 10) ~= i);
+       f_test = all_f_indices(mod(all_f_indices, 10) == (i-1));
+       f_train = all_f_indices(mod(all_f_indices, 10) ~= (i-1));
        
        s_test = all_s_indices(mod(all_s_indices, 10) == i);
        s_train = all_s_indices(mod(all_s_indices, 10) ~= i);
@@ -28,8 +28,8 @@ function [ tfr tsr ] = cross_validate( artist_1, artist_2, w, T )
        % total_first_rate = total_first_rate + (art_1_rate*(size(f_test)/f_size));
        % total_second_rate = total_second_rate + (art_2_rate*(size(s_test)/s_size));
       
-       total_first_rate(i) = art_1_rate*(size(f_test)/f_size);
-       total_second_rate(i) = art_2_rate*(size(s_test)/s_size);
+       total_first_rate(i) = sum(art_1_rate)*(size(f_test)/f_size);
+       total_second_rate(i) = sum(art_2_rate)*(size(s_test)/s_size);
        
     end
 
