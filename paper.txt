@@ -1,0 +1,26 @@
+o Introduction
+  o What's the problem?
+  o Why is it important?
+  o How are we going about it?
+o Previous Work (Stanford)
+  o How is ours different from theirs?
+  o How is ours better?
+    -> spoiler: it's not
+o Technical Solution
+  -> use pictures for each one to describe WTF they are
+  o Summary
+  o Weighted Combination
+  o HoG
+  o Edge Detection
+  o LBP
+  o Corner Detection
+  o Color Histogram
+  o SIFT
+o Experiments
+  o All pairs of artists graphs
+  o Efficacy of algorithms at identifying artists
+o Conclusions
+  o What do the features say about what parts of an artist's
+    work is most easily recognizable?
+o References
+
