@@ -1,5 +1,5 @@
 function [F] = fsa(im)
   f = rgb2gray(im);
-  F = ff2(f);
+  F = fft2(f);
 end
 
