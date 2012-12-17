@@ -54,5 +54,8 @@ function H = hog(pixels)
       H(((cont - 1) * nbins + 1):(cont * nbins), 1) = H2;
     end
   end
+  
+  H = H'; 
+  
 end
 
