@@ -41,31 +41,32 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f
     for i = 1:length(w)
             ff = [];
             sf = [];
-        for j = 1:n           
+        for j = 1:length(f_train)           
             ff = [ff; first_feats{j,i}];
+		end
+		 for j = 1:length(s_train)
             sf = [sf; second_feats{j,i}];            
-        end
-        size(ff)
-        size(sf)
+         end
         svms = [svms svmtrain([ff; sf], key)];
-    end
-    
+	end
+
+	
     artist1_rate = [];
     artist2_rate = [];
     
     for i=f_test(1:end)
         im = db.get_image(firsts(i).name);
         wsum = 0;
-        for j=1:length(w)
-            if (svmclassify(svms{j}, im.features.(feat_names{j})) == 0)
+		for j=1:length(w)
+			if (svmclassify(svms{j}, im.features.(feat_names{j})) == 0)
                 wsum = wsum + w(j);
-            end
-        end
-        disp([wsum]);
+			end
+		end
+       % disp(wsum);
         if wsum >= T
             artist1_rate = [artist1_rate 1];
-        elseif wsum < 1-T
-            artist1_rate = [artist1_rate -1];
+ %       elseif wsum < (1-T)
+ %           artist1_rate = [artist1_rate -1];
         else
             artist1_rate = [artist1_rate 0];
         end
@@ -81,15 +82,20 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f
         end
         if wsum >= T
             artist2_rate = [artist2_rate 1];
-        elseif wsum < 1-T
-            artist2_rate = [artist2_rate -1];
+   %     elseif wsum < 1-T
+    %        artist2_rate = [artist2_rate -1];
         else
             artist2_rate = [artist2_rate 0];
         end
     end
     
-    disp([artist_1 ' identification rate: ' num2str(sum(artist1_rate==1)/length(artist1_rate))]);
-    disp([artist_2 ' identification rate: ' num2str(sum(artist2_rate==1)/length(artist2_rate))]);
+ %   disp([artist_1 ' identification rate: ' num2str(sum(artist1_rate==1)/length(artist1_rate))]);
+ %   disp([artist_2 ' identification rate: ' num2str(sum(artist2_rate==1)/length(artist2_rate))]);
     
+ artist1_rate = sum(artist1_rate)/size(f_test,2);
+ artist2_rate = sum(artist2_rate)/size(s_test,2);
+ 
+ 
+ 
 end
 
