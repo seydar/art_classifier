@@ -28,5 +28,21 @@ o References
 == Problem
 The problem with being STEM students is that we have an incredibly poor ability
 to recognize artists from paintings. However, as with most problems in the
-modern age, 
+modern age, they are easily solved with computers and math. Our specific problem
+is: given a painting and two possible artists, which artist made the painting?
+The problem itself is interesting although not important. It approaches the
+field of forgery detection, as our project is forgery detection at its most
+basic level: artist classification.
+
+We are going about this project by using a machine learning algorithm (Support
+Vector Machine, SVM) to make an educated estimate on who the artist is. With
+zero training, the computer would make simply a random guess. To turn this guess
+into an educated estimate, we train it on data from six different features of
+each painting, telling the computer to which artist the features belong to.
+SVM can only make a decision based on one feature, so we run the SVM once for
+each feature and then we combine the outcomes of each feature using a weighted
+voting algorithm, where each feature's result gets a certain number of votes,
+and the winner is then declared by the program with a "sureness" factor.
+
+= Previous Work
 
