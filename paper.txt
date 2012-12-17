@@ -24,3 +24,9 @@ o Conclusions
     work is most easily recognizable?
 o References
 
+= Introduction
+== Problem
+The problem with being STEM students is that we have an incredibly poor ability
+to recognize artists from paintings. However, as with most problems in the
+modern age, 
+
