@@ -2,8 +2,6 @@ function [ tfr tsr ] = sift_test( artist_1, artist_2, level)
     % 10-fold cross validation
 	
 	db = db_setup('.');
-	
-
     firsts = dir(['./images/' artist_1 '*']);
     seconds = dir(['./images/' artist_2 '*']);
     
