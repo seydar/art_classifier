@@ -3,7 +3,7 @@
 \usepackage{wrapfig}
 \newcommand{\degree}{\ensuremath{^\circ}}
 %\linespread{1.6}
-\title{Summer 2012 in Finland}
+\title{Artist Classification with Stylometry and Support Vector Machines}
 \author{Ari Brown}
 \date{\today}
 \begin{document}
@@ -41,14 +41,12 @@
   fewer features to base our artist-selection decisions on, and we have
   different weights for our final decider. Trivially, we also used different
   data, overlapping with only two of the artists. \\
-  
-  Our implementation is better than the reference implementation because we also
-  use Fourier Spectral Analysis which is one of the most basic ways to extract a
-  feature from an image. We also read a paper by Hughes et al. on stylometrics,
-  and another by Hughes et al. on empirical mode decomposition, which inspired
-  our use of Fourier spectral analysis. A more quantitative reason why our
-  implementation is better than the reference implementation is that we achieved
-  better success rates with our system.
+
+  Our implementation is better than the reference implementation because we
+  make use of a weighted council-like approach to produce a single answer
+  based on all of our styolmetrics. We also use cross validation to get better
+  training and more generalized results. Cross validation allows us to reuse
+  data to achieve better results by doing more training.
 
   \section{Technical Solution}
   \subsection{Summary}
@@ -108,26 +106,55 @@
 
   \subsection{SIFT}
 
+  \subsection{Blob Detection}
+  Blob detection is a technique in which we calculate the centers of points of
+  interest that have large intensity changes. The radius of a blob measures
+  how far that intensity goes before changing drastically. This means it would
+  be a great stylometric for measuring the presence of overall features that
+  would mark a painting as visually distracting, such as still lives and Van
+  Gogh's famous sunflower painting. \\
+
+  We were, regrettably, unable to include blob detection in our project
+  because we could not produce a fast enough implementation to run on over 400
+  images. Our issue lies in the non-maximum suppresion algorithm we have.
+
+  \subsection{Fourier Spectral Analysis}
+  Fourier Spectral Analysis is a common technique that was suggested to us by
+  Dr. Dan Rockmore as a replacement for blob detection. Fourier spectral
+  analysis returns Fourier coefficients for the image, where low frequency
+  values represent background and high frequency values represent foreground
+  and texture. The resulting matrix is in the shape of the original image
+  (with the pixels having a change of basis performed on them, so the values
+  do not match up at all), which means it is impossible to train the SVM
+  algorithm on the raw FSA data. As an attempt to solve this, we tried taking
+  the covariance of the data, which also unfortunately returned a matrix that
+  was ultimately based on the size of the original image. \\
+
+  We decided not to include Fourier spectral analysis in our final form
+  because we could not figure out a way to faithfully represent the Fourier
+  coefficients, and the overall results were not good enough to be included;
+  they were little more than random guesses.
+
   \section{Experiments}
 
   \section{Conclusions}
 
+  \begin{thebibliography}
+    Blessing, A. and Wen, K.,
+    2010,
+    \emph{Using Machine Learning for Identification of Art Paintings}.
+  
+    Hughes, J. M., Mao, D., Rockmore, D. M., Wang, Y., Wu, Qiang.,
+    NOVEMBER 2012,
+    \emph{Empirical Mode Decomposition Analysis for Visual Stylometry}.
+    IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE,
+    VOL. 34,
+    NO. 11.
+  
+    Hughes, J. M., Graham, D. J., Rockmore, D. M.,
+    \emph{Stylometrics of artwork: uses and limitations}.
+  
+  \end{thebibliography}
+
 \end{document}
-
-\begin{thebibliography}
-  Blessing, A. and Wen, K.,
-  2010,
-  \emph{Using Machine Learning for Identification of Art Paintings}.
-
-  Hughes, J. M., Mao, D., Rockmore, D. M., Wang, Y., Wu, Qiang.,
-  NOVEMBER 2012,
-  \emph{Empirical Mode Decomposition Analysis for Visual Stylometry}.
-  IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE,
-  VOL. 34,
-  NO. 11.
-
-  Hughes, J. M., Graham, D. J., Rockmore, D. M.,
-  \emph{Stylometrics of artwork: uses and limitations}.
-
-\end{thebibliography}
 

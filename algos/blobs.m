@@ -1,4 +1,4 @@
-function [variance, avg, num] = blobs(im, thresh)
+function ret = blobs(im, thresh)
   I = rgb2gray(im);
   levels = 20;
 
@@ -27,9 +27,12 @@ function [variance, avg, num] = blobs(im, thresh)
     end
   end
 
-  variance = var(r);
-  avg      = mean(r);
-  num      = size(r, 1);
+  % variance = var(r);
+  % avg      = mean(r);
+  % num      = size(r, 1);
+  % ret = [variance, avg, num];
+  new_r = r ./ max(r);           
+  ret = hist(new_r, 0:0.1:1);  
 
 end
 

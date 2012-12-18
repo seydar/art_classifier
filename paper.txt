@@ -61,13 +61,11 @@ fewer features to base our artist-selection decisions on, and we have
 different weights for our final decider. Trivially, we also used different
 data, overlapping with only two of the artists.
 
-Our implementation is better than the reference implementation because we also
-use Fourier Spectral Analysis which is one of the most basic ways to extract a
-feature from an image. We also read a paper by Hughes et al. on stylometrics,
-and another by Hughes et al. on empirical mode decomposition, which inspired
-our use of Fourier spectral analysis. A more quantitative reason why our
-implementation is better than the reference implementation is that we achieved
-better success rates with our system.
+Our implementation is better than the reference implementation because we
+make use of a weighted council-like approach to produce a single answer
+based on all of our styolmetrics. We also use cross validation to get better
+training and more generalized results. Cross validation allows us to reuse
+data to achieve better results by doing more training.
 
 = Technical Solution
 == Summary
