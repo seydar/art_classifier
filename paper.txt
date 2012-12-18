@@ -24,6 +24,10 @@ o Conclusions
     work is most easily recognizable?
 o References
 
+Things to work on:
+  o Edge Detection
+  o SIFT
+
 = Introduction
 == Problem
 The problem with being STEM students is that we have an incredibly poor ability
@@ -42,7 +46,91 @@ each painting, telling the computer to which artist the features belong to.
 SVM can only make a decision based on one feature, so we run the SVM once for
 each feature and then we combine the outcomes of each feature using a weighted
 voting algorithm, where each feature's result gets a certain number of votes,
-and the winner is then declared by the program with a "sureness" factor.
+and the winner is then declared by the program with a ``sureness'' factor.
 
 = Previous Work
+There was a similar project done by undergraduate students at Stanford
+University in a machine learning class that focused on the machine learning
+aspect. Blessing and Wen used twelve different features to classify their
+data, with overlap on five of them with ours. Coincidentally, they chose to
+use the same machine learning algorithms as we did, which were a Bayesian
+Analyzer and Support Vector Machines.
+
+Our implementation differs from the reference implementation because we use
+fewer features to base our artist-selection decisions on, and we have
+different weights for our final decider. Trivially, we also used different
+data, overlapping with only two of the artists.
+
+Our implementation is better than the reference implementation because we also
+use Fourier Spectral Analysis which is one of the most basic ways to extract a
+feature from an image. We also read a paper by Hughes et al. on stylometrics,
+and another by Hughes et al. on empirical mode decomposition, which inspired
+our use of Fourier spectral analysis. A more quantitative reason why our
+implementation is better than the reference implementation is that we achieved
+better success rates with our system.
+
+= Technical Solution
+== Summary
+In its simplest form, our program takes two artists, trains the machine on
+40\% of the data, and then uses the remaining 60\% to test the results while
+recording the accuracy for estimating each artist. This gives us a measure on
+both false positives and false negatives, both of which are important.
+
+== Weighted Combination
+On a more technical level, the program also takes information on the weights
+of each feature and the threshold for ``sureness'', in which if the resulting
+sureness fails to meet the sureness, the program will produce a symbol which
+equates to not knowing. As each individiual styolmetric feature gives its
+opinion on which artist produced the painting, the program weights the result
+as -1 or 1, depending on the determined artist. When all the stylometries have
+produced a result, the values are then weighted respectively according to the
+inputted weight matrix. The weighted values are then summed, and the final
+output is compared with the ``sureness'' threshold, and a final decision on
+the artist is produced. This process is completed for each painting. To speed
+this process, the stylometric data, an invariant, is produced ahead of time
+and stored in a handwritten file-system database.
+
+== Histogram of Oriented Gradients
+The histogram of oriented gradients stylometric, or HoG, is based on the
+direction of intensity changes in cells across an image. The idea behind it is
+that changes in intensity mark feature changes, and so a histogram for a small
+cell is produced based on each pixel. The histograms of each cell are then
+compiled into one, which is the final stylometric result. Which used a
+handwritten implementation that was heavily influenced from a different
+source.
+
+== Edge Detection
+
+== Local Binary Patterns
+Local Binary Patterns are patterns that appear in numbers when checking the
+intensity of individual pixels. It is commonly used in texture identification,
+so the logic behind using it is that it would identify pixelated artwork such
+as that which Seurat is famous for (although Seurat's paintings were not used
+in this project). We used a handwritten implementation.
+
+== Corner Detection
+Corner detection simply detects corner in the image. We used a handwritten
+implementation the detects the corners for a given threshold. The logic behind
+using this stylometric is that we will be able to tell if an artist prefers to
+use sharp contrast in two directions in their work. It is an extension of Edge
+Detection, in that regard.
+
+== Color Histogram
+We did not expect much from this stylometric, but wanted to include it because
+it could shed light on an artist's overall color intensity. It was calculated
+by averaging the red, green, and blue values, respectively, for all pixels.
+The overall intensity of each pixel was also calculated. The motivation behind
+this was to observe an artist's overall intensity, as aforementioned, but also
+to discern any color preferences, however slight.
+
+== SIFT
+
+= Experiments
+
+= Conclusions
+
+= References
+Blessing and Wen "Using Machine Learning for Identification of Art Paintings"
+Hughes et al. "Empirical Mode Decomposition Analysis for Visual Stylometry"
+Hughes et al. "Stylometrics of artwork: uses and limitations"
 
