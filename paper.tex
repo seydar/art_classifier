@@ -55,6 +55,17 @@
   recording the accuracy for estimating each artist. This gives us a measure on
   both false positives and false negatives, both of which are important.
 
+  \subsection{Data}
+  We chose four artists (Rembrandt, Pollock, Monet, and Picasso) and selected
+  roughly 100 works from each artist. We chose each artist for their fame and
+  peculiarities. Picasso was an interesting artist to choose, simply because his
+  style has ranged from realism as a youth to cubism later in his life.
+  Rembrandt is an artist we had seen mentioned in many papers, so we figured
+  that it would be important to include him in our work. Pollock was chosen as
+  he was an abstract painter with creative uses of colors that focused around a
+  certain theme. Monet was selected as he was an impressionist painter who did
+  many plein-air landscapes.
+
   \subsection{Weighted Combination}
   On a more technical level, the program also takes information on the weights
   of each feature and the threshold for ``sureness'', in which if the resulting
@@ -105,6 +116,27 @@
   to discern any color preferences, however slight. \\
 
   \subsection{SIFT}
+  SIFT or scale-invarient feature transform is an algorithm that is used to
+  describe and locate features in images. The first part of this algorithm
+  involves finding the keypoints which is done by finding the maxima/minima of
+  the Difference of Gaussians (DoG) at different scales. Features can be examined
+  at different scales by changing the size of the $\sigma$ when finding the DoG.
+  By examining features at different scale levels features that would otherwise
+  be overlooked can be found. This is useful for art identification because
+  the different styles of artists can be subjectively determined by the patterns
+  that exists at multiple levels, from brushstrokes to the overall theme of a
+  painting. \\
+  
+  The SIFT algorithm that was utilized was from the VLFeat library but a custom
+  Bag of Words model in order to generate sets of histograms that could then be
+  used for our machine learning algorithm. SIFT finds different features and
+  represents them as a 128-dimensional vector. We combined all of the SIFT features
+  from our training set and clustered them into 10 different groups using k-means
+  clustering. We then generated histograms of frequency for all of the images, both
+  training and testing alike, of each of the feature clusters found in the training
+  images of both artists. We can then use the histograms of the training set to
+  train the SVM and the histograms of the testing images to classify using the
+  trained SVM.
 
   \subsection{Blob Detection}
   Blob detection is a technique in which we calculate the centers of points of
@@ -139,19 +171,20 @@
 
   \section{Conclusions}
 
-  \begin{thebibliography}
-    Blessing, A. and Wen, K.,
+  \begin{thebibliography}{1}
+    \bibitem{blessing} Blessing, A. and Wen, K.,
     2010,
     \emph{Using Machine Learning for Identification of Art Paintings}.
   
-    Hughes, J. M., Mao, D., Rockmore, D. M., Wang, Y., Wu, Qiang.,
+    \bibitem{empirical} Hughes, J. M., Mao, D., Rockmore, D. M.,
+    Wang, Y., Wu, Qiang.,
     NOVEMBER 2012,
     \emph{Empirical Mode Decomposition Analysis for Visual Stylometry}.
     IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE,
     VOL. 34,
     NO. 11.
   
-    Hughes, J. M., Graham, D. J., Rockmore, D. M.,
+    \bibitem{drawing} Hughes, J. M., Graham, D. J., Rockmore, D. M.,
     \emph{Stylometrics of artwork: uses and limitations}.
   
   \end{thebibliography}
