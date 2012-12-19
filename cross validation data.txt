@@ -1,29 +1,29 @@
 
 USE THIS DATA!
 	
-[fr sr] = cross_validate('monet','picasso',[0.4 0.4 0.1 0.1],0.5)
+[fr sc] = cross_validate('monet','pollock', [0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
-fr = 0.9239	sr = 0.8391
+fr = 0.9565	sr = 0.8769
 
-[fr sr] = cross_validate('monet','Rembrandt',[0.4 0.4 0.1 0.1],0.5)
+[fr sr] = cross_validate('monet','Rembrandt',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
-fr = 0.9022	sr = 0.9500
+fr = 	sr = 
 
-[fr sr] = cross_validate('monet','pollock',[0.4 0.4 0.1 0.1],0.5)
+[fr sr] = cross_validate('monet','picasso',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
-fr = 0.9565	sr = 0.7385
+fr = 	sr = 
 
-[fr sr] = cross_validate('picasso','Rembrandt',[0.4 0.4 0.1 0.1],0.5)
+[fr sr] = cross_validate('picasso','Rembrandt',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
-fr = 0.8391	sr = 0.9100
+fr = 	sr = 
 
-[fr sr] = cross_validate('picasso','pollock',[0.4 0.4 0.1 0.1],0.5)
+[fr sr] = cross_validate('picasso','pollock',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
-fr = 0.9655	sr = 0.8308
+fr = 	sr = 
 
-[fr sr] = cross_validate('pollock','Rembrandt',[0.4 0.4 0.1 0.1],0.5)
+[fr sr] = cross_validate('pollock','Rembrandt',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
-fr = 0.9692	sr = 1.0000
+fr = 	sr = 
 
 
 

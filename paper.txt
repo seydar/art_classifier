@@ -122,6 +122,28 @@ this was to observe an artist's overall intensity, as aforementioned, but also
 to discern any color preferences, however slight.
 
 == SIFT
+SIFT or scale-invarient feature transform is an algorithm that is used to
+describe and locate features in images. The first part of this algorithm
+involves finding the keypoints which is done by finding the maxima/minima of
+the Difference of Gaussians (DoG) at different scales. Features can be examined
+at different scales by changing the size of the SIGMA when finding the DoG.
+By examining features at different scale levels features that would otherwise
+be overlooked can be found. This is useful for art identification because
+the different styles of artists can be subjectively determined by the patterns
+that exists at multiple levels, from brushstrokes to the overall theme of a
+painting.
+
+The SIFT algorithm that was utilized was from the VLFeat library but a custom
+Bag of Words model in order to generate sets of histograms that could then be
+used for our machine learning algorithm. SIFT finds different features and
+represents them as a 128-dimensional vector. We combined all of the SIFT features
+from our training set and clustered them into 10 different groups using k-means
+clustering. We then generated histograms of frequency for all of the images, both
+training and testing alike, of each of the feature clusters found in the training
+images of both artists. We can then use the histograms of the training set to
+train the SVM and the histograms of the testing images to classify using the
+trained SVM.
+
 
 = Experiments
 

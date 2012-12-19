@@ -103,8 +103,8 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f
         end
     end
 
- artist1_rate = sum(artist1_rate)/size(f_test,2)
- artist2_rate = sum(artist2_rate)/size(s_test,2)
+ artist1_rate = sum(artist1_rate)/size(f_test,2);
+ artist2_rate = sum(artist2_rate)/size(s_test,2);
  
  
  
