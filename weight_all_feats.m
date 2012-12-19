@@ -4,7 +4,7 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f
     % length(feat_names) = L, too
     % T is our "sureness" threshold - 
 
-   feat_names = {'corner_thresh' 'edge_hist' 'hog' 'color_hist' 'lbp'};
+   feat_names = {'corner_thresh' 'edge_hist' 'hog' 'color_hist' 'lbp' 'sift'};
   %  feat_names = {'corner_thresh' 'edge_hist' 'color_hist' 'lbp'};
     
     db = db_setup('.');
@@ -18,7 +18,7 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f
     for i = f_train(1:end) % for all of the training images
         im1 = db.get_image(firsts(i).name); % get the ith image
         im1_feats = {};
-        for j = 1:length(w)
+        for j = 1:length(w-1)
             im1_feats = [im1_feats im1.features.(feat_names{j})]; % make a ROW of the features for each
         end
         first_feats = [first_feats; im1_feats];
@@ -27,7 +27,7 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f
 	for i = s_train(1:end) % for all of the training images
         im2 = db.get_image(seconds(i).name);
         im2_feats = {};
-        for j = 1:length(w)
+        for j = 1:length(w-1)
             im2_feats = [im2_feats im2.features.(feat_names{j})];
         end
         second_feats = [second_feats; im2_feats];
@@ -37,7 +37,7 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f
     
     svms = {};
     
-	for i = 1:length(w)
+	for i = 1:length(w-1)
             ff = [];
             sf = [];
 		for j = 1:length(f_train)           
