@@ -69,10 +69,15 @@ data to achieve better results by doing more training.
 
 = Technical Solution
 == Summary
-In its simplest form, our program takes two artists, trains the machine on
-40\% of the data, and then uses the remaining 60\% to test the results while
-recording the accuracy for estimating each artist. This gives us a measure on
-both false positives and false negatives, both of which are important.
+In its simplest form, our program takes two artists, generates a training set
+for each artist, trains the support vector machine and then generates a testing
+set for each artist from the remaining images and classifies them, recording
+the accuracy for estimating each artist. In order to maximize the amount of
+training and testing data we used a technique called cross-validation. In our
+implementation we used 90% of the data for training and 10% for testing and repeated
+this process 10 times in order for all of the images to be used for training
+as well as testing. The overall artist accuracy rate gives us a measure on both
+false positives and false negatives classifications, both of which are important.
 
 == Weighted Combination
 On a more technical level, the program also takes information on the weights
@@ -126,7 +131,7 @@ SIFT or scale-invarient feature transform is an algorithm that is used to
 describe and locate features in images. The first part of this algorithm
 involves finding the keypoints which is done by finding the maxima/minima of
 the Difference of Gaussians (DoG) at different scales. Features can be examined
-at different scales by changing the size of the SIGMA when finding the DoG.
+at different scales by changing the size of the \sigma when finding the DoG.
 By examining features at different scale levels features that would otherwise
 be overlooked can be found. This is useful for art identification because
 the different styles of artists can be subjectively determined by the patterns
