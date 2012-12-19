@@ -1,4 +1,4 @@
-function [svms, trees, codebooks] = create_sift_svm(db, art_1, art_2, f_train, s_train)
+function [svms, trees, codebooks] = create_sift_svm(art_1, art_2, f_train, s_train)
 
 	%steps to do:
 	%1)	extract sift data for the level needed
@@ -17,6 +17,8 @@ function [svms, trees, codebooks] = create_sift_svm(db, art_1, art_2, f_train, s
 		
 	firsts = dir(['./images/' art_1 '*']);
 	seconds = dir(['./images/' art_2 '*']);
+	
+	db = db_setup('.');
 	
 	for level = 3:8
 		first_feats = [];
