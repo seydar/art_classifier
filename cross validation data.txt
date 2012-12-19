@@ -180,8 +180,8 @@ sift:	level 3
 	fr = 0.8923
 	sr = 0.9400
 sift:	level 8
-	fr = 
-	sr = 
+	fr = 0.9231
+	sr = 0.9500
 		
 weighted:
 	fr = 0.9538
