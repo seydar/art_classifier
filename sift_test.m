@@ -99,7 +99,7 @@ function [fr sr] = svm_sift(db, level, art_1, art_2, f_test, f_train, s_test, s_
 	artist1_rate = 0;
 	artist2_rate = 0;
 
-	
+	%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	
 	for i=1:size(f_test_hist,1)
     %    im = db.get_image(firsts(i).name);

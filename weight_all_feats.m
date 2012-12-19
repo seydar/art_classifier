@@ -48,7 +48,11 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f
 		 end
 		 svms = [svms svmtrain([ff; sf], key)];
 	end
-
+	
+	[sift_svms, art_trees, codebooks] = create_sift_svm(db, artist_1, artist_2, f_train, s_train);
+	
+	disp('created sift_svms successfully');
+	
 	
     artist1_rate = [];
     artist2_rate = [];
@@ -57,15 +61,18 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f
         im = db.get_image(firsts(i).name);
         wsum = 0;
 		for j=1:length(w)
-			if (svmclassify(svms{j}, im.features.(feat_names{j})) == 0)
-                wsum = wsum + w(j);
+			if(feat_names{j} ~= 'sift')
+				if (svmclassify(svms{j}, im.features.(feat_names{j})) == 0)
+					wsum = wsum + w(j);
+				end
+			else
+				if(sift_vote(sift_svms, im, art_trees,codebook) == 0)
+					wsum = wsum + w(j);
+				end
 			end
-		end
-       % disp(wsum);
+        end
         if wsum >= T
             artist1_rate = [artist1_rate 1];
- %       elseif wsum < (1-T)
- %           artist1_rate = [artist1_rate -1];
         else
             artist1_rate = [artist1_rate 0];
         end
@@ -75,22 +82,24 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f
         im = db.get_image(seconds(i).name);
         wsum = 0;
         for j=1:length(w)
-            if (svmclassify(svms{j}, im.features.(feat_names{j})) == 1)
-                wsum = wsum + w(j);
-            end
+			if(feat_names{j} ~= 'sift')
+				if (svmclassify(svms{j}, im.features.(feat_names{j})) == 1)
+					wsum = wsum + w(j);
+				end
+			else
+				if(sift_vote(sift_svms, im, art_trees,codebook) == 1)
+					wsum = wsum + w(j);
+				end
+			end
+
         end
         if wsum >= T
             artist2_rate = [artist2_rate 1];
-   %     elseif wsum < 1-T
-    %        artist2_rate = [artist2_rate -1];
         else
             artist2_rate = [artist2_rate 0];
         end
     end
-    
- %   disp([artist_1 ' identification rate: ' num2str(sum(artist1_rate==1)/length(artist1_rate))]);
- %   disp([artist_2 ' identification rate: ' num2str(sum(artist2_rate==1)/length(artist2_rate))]);
-    
+
  artist1_rate = sum(artist1_rate)/size(f_test,2);
  artist2_rate = sum(artist2_rate)/size(s_test,2);
  
