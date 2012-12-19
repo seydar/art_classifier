@@ -1,0 +1,553 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+# java.lang.OutOfMemoryError: Cannot create GC thread. Out of system resources.
+#
+#  Internal Error (gcTaskThread.cpp:38), pid=3591, tid=140487357462272
+#  Error: Cannot create GC thread. Out of system resources.
+#
+# JRE version: 6.0_17-b04
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (14.3-b01 mixed mode linux-amd64 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fc5b4447000):  JavaThread "Unknown thread" [_thread_in_vm, id=3627, stack(0x00007fc5c2697000,0x00007fc5c3098000)]
+
+Stack: [0x00007fc5c2697000,0x00007fc5c3098000],  sp=0x00007fc5c3095cd0,  free space=10235k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x6bd1ef]
+V  [libjvm.so+0x2be6c8]
+V  [libjvm.so+0x33a2fd]
+V  [libjvm.so+0x338e3e]
+V  [libjvm.so+0x338bd3]
+V  [libjvm.so+0x5a87c7]
+V  [libjvm.so+0x697695]
+V  [libjvm.so+0x69732a]
+V  [libjvm.so+0x377cd0]
+V  [libjvm.so+0x67f5af]
+V  [libjvm.so+0x3def30]
+C  [libmwjmi.so+0x6e029]  _Z9InitSunVMN5boost8optionalIKSt6vectorISsSaISsEEEE+0x1129
+C  [libmwjmi.so+0x6eb5f]
+C  [libmwjmi.so+0x6eca9]
+C  [libmwjmi.so+0x5ceb1]  _Z7mljInitv+0x21
+C  [libmwmcr.so+0x106205]
+C  [libmwmcr.so+0xf8bf4]
+C  [libmwmcr.so+0xf8d97]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00007fc5b4447000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=3627, stack(0x00007fc5c2697000,0x00007fc5c3098000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+00400000-00406000 r-xp 00000000 08:03 3543364                            /opt/caen/matlab-2012a/bin/glnxa64/MATLAB
+00606000-00607000 rw-p 00006000 08:03 3543364                            /opt/caen/matlab-2012a/bin/glnxa64/MATLAB
+019ab000-01b17000 rw-p 00000000 00:00 0                                  [heap]
+3b7f400000-3b7f420000 r-xp 00000000 08:03 10224046                       /lib64/ld-2.12.so
+3b7f61f000-3b7f620000 r--p 0001f000 08:03 10224046                       /lib64/ld-2.12.so
+3b7f620000-3b7f621000 rw-p 00020000 08:03 10224046                       /lib64/ld-2.12.so
+3b7f621000-3b7f622000 rw-p 00000000 00:00 0 
+3b7f800000-3b7f989000 r-xp 00000000 08:03 10224047                       /lib64/libc-2.12.so
+3b7f989000-3b7fb88000 ---p 00189000 08:03 10224047                       /lib64/libc-2.12.so
+3b7fb88000-3b7fb8c000 r--p 00188000 08:03 10224047                       /lib64/libc-2.12.so
+3b7fb8c000-3b7fb8d000 rw-p 0018c000 08:03 10224047                       /lib64/libc-2.12.so
+3b7fb8d000-3b7fb92000 rw-p 00000000 00:00 0 
+3b7fc00000-3b7fc83000 r-xp 00000000 08:03 10224048                       /lib64/libm-2.12.so
+3b7fc83000-3b7fe82000 ---p 00083000 08:03 10224048                       /lib64/libm-2.12.so
+3b7fe82000-3b7fe83000 r--p 00082000 08:03 10224048                       /lib64/libm-2.12.so
+3b7fe83000-3b7fe84000 rw-p 00083000 08:03 10224048                       /lib64/libm-2.12.so
+3b80000000-3b80002000 r-xp 00000000 08:03 10224145                       /lib64/libdl-2.12.so
+3b80002000-3b80202000 ---p 00002000 08:03 10224145                       /lib64/libdl-2.12.so
+3b80202000-3b80203000 r--p 00002000 08:03 10224145                       /lib64/libdl-2.12.so
+3b80203000-3b80204000 rw-p 00003000 08:03 10224145                       /lib64/libdl-2.12.so
+3b80400000-3b80417000 r-xp 00000000 08:03 10224144                       /lib64/libpthread-2.12.so
+3b80417000-3b80617000 ---p 00017000 08:03 10224144                       /lib64/libpthread-2.12.so
+3b80617000-3b80618000 r--p 00017000 08:03 10224144                       /lib64/libpthread-2.12.so
+3b80618000-3b80619000 rw-p 00018000 08:03 10224144                       /lib64/libpthread-2.12.so
+3b80619000-3b8061d000 rw-p 00000000 00:00 0 
+3b80c00000-3b80c07000 r-xp 00000000 08:03 10224161                       /lib64/librt-2.12.so
+3b80c07000-3b80e06000 ---p 00007000 08:03 10224161                       /lib64/librt-2.12.so
+3b80e06000-3b80e07000 r--p 00006000 08:03 10224161                       /lib64/librt-2.12.so
+3b80e07000-3b80e08000 rw-p 00007000 08:03 10224161                       /lib64/librt-2.12.so
+3b81800000-3b81816000 r-xp 00000000 08:03 10224149                       /lib64/libresolv-2.12.so
+3b81816000-3b81a16000 ---p 00016000 08:03 10224149                       /lib64/libresolv-2.12.so
+3b81a16000-3b81a17000 r--p 00016000 08:03 10224149                       /lib64/libresolv-2.12.so
+3b81a17000-3b81a18000 rw-p 00017000 08:03 10224149                       /lib64/libresolv-2.12.so
+3b81a18000-3b81a1a000 rw-p 00000000 00:00 0 
+3b82000000-3b8201b000 r-xp 00000000 08:03 11045679                       /usr/lib64/libxcb.so.1.1.0
+3b8201b000-3b8221a000 ---p 0001b000 08:03 11045679                       /usr/lib64/libxcb.so.1.1.0
+3b8221a000-3b8221b000 rw-p 0001a000 08:03 11045679                       /usr/lib64/libxcb.so.1.1.0
+3b82400000-3b82539000 r-xp 00000000 08:03 11045680                       /usr/lib64/libX11.so.6.3.0
+3b82539000-3b82739000 ---p 00139000 08:03 11045680                       /usr/lib64/libX11.so.6.3.0
+3b82739000-3b8273f000 rw-p 00139000 08:03 11045680                       /usr/lib64/libX11.so.6.3.0
+3b82800000-3b82802000 r-xp 00000000 08:03 11010720                       /usr/lib64/libXau.so.6.0.0
+3b82802000-3b82a02000 ---p 00002000 08:03 11010720                       /usr/lib64/libXau.so.6.0.0
+3b82a02000-3b82a03000 rw-p 00002000 08:03 11010720                       /usr/lib64/libXau.so.6.0.0
+3b83000000-3b83011000 r-xp 00000000 08:03 11045681                       /usr/lib64/libXext.so.6.4.0
+3b83011000-3b83211000 ---p 00011000 08:03 11045681                       /usr/lib64/libXext.so.6.4.0
+3b83211000-3b83212000 rw-p 00011000 08:03 11045681                       /usr/lib64/libXext.so.6.4.0
+3b84000000-3b84018000 r-xp 00000000 08:03 11045685                       /usr/lib64/libXmu.so.6.2.0
+3b84018000-3b84218000 ---p 00018000 08:03 11045685                       /usr/lib64/libXmu.so.6.2.0
+3b84218000-3b8421a000 rw-p 00018000 08:03 11045685                       /usr/lib64/libXmu.so.6.2.0
+3b87c00000-3b87c04000 r-xp 00000000 08:03 10224123                       /lib64/libuuid.so.1.3.0
+3b87c04000-3b87e03000 ---p 00004000 08:03 10224123                       /lib64/libuuid.so.1.3.0
+3b87e03000-3b87e04000 rw-p 00003000 08:03 10224123                       /lib64/libuuid.so.1.3.0
+3b8c000000-3b8c017000 r-xp 00000000 08:03 11045682                       /usr/lib64/libICE.so.6.3.0
+3b8c017000-3b8c217000 ---p 00017000 08:03 11045682                       /usr/lib64/libICE.so.6.3.0
+3b8c217000-3b8c218000 rw-p 00017000 08:03 11045682                       /usr/lib64/libICE.so.6.3.0
+3b8c218000-3b8c21c000 rw-p 00000000 00:00 0 
+3b8c800000-3b8c807000 r-xp 00000000 08:03 11045683                       /usr/lib64/libSM.so.6.0.0
+3b8c807000-3b8ca07000 ---p 00007000 08:03 11045683                       /usr/lib64/libSM.so.6.0.0
+3b8ca07000-3b8ca08000 rw-p 00007000 08:03 11045683                       /usr/lib64/libSM.so.6.0.0
+3b8dc00000-3b8dc07000 r-xp 00000000 08:03 10224159                       /lib64/libcrypt-2.12.so
+3b8dc07000-3b8de07000 ---p 00007000 08:03 10224159                       /lib64/libcrypt-2.12.so
+3b8de07000-3b8de08000 r--p 00007000 08:03 10224159                       /lib64/libcrypt-2.12.so
+3b8de08000-3b8de09000 rw-p 00008000 08:03 10224159                       /lib64/libcrypt-2.12.so
+3b8de09000-3b8de37000 rw-p 00000000 00:00 0 
+3b8e800000-3b8e85d000 r-xp 00000000 08:03 10224158                       /lib64/libfreebl3.so
+3b8e85d000-3b8ea5c000 ---p 0005d000 08:03 10224158                       /lib64/libfreebl3.so
+3b8ea5c000-3b8ea5d000 r--p 0005c000 08:03 10224158                       /lib64/libfreebl3.so
+3b8ea5d000-3b8ea5e000 rw-p 0005d000 08:03 10224158                       /lib64/libfreebl3.so
+3b8ea5e000-3b8ea62000 rw-p 00000000 00:00 0 
+3b8f800000-3b8f81d000 r-xp 00000000 08:03 10224146                       /lib64/libtinfo.so.5.7
+3b8f81d000-3b8fa1d000 ---p 0001d000 08:03 10224146                       /lib64/libtinfo.so.5.7
+3b8fa1d000-3b8fa21000 rw-p 0001d000 08:03 10224146                       /lib64/libtinfo.so.5.7
+3b90000000-3b90022000 r-xp 00000000 08:03 10223733                       /lib64/libncurses.so.5.7
+3b90022000-3b90221000 ---p 00022000 08:03 10223733                       /lib64/libncurses.so.5.7
+3b90221000-3b90222000 rw-p 00021000 08:03 10223733                       /lib64/libncurses.so.5.7
+3b92a00000-3b92a16000 r-xp 00000000 08:03 10224178                       /lib64/libnsl-2.12.so
+3b92a16000-3b92c15000 ---p 00016000 08:03 10224178                       /lib64/libnsl-2.12.so
+3b92c15000-3b92c16000 r--p 00015000 08:03 10224178                       /lib64/libnsl-2.12.so
+3b92c16000-3b92c17000 rw-p 00016000 08:03 10224178                       /lib64/libnsl-2.12.so
+3b92c17000-3b92c19000 rw-p 00000000 00:00 0 
+3b93800000-3b9385f000 r-xp 00000000 08:03 11045684                       /usr/lib64/libXt.so.6.0.0
+3b9385f000-3b93a5e000 ---p 0005f000 08:03 11045684                       /usr/lib64/libXt.so.6.0.0
+3b93a5e000-3b93a65000 rw-p 0005e000 08:03 11045684                       /usr/lib64/libXt.so.6.0.0
+7fc597c00000-7fc5990c0000 rwxp 00000000 00:00 0 
+7fc5990c0000-7fc59fc00000 rwxp 00000000 00:00 0 
+7fc59fc00000-7fc5a2c00000 rwxp 00000000 00:00 0 
+7fc5a2c00000-7fc5a8f00000 rwxp 00000000 00:00 0 
+7fc5a8f00000-7fc5a9f00000 rwxp 00000000 00:00 0 
+7fc5a9f00000-7fc5ac000000 rwxp 00000000 00:00 0 
+7fc5ac000000-7fc5ac021000 rw-p 00000000 00:00 0 
+7fc5ac021000-7fc5b0000000 ---p 00000000 00:00 0 
+7fc5b02fd000-7fc5b02fe000 ---p 00000000 00:00 0 
+7fc5b02fe000-7fc5b0416000 rwxp 00000000 00:00 0 
+7fc5b0416000-7fc5b0448000 rwxp 00000000 00:00 0 
+7fc5b0448000-7fc5b0453000 rwxp 00000000 00:00 0 
+7fc5b0453000-7fc5b0488000 rwxp 00000000 00:00 0 
+7fc5b0488000-7fc5b04a0000 rwxp 00000000 00:00 0 
+7fc5b04a0000-7fc5b04d1000 rwxp 00000000 00:00 0 
+7fc5b04d1000-7fc5b04da000 rwxp 00000000 00:00 0 
+7fc5b04da000-7fc5b04ea000 rwxp 00000000 00:00 0 
+7fc5b04ea000-7fc5b075b000 rwxp 00000000 00:00 0 
+7fc5b075b000-7fc5b34eb000 rwxp 00000000 00:00 0 
+7fc5b34eb000-7fc5b34f9000 r-xp 00000000 08:03 3805616                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/libzip.so
+7fc5b34f9000-7fc5b35fb000 ---p 0000e000 08:03 3805616                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/libzip.so
+7fc5b35fb000-7fc5b35fe000 rw-p 00010000 08:03 3805616                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/libzip.so
+7fc5b35fe000-7fc5b35ff000 rw-p 00000000 00:00 0 
+7fc5b35ff000-7fc5b3600000 ---p 00000000 00:00 0 
+7fc5b3600000-7fc5b4000000 rwxp 00000000 00:00 0 
+7fc5b4000000-7fc5b4500000 rw-p 00000000 00:00 0 
+7fc5b4500000-7fc5b8000000 ---p 00000000 00:00 0 
+7fc5b8000000-7fc5b8021000 rw-p 00000000 00:00 0 
+7fc5b8021000-7fc5bc000000 ---p 00000000 00:00 0 
+7fc5bc000000-7fc5bc021000 rw-p 00000000 00:00 0 
+7fc5bc021000-7fc5c0000000 ---p 00000000 00:00 0 
+7fc5c0002000-7fc5c000d000 rwxp 00000000 00:00 0 
+7fc5c000d000-7fc5c0042000 rwxp 00000000 00:00 0 
+7fc5c0042000-7fc5c004c000 rwxp 00000000 00:00 0 
+7fc5c004c000-7fc5c0102000 rwxp 00000000 00:00 0 
+7fc5c0102000-7fc5c0109000 r-xp 00000000 08:03 3805620                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads/libhpi.so
+7fc5c0109000-7fc5c020a000 ---p 00007000 08:03 3805620                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads/libhpi.so
+7fc5c020a000-7fc5c020c000 rw-p 00008000 08:03 3805620                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads/libhpi.so
+7fc5c020c000-7fc5c020d000 rw-p 00000000 00:00 0 
+7fc5c020d000-7fc5c020e000 ---p 00000000 00:00 0 
+7fc5c020e000-7fc5c0c0e000 rwxp 00000000 00:00 0 
+7fc5c0c0e000-7fc5c0c13000 r-xp 00000000 08:03 10223643                   /lib64/libnss_dns-2.12.so
+7fc5c0c13000-7fc5c0e12000 ---p 00005000 08:03 10223643                   /lib64/libnss_dns-2.12.so
+7fc5c0e12000-7fc5c0e13000 r--p 00004000 08:03 10223643                   /lib64/libnss_dns-2.12.so
+7fc5c0e13000-7fc5c0e14000 rw-p 00005000 08:03 10223643                   /lib64/libnss_dns-2.12.so
+7fc5c0e14000-7fc5c0e20000 r-xp 00000000 08:03 10223645                   /lib64/libnss_files-2.12.so
+7fc5c0e20000-7fc5c1020000 ---p 0000c000 08:03 10223645                   /lib64/libnss_files-2.12.so
+7fc5c1020000-7fc5c1021000 r--p 0000c000 08:03 10223645                   /lib64/libnss_files-2.12.so
+7fc5c1021000-7fc5c1022000 rw-p 0000d000 08:03 10223645                   /lib64/libnss_files-2.12.so
+7fc5c1045000-7fc5c1052000 r-xp 00000000 08:03 3805615                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/libverify.so
+7fc5c1052000-7fc5c1151000 ---p 0000d000 08:03 3805615                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/libverify.so
+7fc5c1151000-7fc5c1154000 rw-p 0000c000 08:03 3805615                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/libverify.so
+7fc5c1154000-7fc5c18b2000 r-xp 00000000 08:03 3805624                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so
+7fc5c18b2000-7fc5c19b1000 ---p 0075e000 08:03 3805624                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so
+7fc5c19b1000-7fc5c1b29000 rw-p 0075d000 08:03 3805624                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so
+7fc5c1b29000-7fc5c1b67000 rw-p 00000000 00:00 0 
+7fc5c1b67000-7fc5c1b90000 r-xp 00000000 08:03 3805596                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/libjava.so
+7fc5c1b90000-7fc5c1c8f000 ---p 00029000 08:03 3805596                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/libjava.so
+7fc5c1c8f000-7fc5c1c96000 rw-p 00028000 08:03 3805596                    /opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/libjava.so
+7fc5c1c96000-7fc5c1c97000 ---p 00000000 00:00 0 
+7fc5c1c97000-7fc5c2697000 rwxp 00000000 00:00 0 
+7fc5c2697000-7fc5c269a000 ---p 00000000 00:00 0 
+7fc5c269a000-7fc5c3098000 rwxp 00000000 00:00 0 
+7fc5c3098000-7fc5c31b8000 rw-p 00000000 00:00 0 
+7fc5c31b8000-7fc5c31b9000 ---p 00000000 00:00 0 
+7fc5c31b9000-7fc5c3989000 rwxp 00000000 00:00 0 
+7fc5c3989000-7fc5c398b000 r-xp 00000000 08:03 3544444                    /opt/caen/matlab-2012a/bin/glnxa64/mklcompat.so
+7fc5c398b000-7fc5c3b8a000 ---p 00002000 08:03 3544444                    /opt/caen/matlab-2012a/bin/glnxa64/mklcompat.so
+7fc5c3b8a000-7fc5c3b8b000 rw-p 00001000 08:03 3544444                    /opt/caen/matlab-2012a/bin/glnxa64/mklcompat.so
+7fc5c3b8b000-7fc5c3c4a000 r-xp 00000000 08:03 3932535                    /opt/caen/matlab-2012a/sys/os/glnxa64/libiomp5.so
+7fc5c3c4a000-7fc5c3e49000 ---p 000bf000 08:03 3932535                    /opt/caen/matlab-2012a/sys/os/glnxa64/libiomp5.so
+7fc5c3e49000-7fc5c3e52000 rw-p 000be000 08:03 3932535                    /opt/caen/matlab-2012a/sys/os/glnxa64/libiomp5.so
+7fc5c3e52000-7fc5c3e59000 rw-p 00000000 00:00 0 
+7fc5c3e59000-7fc5c5ce4000 r-xp 00000000 08:03 3544113                    /opt/caen/matlab-2012a/bin/glnxa64/mkl.so
+7fc5c5ce4000-7fc5c5ee4000 ---p 01e8b000 08:03 3544113                    /opt/caen/matlab-2012a/bin/glnxa64/mkl.so
+7fc5c5ee4000-7fc5c5f26000 rw-p 01e8b000 08:03 3544113                    /opt/caen/matlab-2012a/bin/glnxa64/mkl.so
+7fc5c5f26000-7fc5c5f2b000 rw-p 00000000 00:00 0 
+7fc5c5f2b000-7fc5cbdbc000 r--p 00000000 08:03 11017132                   /usr/lib/locale/locale-archive
+7fc5cbdbc000-7fc5cbdc4000 rw-p 00000000 00:00 0 
+7fc5cbdc4000-7fc5cbdca000 r-xp 00000000 08:03 3543658                    /opt/caen/matlab-2012a/bin/glnxa64/libmwcolamd.so
+7fc5cbdca000-7fc5cbfc9000 ---p 00006000 08:03 3543658                    /opt/caen/matlab-2012a/bin/glnxa64/libmwcolamd.so
+7fc5cbfc9000-7fc5cbfca000 rw-p 00005000 08:03 3543658                    /opt/caen/matlab-2012a/bin/glnxa64/libmwcolamd.so
+7fc5cbfca000-7fc5cbfd2000 r-xp 00000000 08:03 3543628                    /opt/caen/matlab-2012a/bin/glnxa64/libmwamd.so
+7fc5cbfd2000-7fc5cc1d1000 ---p 00008000 08:03 3543628                    /opt/caen/matlab-2012a/bin/glnxa64/libmwamd.so
+7fc5cc1d1000-7fc5cc1d2000 rw-p 00007000 08:03 3543628                    /opt/caen/matlab-2012a/bin/glnxa64/libmwamd.so
+7fc5cc1d2000-7fc5cc1d3000 rw-p 00000000 00:00 0 
+7fc5cc1d3000-7fc5cc215000 r-xp 00000000 08:03 3543655                    /opt/caen/matlab-2012a/bin/glnxa64/libmwcholmod.so
+7fc5cc215000-7fc5cc415000 ---p 00042000 08:03 3543655                    /opt/caen/matlab-2012a/bin/glnxa64/libmwcholmod.so
+7fc5cc415000-7fc5cc416000 rw-p 00042000 08:03 3543655                    /opt/caen/matlab-2012a/bin/glnxa64/libmwcholmod.so
+7fc5cc416000-7fc5cc417000 rw-p 00000000 00:00 0 
+7fc5cc417000-7fc5cc429000 r-xp 00000000 08:03 3543652                    /opt/caen/matlab-2012a/bin/glnxa64/libmwblas.so
+7fc5cc429000-7fc5cc628000 ---p 00012000 08:03 3543652                    /opt/caen/matlab-2012a/bin/glnxa64/libmwblas.so
+7fc5cc628000-7fc5cc62a000 rw-p 00011000 08:03 3543652                    /opt/caen/matlab-2012a/bin/glnxa64/libmwblas.so
+7fc5cc62a000-7fc5cc62c000 rw-p 00000000 00:00 0 
+7fc5cc62c000-7fc5cc630000 r-xp 00000000 08:03 3543821                    /opt/caen/matlab-2012a/bin/glnxa64/libmwompwrapper.so
+7fc5cc630000-7fc5cc82f000 ---p 00004000 08:03 3543821                    /opt/caen/matlab-2012a/bin/glnxa64/libmwompwrapper.so
+7fc5cc82f000-7fc5cc830000 rw-p 00003000 08:03 3543821                    /opt/caen/matlab-2012a/bin/glnxa64/libmwompwrapper.so
+7fc5cc830000-7fc5cc839000 r-xp 00000000 08:03 3543651                    /opt/caen/matlab-2012a/bin/glnxa64/libmwbinder.so
+7fc5cc839000-7fc5cca38000 ---p 00009000 08:03 3543651                    /opt/caen/matlab-2012a/bin/glnxa64/libmwbinder.so
+7fc5cca38000-7fc5cca39000 rw-p 00008000 08:03 3543651                    /opt/caen/matlab-2012a/bin/glnxa64/libmwbinder.so
+7fc5cca39000-7fc5cca3a000 rw-p 00000000 00:00 0 
+7fc5cca3a000-7fc5ccafd000 r-xp 00000000 08:03 3543789                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmathcore.so
+7fc5ccafd000-7fc5cccfc000 ---p 000c3000 08:03 3543789                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmathcore.so
+7fc5cccfc000-7fc5ccd01000 rw-p 000c2000 08:03 3543789                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmathcore.so
+7fc5ccd01000-7fc5ccd02000 rw-p 00000000 00:00 0 
+7fc5ccd02000-7fc5ccf87000 r-xp 00000000 08:03 3543543                    /opt/caen/matlab-2012a/bin/glnxa64/libhdf5.so.6.0.5
+7fc5ccf87000-7fc5cd187000 ---p 00285000 08:03 3543543                    /opt/caen/matlab-2012a/bin/glnxa64/libhdf5.so.6.0.5
+7fc5cd187000-7fc5cd192000 rw-p 00285000 08:03 3543543                    /opt/caen/matlab-2012a/bin/glnxa64/libhdf5.so.6.0.5
+7fc5cd192000-7fc5cd193000 rw-p 00000000 00:00 0 
+7fc5cd193000-7fc5cd1ae000 r-xp 00000000 08:03 3543545                    /opt/caen/matlab-2012a/bin/glnxa64/libhdf5_hl.so.6.0.5
+7fc5cd1ae000-7fc5cd3ad000 ---p 0001b000 08:03 3543545                    /opt/caen/matlab-2012a/bin/glnxa64/libhdf5_hl.so.6.0.5
+7fc5cd3ad000-7fc5cd3ae000 rw-p 0001a000 08:03 3543545                    /opt/caen/matlab-2012a/bin/glnxa64/libhdf5_hl.so.6.0.5
+7fc5cd3ae000-7fc5cd3c1000 rw-p 00000000 00:00 0 
+7fc5cd3c1000-7fc5cd642000 r-xp 00000000 08:03 3932501                    /opt/caen/matlab-2012a/sys/os/glnxa64/libXm.so.3.0.2
+7fc5cd642000-7fc5cd842000 ---p 00281000 08:03 3932501                    /opt/caen/matlab-2012a/sys/os/glnxa64/libXm.so.3.0.2
+7fc5cd842000-7fc5cd86c000 rw-p 00281000 08:03 3932501                    /opt/caen/matlab-2012a/sys/os/glnxa64/libXm.so.3.0.2
+7fc5cd86c000-7fc5cd86d000 rw-p 00000000 00:00 0 
+7fc5cd86d000-7fc5cd87a000 r-xp 00000000 08:03 3543716                    /opt/caen/matlab-2012a/bin/glnxa64/libmwgbt.so
+7fc5cd87a000-7fc5cda7a000 ---p 0000d000 08:03 3543716                    /opt/caen/matlab-2012a/bin/glnxa64/libmwgbt.so
+7fc5cda7a000-7fc5cda7b000 rw-p 0000d000 08:03 3543716                    /opt/caen/matlab-2012a/bin/glnxa64/libmwgbt.so
+7fc5cda7b000-7fc5cda7c000 rw-p 00000000 00:00 0 
+7fc5cda7c000-7fc5cdaad000 r-xp 00000000 08:03 3543743                    /opt/caen/matlab-2012a/bin/glnxa64/libmwgbtutils.so
+7fc5cdaad000-7fc5cdcac000 ---p 00031000 08:03 3543743                    /opt/caen/matlab-2012a/bin/glnxa64/libmwgbtutils.so
+7fc5cdcac000-7fc5cdcb2000 rw-p 00030000 08:03 3543743                    /opt/caen/matlab-2012a/bin/glnxa64/libmwgbtutils.so
+7fc5cdcb2000-7fc5cdd63000 r-xp 00000000 08:03 3543773                    /opt/caen/matlab-2012a/bin/glnxa64/libmwlapack.so
+7fc5cdd63000-7fc5cdf62000 ---p 000b1000 08:03 3543773                    /opt/caen/matlab-2012a/bin/glnxa64/libmwlapack.so
+7fc5cdf62000-7fc5cdf6c000 rw-p 000b0000 08:03 3543773                    /opt/caen/matlab-2012a/bin/glnxa64/libmwlapack.so
+7fc5cdf6c000-7fc5ce1bc000 r-xp 00000000 08:03 3543757                    /opt/caen/matlab-2012a/bin/glnxa64/libmwhgdatatypes.so
+7fc5ce1bc000-7fc5ce3bb000 ---p 00250000 08:03 3543757                    /opt/caen/matlab-2012a/bin/glnxa64/libmwhgdatatypes.so
+7fc5ce3bb000-7fc5ce3d8000 rw-p 0024f000 08:03 3543757                    /opt/caen/matlab-2012a/bin/glnxa64/libmwhgdatatypes.so
+7fc5ce3d8000-7fc5ce3da000 rw-p 00000000 00:00 0 
+7fc5ce3da000-7fc5ce40b000 r-xp 00000000 08:03 3543738                    /opt/caen/matlab-2012a/bin/glnxa64/libmwhardcopy.so
+7fc5ce40b000-7fc5ce60a000 ---p 00031000 08:03 3543738                    /opt/caen/matlab-2012a/bin/glnxa64/libmwhardcopy.so
+7fc5ce60a000-7fc5ce60d000 rw-p 00030000 08:03 3543738                    /opt/caen/matlab-2012a/bin/glnxa64/libmwhardcopy.so
+7fc5ce60d000-7fc5ce61d000 r-xp 00000000 08:03 3543735                    /opt/caen/matlab-2012a/bin/glnxa64/libmwgraphics_util.so
+7fc5ce61d000-7fc5ce81c000 ---p 00010000 08:03 3543735                    /opt/caen/matlab-2012a/bin/glnxa64/libmwgraphics_util.so
+7fc5ce81c000-7fc5ce81e000 rw-p 0000f000 08:03 3543735                    /opt/caen/matlab-2012a/bin/glnxa64/libmwgraphics_util.so
+7fc5ce81e000-7fc5ce81f000 rw-p 00000000 00:00 0 
+7fc5ce81f000-7fc5ce834000 r-xp 00000000 08:03 3543770                    /opt/caen/matlab-2012a/bin/glnxa64/libmwir_xfmr.so
+7fc5ce834000-7fc5cea34000 ---p 00015000 08:03 3543770                    /opt/caen/matlab-2012a/bin/glnxa64/libmwir_xfmr.so
+7fc5cea34000-7fc5cea35000 rw-p 00015000 08:03 3543770                    /opt/caen/matlab-2012a/bin/glnxa64/libmwir_xfmr.so
+7fc5cea35000-7fc5cea37000 rw-p 00000000 00:00 0 
+7fc5cea37000-7fc5ceaa2000 r-xp 00000000 08:03 3543974                    /opt/caen/matlab-2012a/bin/glnxa64/libmwspmatrix.so
+7fc5ceaa2000-7fc5ceca2000 ---p 0006b000 08:03 3543974                    /opt/caen/matlab-2012a/bin/glnxa64/libmwspmatrix.so
+7fc5ceca2000-7fc5ceca3000 rw-p 0006b000 08:03 3543974                    /opt/caen/matlab-2012a/bin/glnxa64/libmwspmatrix.so
+7fc5ceca3000-7fc5cecc8000 r-xp 00000000 08:03 3543781                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_pcodegen.so
+7fc5cecc8000-7fc5ceec8000 ---p 00025000 08:03 3543781                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_pcodegen.so
+7fc5ceec8000-7fc5ceeca000 rw-p 00025000 08:03 3543781                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_pcodegen.so
+7fc5ceeca000-7fc5ceecb000 rw-p 00000000 00:00 0 
+7fc5ceecb000-7fc5ceee4000 r-xp 00000000 08:03 3543782                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_pcodeio.so
+7fc5ceee4000-7fc5cf0e3000 ---p 00019000 08:03 3543782                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_pcodeio.so
+7fc5cf0e3000-7fc5cf0e5000 rw-p 00018000 08:03 3543782                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_pcodeio.so
+7fc5cf0e5000-7fc5cf0f5000 r-xp 00000000 08:03 3543811                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmlib.so
+7fc5cf0f5000-7fc5cf2f5000 ---p 00010000 08:03 3543811                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmlib.so
+7fc5cf2f5000-7fc5cf2f7000 rw-p 00010000 08:03 3543811                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmlib.so
+7fc5cf2f7000-7fc5cf320000 r-xp 00000000 08:03 3543793                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmathrng.so
+7fc5cf320000-7fc5cf51f000 ---p 00029000 08:03 3543793                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmathrng.so
+7fc5cf51f000-7fc5cf521000 rw-p 00028000 08:03 3543793                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmathrng.so
+7fc5cf521000-7fc5cf524000 rw-p 00000000 00:00 0 
+7fc5cf524000-7fc5cf5d9000 r-xp 00000000 08:03 3543795                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmathutil.so
+7fc5cf5d9000-7fc5cf7d8000 ---p 000b5000 08:03 3543795                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmathutil.so
+7fc5cf7d8000-7fc5cf7d9000 rw-p 000b4000 08:03 3543795                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmathutil.so
+7fc5cf7d9000-7fc5cf815000 r-xp 00000000 08:03 3543911                    /opt/caen/matlab-2012a/bin/glnxa64/libmwprofiler.so
+7fc5cf815000-7fc5cfa14000 ---p 0003c000 08:03 3543911                    /opt/caen/matlab-2012a/bin/glnxa64/libmwprofiler.so
+7fc5cfa14000-7fc5cfa17000 rw-p 0003b000 08:03 3543911                    /opt/caen/matlab-2012a/bin/glnxa64/libmwprofiler.so
+7fc5cfa17000-7fc5cfa61000 r-xp 00000000 08:03 3543578                    /opt/caen/matlab-2012a/bin/glnxa64/libmat.so
+7fc5cfa61000-7fc5cfc61000 ---p 0004a000 08:03 3543578                    /opt/caen/matlab-2012a/bin/glnxa64/libmat.so
+7fc5cfc61000-7fc5cfc65000 rw-p 0004a000 08:03 3543578                    /opt/caen/matlab-2012a/bin/glnxa64/libmat.so
+7fc5cfc65000-7fc5cfc66000 rw-p 00000000 00:00 0 
+7fc5cfc66000-7fc5d001e000 r-xp 00000000 08:03 3544109                    /opt/caen/matlab-2012a/bin/glnxa64/libxerces-c.so.27.0
+7fc5d001e000-7fc5d021d000 ---p 003b8000 08:03 3544109                    /opt/caen/matlab-2012a/bin/glnxa64/libxerces-c.so.27.0
+7fc5d021d000-7fc5d0261000 rw-p 003b7000 08:03 3544109                    /opt/caen/matlab-2012a/bin/glnxa64/libxerces-c.so.27.0
+7fc5d0261000-7fc5d0262000 rw-p 00000000 00:00 0 
+7fc5d0262000-7fc5d02d4000 r-xp 00000000 08:03 3544021                    /opt/caen/matlab-2012a/bin/glnxa64/libmwxmlcore.so
+7fc5d02d4000-7fc5d04d3000 ---p 00072000 08:03 3544021                    /opt/caen/matlab-2012a/bin/glnxa64/libmwxmlcore.so
+7fc5d04d3000-7fc5d04db000 rw-p 00071000 08:03 3544021                    /opt/caen/matlab-2012a/bin/glnxa64/libmwxmlcore.so
+7fc5d04db000-7fc5d04dd000 rw-p 00000000 00:00 0 
+7fc5d04dd000-7fc5d04f2000 r-xp 00000000 08:03 3543467                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_iostreams.so.1.44.0
+7fc5d04f2000-7fc5d06f2000 ---p 00015000 08:03 3543467                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_iostreams.so.1.44.0
+7fc5d06f2000-7fc5d06f4000 rw-p 00015000 08:03 3543467                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_iostreams.so.1.44.0
+7fc5d06f4000-7fc5d086a000 r-xp 00000000 08:03 3543994                    /opt/caen/matlab-2012a/bin/glnxa64/libmwuix.so
+7fc5d086a000-7fc5d0a6a000 ---p 00176000 08:03 3543994                    /opt/caen/matlab-2012a/bin/glnxa64/libmwuix.so
+7fc5d0a6a000-7fc5d0a7f000 rw-p 00176000 08:03 3543994                    /opt/caen/matlab-2012a/bin/glnxa64/libmwuix.so
+7fc5d0a7f000-7fc5d0a84000 rw-p 00000000 00:00 0 
+7fc5d0a84000-7fc5d0ae4000 r-xp 00000000 08:03 3543779                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_ir.so
+7fc5d0ae4000-7fc5d0ce3000 ---p 00060000 08:03 3543779                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_ir.so
+7fc5d0ce3000-7fc5d0cec000 rw-p 0005f000 08:03 3543779                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_ir.so
+7fc5d0cec000-7fc5d0ced000 rw-p 00000000 00:00 0 
+7fc5d0ced000-7fc5d0cf2000 r-xp 00000000 08:03 3543993                    /opt/caen/matlab-2012a/bin/glnxa64/libmwuinone.so
+7fc5d0cf2000-7fc5d0ef2000 ---p 00005000 08:03 3543993                    /opt/caen/matlab-2012a/bin/glnxa64/libmwuinone.so
+7fc5d0ef2000-7fc5d0ef3000 rw-p 00005000 08:03 3543993                    /opt/caen/matlab-2012a/bin/glnxa64/libmwuinone.so
+7fc5d0ef3000-7fc5d0f9c000 r-xp 00000000 08:03 3543992                    /opt/caen/matlab-2012a/bin/glnxa64/libmwudd_mi.so
+7fc5d0f9c000-7fc5d119c000 ---p 000a9000 08:03 3543992                    /opt/caen/matlab-2012a/bin/glnxa64/libmwudd_mi.so
+7fc5d119c000-7fc5d11a8000 rw-p 000a9000 08:03 3543992                    /opt/caen/matlab-2012a/bin/glnxa64/libmwudd_mi.so
+7fc5d11a8000-7fc5d11a9000 rw-p 00000000 00:00 0 
+7fc5d11a9000-7fc5d11ee000 r-xp 00000000 08:03 3544092                    /opt/caen/matlab-2012a/bin/glnxa64/libuij.so
+7fc5d11ee000-7fc5d13ee000 ---p 00045000 08:03 3544092                    /opt/caen/matlab-2012a/bin/glnxa64/libuij.so
+7fc5d13ee000-7fc5d13f1000 rw-p 00045000 08:03 3544092                    /opt/caen/matlab-2012a/bin/glnxa64/libuij.so
+7fc5d13f1000-7fc5d13f2000 rw-p 00000000 00:00 0 
+7fc5d13f2000-7fc5d150b000 r-xp 00000000 08:03 3543759                    /opt/caen/matlab-2012a/bin/glnxa64/libmwhgutils.so
+7fc5d150b000-7fc5d170a000 ---p 00119000 08:03 3543759                    /opt/caen/matlab-2012a/bin/glnxa64/libmwhgutils.so
+7fc5d170a000-7fc5d1720000 rw-p 00118000 08:03 3543759                    /opt/caen/matlab-2012a/bin/glnxa64/libmwhgutils.so
+7fc5d1720000-7fc5d247f000 r-xp 00000000 08:03 3543755                    /opt/caen/matlab-2012a/bin/glnxa64/libmwhg.so
+7fc5d247f000-7fc5d267e000 ---p 00d5f000 08:03 3543755                    /opt/caen/matlab-2012a/bin/glnxa64/libmwhg.so
+7fc5d267e000-7fc5d2794000 rw-p 00d5e000 08:03 3543755                    /opt/caen/matlab-2012a/bin/glnxa64/libmwhg.so
+7fc5d2794000-7fc5d27a1000 rw-p 00000000 00:00 0 
+7fc5d27a1000-7fc5d28b3000 r-xp 00000000 08:03 3543736                    /opt/caen/matlab-2012a/bin/glnxa64/libmwgui.so
+7fc5d28b3000-7fc5d2ab2000 ---p 00112000 08:03 3543736                    /opt/caen/matlab-2012a/bin/glnxa64/libmwgui.so
+7fc5d2ab2000-7fc5d2aee000 rw-p 00111000 08:03 3543736                    /opt/caen/matlab-2012a/bin/glnxa64/libmwgui.so
+7fc5d2aee000-7fc5d2af0000 rw-p 00000000 00:00 0 
+7fc5d2af0000-7fc5d2d5f000 r-xp 00000000 08:03 3543803                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmcos.so
+7fc5d2d5f000-7fc5d2f5f000 ---p 0026f000 08:03 3543803                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmcos.so
+7fc5d2f5f000-7fc5d2f89000 rw-p 0026f000 08:03 3543803                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmcos.so
+7fc5d2f89000-7fc5d2f90000 r-xp 00000000 08:03 3543823                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmtok.so
+7fc5d2f90000-7fc5d3190000 ---p 00007000 08:03 3543823                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmtok.so
+7fc5d3190000-7fc5d3191000 rw-p 00007000 08:03 3543823                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmtok.so
+7fc5d3191000-7fc5d3216000 r-xp 00000000 08:03 3543797                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmlint.so
+7fc5d3216000-7fc5d3415000 ---p 00085000 08:03 3543797                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmlint.so
+7fc5d3415000-7fc5d341d000 rw-p 00084000 08:03 3543797                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmlint.so
+7fc5d341d000-7fc5d341f000 rw-p 00000000 00:00 0 
+7fc5d341f000-7fc5d3503000 r-xp 00000000 08:03 3543991                    /opt/caen/matlab-2012a/bin/glnxa64/libmwudd.so
+7fc5d3503000-7fc5d3703000 ---p 000e4000 08:03 3543991                    /opt/caen/matlab-2012a/bin/glnxa64/libmwudd.so
+7fc5d3703000-7fc5d371a000 rw-p 000e4000 08:03 3543991                    /opt/caen/matlab-2012a/bin/glnxa64/libmwudd.so
+7fc5d371a000-7fc5d371d000 rw-p 00000000 00:00 0 
+7fc5d371d000-7fc5d3989000 r-xp 00000000 08:03 3543780                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_parser.so
+7fc5d3989000-7fc5d3b89000 ---p 0026c000 08:03 3543780                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_parser.so
+7fc5d3b89000-7fc5d402b000 rw-p 0026c000 08:03 3543780                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_parser.so
+7fc5d402b000-7fc5d402c000 rw-p 00000000 00:00 0 
+7fc5d402c000-7fc5d404c000 r-xp 00000000 08:03 3543579                    /opt/caen/matlab-2012a/bin/glnxa64/libmex.so
+7fc5d404c000-7fc5d424c000 ---p 00020000 08:03 3543579                    /opt/caen/matlab-2012a/bin/glnxa64/libmex.so
+7fc5d424c000-7fc5d424e000 rw-p 00020000 08:03 3543579                    /opt/caen/matlab-2012a/bin/glnxa64/libmex.so
+7fc5d424e000-7fc5d424f000 r-xp 00000000 08:03 3543812                    /opt/caen/matlab-2012a/bin/glnxa64/libmwnativejava_services.so
+7fc5d424f000-7fc5d444f000 ---p 00001000 08:03 3543812                    /opt/caen/matlab-2012a/bin/glnxa64/libmwnativejava_services.so
+7fc5d444f000-7fc5d4450000 rw-p 00001000 08:03 3543812                    /opt/caen/matlab-2012a/bin/glnxa64/libmwnativejava_services.so
+7fc5d4450000-7fc5d4451000 rw-p 00000000 00:00 0 
+7fc5d4451000-7fc5d479e000 r-xp 00000000 08:03 3543768                    /opt/caen/matlab-2012a/bin/glnxa64/libmwiqm.so
+7fc5d479e000-7fc5d499d000 ---p 0034d000 08:03 3543768                    /opt/caen/matlab-2012a/bin/glnxa64/libmwiqm.so
+7fc5d499d000-7fc5d49c3000 rw-p 0034c000 08:03 3543768                    /opt/caen/matlab-2012a/bin/glnxa64/libmwiqm.so
+7fc5d49c3000-7fc5d49ca000 rw-p 00000000 00:00 0 
+7fc5d49ca000-7fc5d4a39000 r-xp 00000000 08:03 3543490                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_serialization.so.1.44.0
+7fc5d4a39000-7fc5d4c39000 ---p 0006f000 08:03 3543490                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_serialization.so.1.44.0
+7fc5d4c39000-7fc5d4c3d000 rw-p 0006f000 08:03 3543490                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_serialization.so.1.44.0
+7fc5d4c3d000-7fc5d4c50000 r-xp 00000000 08:03 3543604                    /opt/caen/matlab-2012a/bin/glnxa64/libmwMATLAB_settings_res.so
+7fc5d4c50000-7fc5d4e4f000 ---p 00013000 08:03 3543604                    /opt/caen/matlab-2012a/bin/glnxa64/libmwMATLAB_settings_res.so
+7fc5d4e4f000-7fc5d4e50000 rw-p 00012000 08:03 3543604                    /opt/caen/matlab-2012a/bin/glnxa64/libmwMATLAB_settings_res.so
+7fc5d4e50000-7fc5d4e61000 r-xp 00000000 08:03 3543808                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmfl_scalar.so
+7fc5d4e61000-7fc5d5060000 ---p 00011000 08:03 3543808                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmfl_scalar.so
+7fc5d5060000-7fc5d5061000 rw-p 00010000 08:03 3543808                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmfl_scalar.so
+7fc5d5061000-7fc5d5062000 rw-p 00000000 00:00 0 
+7fc5d5062000-7fc5d54e8000 r-xp 00000000 08:03 3543813                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmlutil.so
+7fc5d54e8000-7fc5d56e7000 ---p 00486000 08:03 3543813                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmlutil.so
+7fc5d56e7000-7fc5d5714000 rw-p 00485000 08:03 3543813                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmlutil.so
+7fc5d5714000-7fc5d5720000 rw-p 00000000 00:00 0 
+7fc5d5720000-7fc5d5736000 r-xp 00000000 08:03 3932755                    /opt/caen/matlab-2012a/sys/os/glnxa64/libz.so.1.2.6
+7fc5d5736000-7fc5d5935000 ---p 00016000 08:03 3932755                    /opt/caen/matlab-2012a/sys/os/glnxa64/libz.so.1.2.6
+7fc5d5935000-7fc5d5936000 rw-p 00015000 08:03 3932755                    /opt/caen/matlab-2012a/sys/os/glnxa64/libz.so.1.2.6
+7fc5d5936000-7fc5d5937000 rw-p 00000000 00:00 0 
+7fc5d5937000-7fc5d594a000 r-xp 00000000 08:03 3543491                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_signals.so.1.44.0
+7fc5d594a000-7fc5d5b49000 ---p 00013000 08:03 3543491                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_signals.so.1.44.0
+7fc5d5b49000-7fc5d5b4a000 rw-p 00012000 08:03 3543491                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_signals.so.1.44.0
+7fc5d5b4a000-7fc5d5b4b000 rw-p 00000000 00:00 0 
+7fc5d5b4b000-7fc5d5c51000 r-xp 00000000 08:03 3543489                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_regex.so.1.44.0
+7fc5d5c51000-7fc5d5e51000 ---p 00106000 08:03 3543489                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_regex.so.1.44.0
+7fc5d5e51000-7fc5d5e58000 rw-p 00106000 08:03 3543489                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_regex.so.1.44.0
+7fc5d5e58000-7fc5d5e79000 r-xp 00000000 08:03 3543465                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_filesystem.so.1.44.0
+7fc5d5e79000-7fc5d6078000 ---p 00021000 08:03 3543465                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_filesystem.so.1.44.0
+7fc5d6078000-7fc5d607a000 rw-p 00020000 08:03 3543465                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_filesystem.so.1.44.0
+7fc5d607a000-7fc5d636a000 r-xp 00000000 08:03 3543603                    /opt/caen/matlab-2012a/bin/glnxa64/libmwMATLAB_res.so
+7fc5d636a000-7fc5d6569000 ---p 002f0000 08:03 3543603                    /opt/caen/matlab-2012a/bin/glnxa64/libmwMATLAB_res.so
+7fc5d6569000-7fc5d656b000 rw-p 002ef000 08:03 3543603                    /opt/caen/matlab-2012a/bin/glnxa64/libmwMATLAB_res.so
+7fc5d656b000-7fc5d6577000 rw-p 00000000 00:00 0 
+7fc5d6577000-7fc5d6579000 r-xp 00000000 08:03 3543946                    /opt/caen/matlab-2012a/bin/glnxa64/libmwresource_core.so
+7fc5d6579000-7fc5d6778000 ---p 00002000 08:03 3543946                    /opt/caen/matlab-2012a/bin/glnxa64/libmwresource_core.so
+7fc5d6778000-7fc5d6779000 rw-p 00001000 08:03 3543946                    /opt/caen/matlab-2012a/bin/glnxa64/libmwresource_core.so
+7fc5d6779000-7fc5d6793000 r-xp 00000000 08:03 3544106                    /opt/caen/matlab-2012a/bin/glnxa64/libtbbmalloc.so.2
+7fc5d6793000-7fc5d6892000 ---p 0001a000 08:03 3544106                    /opt/caen/matlab-2012a/bin/glnxa64/libtbbmalloc.so.2
+7fc5d6892000-7fc5d6895000 rw-p 00019000 08:03 3544106                    /opt/caen/matlab-2012a/bin/glnxa64/libtbbmalloc.so.2
+7fc5d6895000-7fc5d68a3000 rw-p 00000000 00:00 0 
+7fc5d68a3000-7fc5d68dd000 r-xp 00000000 08:03 3544105                    /opt/caen/matlab-2012a/bin/glnxa64/libtbb.so.2
+7fc5d68dd000-7fc5d69dd000 ---p 0003a000 08:03 3544105                    /opt/caen/matlab-2012a/bin/glnxa64/libtbb.so.2
+7fc5d69dd000-7fc5d69e1000 rw-p 0003a000 08:03 3544105                    /opt/caen/matlab-2012a/bin/glnxa64/libtbb.so.2
+7fc5d69e1000-7fc5d69e2000 rw-p 00000000 00:00 0 
+7fc5d69e2000-7fc5d69ed000 r-xp 00000000 08:03 3543551                    /opt/caen/matlab-2012a/bin/glnxa64/libicuio.so.44.2
+7fc5d69ed000-7fc5d6bed000 ---p 0000b000 08:03 3543551                    /opt/caen/matlab-2012a/bin/glnxa64/libicuio.so.44.2
+7fc5d6bed000-7fc5d6bef000 rw-p 0000b000 08:03 3543551                    /opt/caen/matlab-2012a/bin/glnxa64/libicuio.so.44.2
+7fc5d6bef000-7fc5d6de1000 r-xp 00000000 08:03 3543549                    /opt/caen/matlab-2012a/bin/glnxa64/libicui18n.so.44.2
+7fc5d6de1000-7fc5d6fe0000 ---p 001f2000 08:03 3543549                    /opt/caen/matlab-2012a/bin/glnxa64/libicui18n.so.44.2
+7fc5d6fe0000-7fc5d6fec000 rw-p 001f1000 08:03 3543549                    /opt/caen/matlab-2012a/bin/glnxa64/libicui18n.so.44.2
+7fc5d6fec000-7fc5d6fed000 rw-p 00000000 00:00 0 
+7fc5d6fed000-7fc5d713e000 r-xp 00000000 08:03 3543584                    /opt/caen/matlab-2012a/bin/glnxa64/libicuuc.so.44.2
+7fc5d713e000-7fc5d733e000 ---p 00151000 08:03 3543584                    /opt/caen/matlab-2012a/bin/glnxa64/libicuuc.so.44.2
+7fc5d733e000-7fc5d734e000 rw-p 00151000 08:03 3543584                    /opt/caen/matlab-2012a/bin/glnxa64/libicuuc.so.44.2
+7fc5d734e000-7fc5d7351000 rw-p 00000000 00:00 0 
+7fc5d7351000-7fc5d8191000 r--p 00000000 08:03 3543548                    /opt/caen/matlab-2012a/bin/glnxa64/libicudata.so.44.2
+7fc5d8191000-7fc5d8390000 ---p 00e40000 08:03 3543548                    /opt/caen/matlab-2012a/bin/glnxa64/libicudata.so.44.2
+7fc5d8390000-7fc5d8391000 rw-p 00e3f000 08:03 3543548                    /opt/caen/matlab-2012a/bin/glnxa64/libicudata.so.44.2
+7fc5d8391000-7fc5d83b7000 r-xp 00000000 08:03 3543509                    /opt/caen/matlab-2012a/bin/glnxa64/libexpat.so.1.5.0
+7fc5d83b7000-7fc5d85b6000 ---p 00026000 08:03 3543509                    /opt/caen/matlab-2012a/bin/glnxa64/libexpat.so.1.5.0
+7fc5d85b6000-7fc5d85b9000 rw-p 00025000 08:03 3543509                    /opt/caen/matlab-2012a/bin/glnxa64/libexpat.so.1.5.0
+7fc5d85b9000-7fc5d85ba000 rw-p 00000000 00:00 0 
+7fc5d85ba000-7fc5d85d0000 r-xp 00000000 08:03 3543515                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_thread.so.1.44.0
+7fc5d85d0000-7fc5d87cf000 ---p 00016000 08:03 3543515                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_thread.so.1.44.0
+7fc5d87cf000-7fc5d87d1000 rw-p 00015000 08:03 3543515                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_thread.so.1.44.0
+7fc5d87d1000-7fc5d87d3000 r-xp 00000000 08:03 3543492                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_system.so.1.44.0
+7fc5d87d3000-7fc5d89d3000 ---p 00002000 08:03 3543492                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_system.so.1.44.0
+7fc5d89d3000-7fc5d89d4000 rw-p 00002000 08:03 3543492                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_system.so.1.44.0
+7fc5d89d4000-7fc5d89e5000 r-xp 00000000 08:03 3543464                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_date_time.so.1.44.0
+7fc5d89e5000-7fc5d8be4000 ---p 00011000 08:03 3543464                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_date_time.so.1.44.0
+7fc5d8be4000-7fc5d8be6000 rw-p 00010000 08:03 3543464                    /opt/caen/matlab-2012a/bin/glnxa64/libboost_date_time.so.1.44.0
+7fc5d8be6000-7fc5d8be8000 rw-p 00000000 00:00 0 
+7fc5d8be8000-7fc5d8bfe000 r-xp 00000000 08:03 3543514                    /opt/caen/matlab-2012a/bin/glnxa64/libgcc_s.so.1
+7fc5d8bfe000-7fc5d8dfd000 ---p 00016000 08:03 3543514                    /opt/caen/matlab-2012a/bin/glnxa64/libgcc_s.so.1
+7fc5d8dfd000-7fc5d8dfe000 rw-p 00015000 08:03 3543514                    /opt/caen/matlab-2012a/bin/glnxa64/libgcc_s.so.1
+7fc5d8dfe000-7fc5d8dff000 rw-p 00000000 00:00 0 
+7fc5d8e11000-7fc5d8e19000 rw-s 00000000 08:05 12058846                   /tmp/hsperfdata_pelops/3591
+7fc5d8e19000-7fc5d8e1a000 rw-p 00000000 00:00 0 
+7fc5d8e1a000-7fc5d8e1b000 r--p 00000000 00:00 0 
+7fc5d8e1b000-7fc5d8e22000 r--s 00000000 08:03 11294756                   /usr/lib64/gconv/gconv-modules.cache
+7fc5d8e22000-7fc5d8f13000 r-xp 00000000 08:03 3544077                    /opt/caen/matlab-2012a/bin/glnxa64/libstdc++.so.6.0.13
+7fc5d8f13000-7fc5d9113000 ---p 000f1000 08:03 3544077                    /opt/caen/matlab-2012a/bin/glnxa64/libstdc++.so.6.0.13
+7fc5d9113000-7fc5d911a000 r--p 000f1000 08:03 3544077                    /opt/caen/matlab-2012a/bin/glnxa64/libstdc++.so.6.0.13
+7fc5d911a000-7fc5d911c000 rw-p 000f8000 08:03 3544077                    /opt/caen/matlab-2012a/bin/glnxa64/libstdc++.so.6.0.13
+7fc5d911c000-7fc5d9131000 rw-p 00000000 00:00 0 
+7fc5d9131000-7fc5d91c0000 r-xp 00000000 08:03 3543760                    /opt/caen/matlab-2012a/bin/glnxa64/libmwi18n.so
+7fc5d91c0000-7fc5d93bf000 ---p 0008f000 08:03 3543760                    /opt/caen/matlab-2012a/bin/glnxa64/libmwi18n.so
+7fc5d93bf000-7fc5d93c5000 rw-p 0008e000 08:03 3543760                    /opt/caen/matlab-2012a/bin/glnxa64/libmwi18n.so
+7fc5d93c5000-7fc5d98f9000 r-xp 00000000 08:03 3543778                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_interpreter.so
+7fc5d98f9000-7fc5d9af8000 ---p 00534000 08:03 3543778                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_interpreter.so
+7fc5d9af8000-7fc5d9bd5000 rw-p 00533000 08:03 3543778                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_interpreter.so
+7fc5d9bd5000-7fc5d9c70000 rw-p 00000000 00:00 0 
+7fc5d9c70000-7fc5d9d05000 r-xp 00000000 08:03 3543777                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_dispatcher.so
+7fc5d9d05000-7fc5d9f04000 ---p 00095000 08:03 3543777                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_dispatcher.so
+7fc5d9f04000-7fc5d9f0b000 rw-p 00094000 08:03 3543777                    /opt/caen/matlab-2012a/bin/glnxa64/libmwm_dispatcher.so
+7fc5d9f0b000-7fc5da075000 r-xp 00000000 08:03 3543805                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmcr.so
+7fc5da075000-7fc5da275000 ---p 0016a000 08:03 3543805                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmcr.so
+7fc5da275000-7fc5da287000 rw-p 0016a000 08:03 3543805                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmcr.so
+7fc5da287000-7fc5da28a000 rw-p 00000000 00:00 0 
+7fc5da28a000-7fc5da2bc000 r-xp 00000000 08:03 3543661                    /opt/caen/matlab-2012a/bin/glnxa64/libmwbridge.so
+7fc5da2bc000-7fc5da4bc000 ---p 00032000 08:03 3543661                    /opt/caen/matlab-2012a/bin/glnxa64/libmwbridge.so
+7fc5da4bc000-7fc5da4bf000 rw-p 00032000 08:03 3543661                    /opt/caen/matlab-2012a/bin/glnxa64/libmwbridge.so
+7fc5da4bf000-7fc5da4c6000 rw-p 00000000 00:00 0 
+7fc5da4c6000-7fc5da566000 r-xp 00000000 08:03 3543771                    /opt/caen/matlab-2012a/bin/glnxa64/libmwjmi.so
+7fc5da566000-7fc5da765000 ---p 000a0000 08:03 3543771                    /opt/caen/matlab-2012a/bin/glnxa64/libmwjmi.so
+7fc5da765000-7fc5da76d000 rw-p 0009f000 08:03 3543771                    /opt/caen/matlab-2012a/bin/glnxa64/libmwjmi.so
+7fc5da76d000-7fc5da76e000 rw-p 00000000 00:00 0 
+7fc5da76e000-7fc5da9dc000 r-xp 00000000 08:03 3543938                    /opt/caen/matlab-2012a/bin/glnxa64/libmwservices.so
+7fc5da9dc000-7fc5dabdb000 ---p 0026e000 08:03 3543938                    /opt/caen/matlab-2012a/bin/glnxa64/libmwservices.so
+7fc5dabdb000-7fc5dabf2000 rw-p 0026d000 08:03 3543938                    /opt/caen/matlab-2012a/bin/glnxa64/libmwservices.so
+7fc5dabf2000-7fc5dac00000 rw-p 00000000 00:00 0 
+7fc5dac00000-7fc5dac3d000 r-xp 00000000 08:03 3543818                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmpath.so
+7fc5dac3d000-7fc5dae3d000 ---p 0003d000 08:03 3543818                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmpath.so
+7fc5dae3d000-7fc5dae40000 rw-p 0003d000 08:03 3543818                    /opt/caen/matlab-2012a/bin/glnxa64/libmwmpath.so
+7fc5dae40000-7fc5dae44000 rw-p 00000000 00:00 0 
+7fc5dae44000-7fc5daefa000 r-xp 00000000 08:03 3544024                    /opt/caen/matlab-2012a/bin/glnxa64/libmx.so
+7fc5daefa000-7fc5db0f9000 ---p 000b6000 08:03 3544024                    /opt/caen/matlab-2012a/bin/glnxa64/libmx.so
+7fc5db0f9000-7fc5db0fe000 rw-p 000b5000 08:03 3544024                    /opt/caen/matlab-2012a/bin/glnxa64/libmx.so
+7fc5db0fe000-7fc5db1dc000 r-xp 00000000 08:03 3543714                    /opt/caen/matlab-2012a/bin/glnxa64/libmwfl.so
+7fc5db1dc000-7fc5db3db000 ---p 000de000 08:03 3543714                    /opt/caen/matlab-2012a/bin/glnxa64/libmwfl.so
+7fc5db3db000-7fc5db3e5000 rw-p 000dd000 08:03 3543714                    /opt/caen/matlab-2012a/bin/glnxa64/libmwfl.so
+7fc5db3e5000-7fc5db3f5000 rw-p 00000000 00:00 0 
+7fc5db3f5000-7fc5db4cb000 r-xp 00000000 08:03 3544093                    /opt/caen/matlab-2012a/bin/glnxa64/libut.so
+7fc5db4cb000-7fc5db6cb000 ---p 000d6000 08:03 3544093                    /opt/caen/matlab-2012a/bin/glnxa64/libut.so
+7fc5db6cb000-7fc5db6d7000 rw-p 000d6000 08:03 3544093                    /opt/caen/matlab-2012a/bin/glnxa64/libut.so
+7fc5db6d7000-7fc5db6eb000 rw-p 00000000 00:00 0 
+7fffa58d6000-7fffa58ea000 rwxp 00000000 00:00 0                          [stack]
+7fffa58ea000-7fffa58ec000 rw-p 00000000 00:00 0 
+7fffa59bf000-7fffa59c0000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xms64m -XX:NewRatio=3 -XX:MaxPermSize=128m -Xmx196m -XX:MaxDirectMemorySize=2147400000 -XX:+AllowUserSignalHandlers -Xrs -Dsun.awt.disableMixing=true -Djava.library.path=/opt/caen/matlab-2012a/bin/glnxa64 vfprintf abort -Djava.awt.headless=true -Xrs -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8 
+java_command: <unknown>
+Launcher Type: generic
+
+Environment Variables:
+PATH=/opt/caen/matlab-2012a/bin:/opt/caen/matlab-2012a/bin/glnxa64:/usr/lib64/qt-3.3/bin:/usr/caen/bin:/usr/um/bin:/usr/local/bin:/bin:/usr/bin
+LD_LIBRARY_PATH=/opt/caen/matlab-2012a/sys/os/glnxa64:/opt/caen/matlab-2012a/bin/glnxa64:/opt/caen/matlab-2012a/extern/lib/glnxa64:/opt/caen/matlab-2012a/runtime/glnxa64:/opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/server:/opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64:/opt/caen/matlab-2012a/toolbox/NAG/mex.a64:/opt/caen/matlab-2012a/bin/glnxa64/:/opt/caen/matlab-2012a/runtime/glnxa64/:/opt/caen/matlab-2012a/sys/os/glnxa64/:/opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/server/:/opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64/client:/opt/caen/matlab-2012a/sys/java/jre/glnxa64/jre/lib/amd64
+SHELL=/bin/csh
+DISPLAY=
+HOSTTYPE=x86_64-linux
+OSTYPE=linux
+ARCH=glnxa64
+MACHTYPE=x86_64
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x6bddc0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x6bddc0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x594f90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x594f90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x594f90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x594f90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x597750], sa_mask[0]=0x08080002, sa_flags=0x10000004
+SIGHUP: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGINT: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGTERM: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGQUIT: [libmwmcr.so+0x131430], sa_mask[0]=0x08080002, sa_flags=0x00000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Red Hat Enterprise Linux Workstation release 6.3 (Santiago)
+
+uname:Linux 2.6.32-279.14.1.el6.x86_64 #1 SMP Mon Oct 15 13:44:51 EDT 2012 x86_64
+libc:glibc 2.12 NPTL 2.12 
+rlimit: STACK 10240k, CORE 0k, NPROC 200, NOFILE 4096, AS 20000000k
+load average:0.40 0.23 0.14
+
+CPU:total 24 (16 cores per cpu, 2 threads per core) family 6 model 44 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, ht
+
+Memory: 4k page, physical 65956500k(39089040k free), swap 12582904k(12432204k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (14.3-b01) for linux-amd64 JRE (1.6.0_17-b04), built on Oct 11 2009 01:08:48 by "java_re" with gcc 3.2.2 (SuSE Linux)
+
+time: Tue Dec 18 20:49:24 2012
+elapsed time: 0 seconds
+
