@@ -63,14 +63,14 @@ function [fr sr] = one_feat(artist_1, artist_2, feat, f_test, f_train, s_test, s
 	artist1_rate = 0;
 	artist2_rate = 0;
 	
-	for i=1:size(f_test,1)
+	for i = f_test(1:end)
 		 im1 = db.get_image(firsts(i).name);
 		if (svmclassify(trained_svm, im1.features.(feat)) == 0)
 			artist1_rate = artist1_rate + 1;
 		end
 	end
     
-    for i=1:size(s_test,1)
+    for i = s_test(1:end)
 		im2 = db.get_image(seconds(i).name);
 		if (svmclassify(trained_svm, im2.features.(feat)) == 1)
 			artist2_rate = artist2_rate + 1;			

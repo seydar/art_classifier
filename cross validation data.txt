@@ -82,8 +82,8 @@ sift:
 	sr = 
 
 weighted:
-	fr = 
-	sr = 
+	fr = 0.9239
+	sr = 0.8621
 
 [fr sr] = cross_validate('picasso','Rembrandt',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
