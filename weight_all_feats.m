@@ -4,7 +4,7 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f
     % length(feat_names) = L, too
     % T is our "sureness" threshold - 
 
-   feat_names = {'corner_thresh' 'edge_hist' 'hog' 'color_hist' 'lbp' 'sift'};
+   feat_names = {'corner_thresh' 'edge_hist' 'blobs' 'hog' 'color_hist' 'lbp' 'sift'};
   %  feat_names = {'corner_thresh' 'edge_hist' 'color_hist' 'lbp'};
     
     db = db_setup('.');

@@ -14,7 +14,7 @@ function [ tfr tsr ] = cross_validate( artist_1, artist_2, w, T )
     total_first_rate = zeros(10,1);
     total_second_rate = zeros(10,1);
     
-       for i=1:10
+	parfor i=1:10
       	  
        disp(['testing i = ' num2str(i)])
        f_test = all_f_indices(mod(all_f_indices, 10) == (i-1));
