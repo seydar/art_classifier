@@ -1,0 +1,83 @@
+function [ tfr tsr ] = one_feat_cross( artist_1, artist_2, feature, T )
+
+    % 10-fold cross validation
+
+    firsts = dir(['./images/' artist_1 '*']);
+    seconds = dir(['./images/' artist_2 '*']);
+    
+    f_size = size(firsts);
+    s_size = size(seconds);
+
+    all_f_indices = 1:f_size;
+    all_s_indices = 1:s_size;
+    
+    total_first_rate = zeros(10,1);
+    total_second_rate = zeros(10,1);
+    
+	parfor i=1:10
+      	  
+       disp(['testing i = ' num2str(i)])
+       f_test = all_f_indices(mod(all_f_indices, 10) == (i-1));
+       f_train = all_f_indices(mod(all_f_indices, 10) ~= (i-1));
+       
+       s_test = all_s_indices(mod(all_s_indices, 10) == (i-1));
+       s_train = all_s_indices(mod(all_s_indices, 10) ~= (i-1));
+       
+		[art_1_arte art_2_rate] = one_feat();
+       total_first_rate(i) = art_1_rate*(size(f_test,2)/f_size(1));
+       total_second_rate(i) = art_2_rate*(size(s_test,2)/s_size(1));
+	      
+	end
+	
+	
+    tfr = sum(total_first_rate);
+    tsr = sum(total_second_rate);
+    
+end
+
+function [fr sr] = one_feat(artist_1, artist_2, feat, f_test, f_train, s_test, s_train, T)
+
+	db = db_setup('.');
+    firsts = dir(['./images/' artist_1 '*']);
+    seconds = dir(['./images/' artist_2 '*']);
+
+	first_feats = [];
+	second_feats = [];
+	for i = f_train(1:end) % for all of the training images
+        im1 = db.get_image(firsts(i).name); % get the ith image
+        im1_feats = [im1_feats im1.features.(feat)]; % make a ROW of the features for each
+        first_feats = [first_feats; im1_feats];
+	end
+	
+	for i = s_train(1:end) % for all of the training images
+        im2 = db.get_image(seconds(i).name);
+		im2_feats = [im2_feats im2.features.(feat)];
+        second_feats = [second_feats; im2_feats];
+	end
+
+	 key = [repmat(0,length(f_train),1); repmat(1,length(s_train),1)];
+	
+	
+	
+	
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

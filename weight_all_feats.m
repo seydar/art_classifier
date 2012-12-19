@@ -34,8 +34,7 @@ function [artist1_rate artist2_rate] = weight_all_feats(artist_1, artist_2, w, f
         second_feats = [second_feats; im2_feats];
     end
     
-	disp('combined the feats going to generate the svms');
-	
+
     key = [repmat(0,length(f_train),1); repmat(1,length(s_train),1)];
     
     svms = {};

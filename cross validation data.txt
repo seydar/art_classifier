@@ -3,108 +3,173 @@ USE THIS DATA!
 	
 [fr sc] = cross_validate('monet','pollock', [0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
-fr = 0.9565	sr = 0.8769
+corner_thresh:
+	fr = 
+	sr = 
+edge_hist:
+	fr = 
+	sr = 
+blobs:
+	fr = 
+	sr = 
+hog:
+	fr = 
+	sr = 
+color_hist:
+	fr = 
+	sr = 
+lbp:
+	fr = 
+	sr = 
+sift:	level 3
+	fr = 0.9130
+	sr = 0.8923
+
+weighted:
+	fr = 0.9565
+	sr = 0.8769
 
 [fr sr] = cross_validate('monet','Rembrandt',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
-fr = 	sr = 
+corner_thresh:
+	fr = 
+	sr = 
+edge_hist:
+	fr = 
+	sr = 
+blobs:
+	fr = 
+	sr = 
+hog:
+	fr = 
+	sr = 
+color_hist:
+	fr = 
+	sr = 
+lbp:
+	fr = 
+	sr = 
+sift:	level 3
+	fr = 0.9022
+	sr = 0.8800
+
+weighted:
+	fr = 0.8696
+	sr = 0.9500
 
 [fr sr] = cross_validate('monet','picasso',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
-fr = 	sr = 
+corner_thresh:
+	fr = 
+	sr = 
+edge_hist:
+	fr = 
+	sr = 
+blobs:
+	fr = 
+	sr = 
+hog:
+	fr = 
+	sr = 
+color_hist:
+	fr = 
+	sr = 
+lbp:
+	fr = 
+	sr = 
+sift:
+	fr = 
+	sr = 
+
+weighted:
+	fr = 
+	sr = 
 
 [fr sr] = cross_validate('picasso','Rembrandt',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
-fr = 	sr = 
+corner_thresh:
+	fr = 
+	sr = 
+edge_hist:
+	fr = 
+	sr = 
+blobs:
+	fr = 
+	sr = 
+hog:
+	fr = 
+	sr = 
+color_hist:
+	fr = 
+	sr = 
+lbp:
+	fr = 
+	sr = 
+sift:
+	fr = 
+	sr = 
+
+weighted:
+	fr = 
+	sr = 
 
 [fr sr] = cross_validate('picasso','pollock',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
-fr = 	sr = 
+corner_thresh:
+	fr = 
+	sr = 
+edge_hist:
+	fr = 
+	sr = 
+blobs:
+	fr = 
+	sr = 
+hog:
+	fr = 
+	sr = 
+color_hist:
+	fr = 
+	sr = 
+lbp:
+	fr = 
+	sr = 
+sift:
+	fr = 
+	sr = 
+
+weighted:
+	fr = 0.9425
+	sr = 0.8000
 
 [fr sr] = cross_validate('pollock','Rembrandt',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
-fr = 	sr = 
+corner_thresh:
+	fr = 
+	sr = 
+edge_hist:
+	fr = 
+	sr = 
+blobs:
+	fr = 
+	sr = 
+hog:
+	fr = 
+	sr = 
+color_hist:
+	fr = 
+	sr = 
+lbp:
+	fr = 
+	sr = 
+sift:
+	fr = 
+	sr = 
+
+weighted:
+	fr = 0.9538
+	sr = 1.000
 
 
-
-Ignore this drew
-
-Pollock Rembrandt Cross Validation
-
-feat_names = {'corner_thresh' 'edge_hist' 'color_hist' 'lbp'};
-
-corner_thresh - 1
-	fr = 0.9700	sr = 0.7231
-	
-edge_hist - 2
-	fr = 0.9900	sr = 0.9692
-
-Color_hist - 3
-	fr = 0.95	sr = 0.9077
-	
-lbp - 4
-	fr = 0.83	sr = 0.7385
-	
-Weighted:
-
-	rembrandt pollock
-
-	w = [0.25 0.25 0.25 0.25]
-	fr = 1.0000	sr = 0.9692
-	
-	w = [0.4 0.4 0.1 0.1]
-	fr = 1.0000	sr = 0.9692
-
-	w = [0.1 0.4 0.4 0.1]
-	fr = 1.0000	sr = 0.9692
-
-	w = [0.05 0.05 0 0.9]
-	fr = 0.8300	sr = 0.7385
-	
-	w = [0.3 0.3 0.3 0.1]
-	fr = 0.9900	sr = 0.9385
-	
-	w = [0.4 0.4 0.15 0.05]
-	fr = 0.99	sr = 0.9385
-	
-
-
-
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
