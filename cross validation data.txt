@@ -25,8 +25,8 @@ sift:	level 3
 	fr = 0.9130
 	sr = 0.8923
 sift:	level 8
-	fr = 
-	sr = 
+	fr = 0.9348
+	sr = 0.8923
 	
 weighted:
 	fr = 0.9565
@@ -44,20 +44,20 @@ blobs:
 	fr = 0.5217
 	sr = 0.8900
 hog:
-	fr = 
-	sr = 
+	fr = 0.9348
+	sr = 0.8900
 color_hist:
-	fr = 
-	sr = 
+	fr = 0.9239
+	sr = 0.9400
 lbp:
-	fr = 
-	sr = 
+	fr = 0.9239
+	sr = 0.7000
 sift:	level 3
 	fr = 0.9022
 	sr = 0.8800
 sift:	level 8
-	fr = 
-	sr = 
+	fr = 0.9022
+	sr = 0.8600
 	
 weighted:
 	fr = 0.8696
@@ -81,14 +81,14 @@ color_hist:
 	fr = 0.7174
 	sr = 0.7241
 lbp:
-	fr = 
-	sr = 
+	fr = 0.8161
+	sr = 0.6207
 sift:	level 3
 	fr = 0.8478
 	sr = 0.8506
 sift:	level 8
-	fr = 
-	sr = 
+	fr = 0.9130
+	sr = 0.9195
 	
 weighted:
 	fr = 0.9239
@@ -97,29 +97,30 @@ weighted:
 [fr sr] = cross_validate('picasso','Rembrandt',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
 corner_thresh:
-	fr = 
-	sr = 
+	fr = 0.4483
+	sr = 0.8300
 edge_hist:
-	fr = 
-	sr = 
+	fr = 0.8736
+	sr = 0.7900
 blobs:
-	fr = 
-	sr = 
+	fr = 0.7126
+	sr = 0.8500
 hog:
-	fr = 
-	sr = 
+	fr = 0.7356
+	sr = 0.7300
 color_hist:
-	fr = 
-	sr = 
+	fr = 0.8391
+	sr = 0.8600
 lbp:
-	fr = 
-	sr = 
+	fr = 0.8046
+	sr = 0.5800
 sift:	level 3
 	fr = 0.9195
 	sr = 0.8800
 sift:	level 8
-	fr = 
-	sr = 
+	fr = 0.9655
+	sr = 0.9200
+	
 weighted:
 	fr = 0.8736
 	sr = 0.9200
@@ -127,29 +128,29 @@ weighted:
 [fr sr] = cross_validate('picasso','pollock',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
 corner_thresh:
-	fr = 
-	sr = 
+	fr = 0.8966
+	sr = 0.6308
 edge_hist:
-	fr = 
-	sr = 
+	fr = 0.8621
+	sr = 0.9077
 blobs:
-	fr = 
-	sr = 
+	fr = 0.8391
+	sr = 0.8154
 hog:
-	fr = 
-	sr = 
+	fr = 0.7126
+	sr = 0.8154
 color_hist:
-	fr = 
-	sr = 
+	fr = 0.6667
+	sr = 0.7846
 lbp:
-	fr = 
-	sr = 
+	fr = 0.2989
+	sr = 0.7692
 sift:	level 3
 	fr = 0.9195
 	sr = 0.8308
 sift:	level 8
-	fr = 
-	sr = 
+	fr = 0.8851
+	sr = 0.8154
 	
 weighted:
 	fr = 0.9425
@@ -158,26 +159,26 @@ weighted:
 [fr sr] = cross_validate('pollock','Rembrandt',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
 corner_thresh:
-	fr = 
-	sr = 
+	fr = 0.7538
+	sr = 0.9700
 edge_hist:
-	fr = 
-	sr = 
+	fr = 0.9538
+	sr = 0.9900
 blobs:
-	fr = 
-	sr = 
+	fr = 0.9692
+	sr = 0.9900
 hog:
-	fr = 
-	sr = 
+	fr = 0.9077
+	sr = 0.8500
 color_hist:
-	fr = 
-	sr = 
+	fr = 0.9385
+	sr = 0.9200
 lbp:
-	fr = 
-	sr = 
+	fr = 0.8154
+	sr = 0.6800
 sift:	level 3
-	fr = 
-	sr = 
+	fr = 0.8923
+	sr = 0.9400
 sift:	level 8
 	fr = 
 	sr = 
