@@ -4,27 +4,30 @@ USE THIS DATA!
 [fr sc] = cross_validate('monet','pollock', [0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
 corner_thresh:
-	fr = 
-	sr = 
+	fr = 0.8913
+	sr = 0.6308
 edge_hist:
-	fr = 
-	sr = 
+	fr = 0.8370
+	sr = 0.8769
 blobs:
-	fr = 
-	sr = 
+	fr = 0.8696
+	sr = 0.8769
 hog:
-	fr = 
-	sr = 
+	fr = 0.8696
+	sr = 0.9077
 color_hist:
-	fr = 
-	sr = 
+	fr = 0.6196
+	sr = 0.7385
 lbp:
-	fr = 
-	sr = 
+	fr = 0.6522
+	sr = 0.7538
 sift:	level 3
 	fr = 0.9130
 	sr = 0.8923
-
+sift:	level 8
+	fr = 
+	sr = 
+	
 weighted:
 	fr = 0.9565
 	sr = 0.8769
@@ -32,14 +35,14 @@ weighted:
 [fr sr] = cross_validate('monet','Rembrandt',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
 corner_thresh:
-	fr = 
-	sr = 
+	fr = 0.5870
+	sr = 0.8700
 edge_hist:
-	fr = 
-	sr = 
+	fr = 0.9022
+	sr = 0.8900
 blobs:
-	fr = 
-	sr = 
+	fr = 0.5217
+	sr = 0.8900
 hog:
 	fr = 
 	sr = 
@@ -52,7 +55,10 @@ lbp:
 sift:	level 3
 	fr = 0.9022
 	sr = 0.8800
-
+sift:	level 8
+	fr = 
+	sr = 
+	
 weighted:
 	fr = 0.8696
 	sr = 0.9500
@@ -60,27 +66,30 @@ weighted:
 [fr sr] = cross_validate('monet','picasso',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
 corner_thresh:
-	fr = 
-	sr = 
+	fr = 0.4348
+	sr = 0.5862
 edge_hist:
-	fr = 
-	sr = 
+	fr = 0.7826
+	sr = 0.8276
 blobs:
-	fr = 
-	sr = 
+	fr = 0.8804
+	sr = 0.7701
 hog:
-	fr = 
-	sr = 
+	fr = 0.6957
+	sr = 0.5402
 color_hist:
-	fr = 
-	sr = 
+	fr = 0.7174
+	sr = 0.7241
 lbp:
 	fr = 
 	sr = 
-sift:
+sift:	level 3
+	fr = 0.8478
+	sr = 0.8506
+sift:	level 8
 	fr = 
 	sr = 
-
+	
 weighted:
 	fr = 0.9239
 	sr = 0.8621
@@ -105,13 +114,15 @@ color_hist:
 lbp:
 	fr = 
 	sr = 
-sift:
+sift:	level 3
+	fr = 0.9195
+	sr = 0.8800
+sift:	level 8
 	fr = 
 	sr = 
-
 weighted:
-	fr = 
-	sr = 
+	fr = 0.8736
+	sr = 0.9200
 
 [fr sr] = cross_validate('picasso','pollock',[0.2,0.2, 0.15, 0.1, 0.1, 0.05,0.2], 0.5);
 
@@ -133,10 +144,13 @@ color_hist:
 lbp:
 	fr = 
 	sr = 
-sift:
+sift:	level 3
+	fr = 0.9195
+	sr = 0.8308
+sift:	level 8
 	fr = 
 	sr = 
-
+	
 weighted:
 	fr = 0.9425
 	sr = 0.8000
@@ -161,10 +175,13 @@ color_hist:
 lbp:
 	fr = 
 	sr = 
-sift:
+sift:	level 3
 	fr = 
 	sr = 
-
+sift:	level 8
+	fr = 
+	sr = 
+		
 weighted:
 	fr = 0.9538
 	sr = 1.000
